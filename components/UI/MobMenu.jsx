@@ -11,7 +11,7 @@ export default function MobMenu({ Menus }) {
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
   const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null);
 
-  const toggleDrawer = (val) => {
+  const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setOpenMenuIndex(null);
     setOpenSubMenuIndex(null);
@@ -32,7 +32,7 @@ export default function MobMenu({ Menus }) {
     <div className="relative">
       <button
         className="lg:hidden z-[999] relative"
-        onClick={() => toggleDrawer("")}
+        onClick={() => toggleDrawer()}
       >
         {isOpen ? (
           <IoClose className="text-red-600 text-xl rounded-full border border-red-600 p-0.5" />
@@ -52,17 +52,24 @@ export default function MobMenu({ Menus }) {
             const hasSubMenu = menu?.subMenus?.length;
             return (
               <li key={i} className="">
-                <span
+                <div
                   className="flex justify-between capitalize items-center p-4 text-lg rounded-md cursor-pointer relative"
-                  onClick={() => setOpenMenuIndex(isMenuOpen ? null : i)}
+                  onClick={() => {
+                    setOpenMenuIndex(isMenuOpen ? null : i);
+                    toggleDrawer();
+                  }}
                 >
-                  {menu.menu}
-                  {hasSubMenu && (
-                    <IoIosArrowDown
-                      className={`ml-auto ${isMenuOpen && "rotate-180"} `}
-                    />
+                  {hasSubMenu ? (
+                    <>
+                      <h4>{menu.menu}</h4>
+                      <IoIosArrowDown
+                        className={`ml-auto ${isMenuOpen && "rotate-180"} `}
+                      />
+                    </>
+                  ) : (
+                    <Link href={menu.link ? menu.link : "#"}>{menu.menu}</Link>
                   )}
-                </span>
+                </div>
                 {hasSubMenu && (
                   <motion.ul
                     initial="exit"

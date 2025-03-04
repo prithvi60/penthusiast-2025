@@ -19,7 +19,7 @@ const Hero = () => {
                 <HeroMarquee />
             </div>
             <div className="padding w-full h-full space-y-5 md:space-y-8 text-center max-w-5xl mx-auto">
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">Is your website telling the <span className="uppercase font-extrabold text-text pr-3">right</span>story?</h2>
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">Is your website telling the <span className="uppercase font-extrabold text-text px-3">right</span>story?</h2>
                 <p className="text-base md:text-xl">We help you turn YOUR experience into content that converts while you&apos;re asleep.We work with people like YOU as a plug-and-play team to meet your Website, Blogs & Social Media Content Needs.</p>
                 <div className="w-full flex justify-center items-center">
                     <GetStartButton />

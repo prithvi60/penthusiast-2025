@@ -5,7 +5,7 @@ const BuildOurStory = () => {
     return (
         <section className="w-full h-full padding">
             <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 md:gap-0 p-10 rounded-md border border-[#D3D2D2]">
-                <div className="space-y-3 w-full">
+                <div className="space-y-3 w-full text-center md:text-start">
                     <h4 className="text-xl font-medium sm:text-2xl lg:text-3xl">
                         Let&apos;s Build your story!
                     </h4>
@@ -13,7 +13,7 @@ const BuildOurStory = () => {
                         Unlock content that drives traffic & conversions.
                     </p>
                 </div>
-                <div className="w-[15%]">
+                <div className="w-2/5 xl:w-[15%]">
                     <GetStartButton />
                 </div>
             </div>

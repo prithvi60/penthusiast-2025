@@ -1,5 +1,5 @@
 "use client";
-import { heroMarquee, ourClients } from "@/utils/Data";
+import { heroMarquee, ourClients, reviews } from "@/utils/Data";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -35,3 +35,26 @@ export const OurClientsMarquee = () => {
         </Marquee>
     );
 };
+
+
+export const OurClientsReviews = () => {
+    return (
+        <div className="padding w-full">
+            <Marquee pauseOnHover speed={50} autoFill className="">
+                {reviews.map((item, idx) => (
+                    <div key={idx} className="flex gap-8 shadow-lg p-5 rounded-lg max-w-sm sm:max-w-md md:max-w-xl m-5">
+                        {/* <Image src={""} alt="" width={150} height={150} className="rounded-full" /> */}
+                        <div className="rounded-full bg-gray-300 size-20 shrink-0" />
+                        <div className="space-y-3.5">
+                            <p className="text-sm">{item.review}</p>
+                            <div>
+                                <h4 className="text-base md:text-lg">{item.name}</h4>
+                                <p className="text-base md:text-lg text-[#848484]">{item.position}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Marquee>
+        </div>
+    )
+}

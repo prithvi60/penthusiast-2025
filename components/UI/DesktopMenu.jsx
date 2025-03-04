@@ -22,11 +22,20 @@ export default function DesktopMenu({ menu }) {
       <div
         className={`flex items-center gap-1 text-sm xl:text-[18px] cursor-pointer px-2 2xl:px-4 py-1.5 xl:py-2 rounded-lg font-medium`}
       >
-        <h4 className="capitalize">{menu.menu}</h4>
-        {hasSubMenu && (
-          <IoIosArrowDown
-            className={`mt-[0.6px] group-hover/link:rotate-180 duration-200 text-black`}
-          />
+        {hasSubMenu ? (
+          <>
+            <h4 className="capitalize">{menu.menu}</h4>
+            <IoIosArrowDown
+              className={`mt-[0.6px] group-hover/link:rotate-180 duration-200 text-black`}
+            />
+          </>
+        ) : (
+          <Link
+            href={menu.link || "#"}
+            className="flex capitalize items-center gap-1"
+          >
+            <span>{menu.menu}</span>
+          </Link>
         )}
       </div>
 
@@ -43,10 +52,7 @@ export default function DesktopMenu({ menu }) {
               // Card-based layout for Expert & Financial Consultation
               <div className="px-3.5 py-4 w-full">
                 {menu.subMenus?.map((submenu, i) => (
-                  <div
-                    key={i}
-                    className="py-2 rounded-lg transition"
-                  >
+                  <div key={i} className="py-2 rounded-lg transition">
                     <Link
                       href={submenu.link || "#"}
                       className="flex items-center gap-2 rounded-md p-3 hover:bg-gray-100 transition"
@@ -62,10 +68,15 @@ export default function DesktopMenu({ menu }) {
             ) : (
               // Grid-based layout for all other submenus
               // <div className="">
-              <div className={`grid ${hasSubMenu >= 2 ? "grid-cols-2" : "grid-cols-1"} gap-10 px-6 py-10 w-full`}>
+              <div
+                className={`grid ${hasSubMenu >= 2 ? "grid-cols-2" : "grid-cols-1"} gap-10 px-6 py-10 w-full`}
+              >
                 {menu.subMenus?.map((item, idx) => (
                   <div key={idx}>
-                    <Link href={item.link} className="text-lg font-semibold pb-2.5">
+                    <Link
+                      href={item.link}
+                      className="text-lg font-semibold pb-2.5"
+                    >
                       {item.menu}
                     </Link>
                   </div>

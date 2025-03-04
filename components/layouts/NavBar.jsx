@@ -7,15 +7,18 @@ import Image from "next/image";
 import CalendlyLink from "../features/CalendlyButton";
 
 const NavBar = () => {
-
   return (
     <header className="px-5 md:px-10 py-6 md:py-4 text-lg z-50 sticky inset-0 flex items-center backdrop-blur-md bg-white bg-opacity-30">
       <nav className="flex justify-between items-center w-full">
         <div>
-          <Link
-            href="/"
-          >
-            <Image src={"/logo.svg"} alt="logo" width={130} height={110} className="" />
+          <Link href="/">
+            <Image
+              src={"/logo.svg"}
+              alt="logo"
+              width={130}
+              height={110}
+              className=""
+            />
           </Link>
         </div>
         {/* navbar menu lists */}
