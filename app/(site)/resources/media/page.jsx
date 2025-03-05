@@ -1,4 +1,4 @@
-import MediaComponent from '@/components/layouts/resources/media/MediaComponent'
+import MediaComponent from '@/components/layouts/resources/MediaComponent'
 import React from 'react'
 
 const Page = () => {

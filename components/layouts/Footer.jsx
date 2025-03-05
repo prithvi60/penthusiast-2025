@@ -15,7 +15,7 @@ const Footer = () => {
                         href={"/"}
                         className="flex items-center gap-2"
                     >
-                        <Image src={"/logo.svg"} alt="logo" width={130} height={110} className="" />
+                        <Image src={"/logo.png"} alt="logo" width={150} height={150} className="" />
                     </Link>
                     <ul className="flex md:hidden items-center gap-2.5">
                         {socialLinks.map((list, idx) => (

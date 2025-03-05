@@ -52,22 +52,29 @@ export default function MobMenu({ Menus }) {
             const hasSubMenu = menu?.subMenus?.length;
             return (
               <li key={i} className="">
-                <div
-                  className="flex justify-between capitalize items-center p-4 text-lg rounded-md cursor-pointer relative"
-                  onClick={() => {
-                    setOpenMenuIndex(isMenuOpen ? null : i);
-                    toggleDrawer();
-                  }}
-                >
+                <div className="p-4">
                   {hasSubMenu ? (
-                    <>
+                    <div
+                      className="flex justify-between capitalize items-center text-lg rounded-md cursor-pointer relative"
+                      onClick={() => {
+                        setOpenMenuIndex(isMenuOpen ? null : i);
+                      }}
+                    >
                       <h4>{menu.menu}</h4>
                       <IoIosArrowDown
                         className={`ml-auto ${isMenuOpen && "rotate-180"} `}
                       />
-                    </>
+                    </div>
                   ) : (
-                    <Link href={menu.link ? menu.link : "#"}>{menu.menu}</Link>
+                    <Link
+                      onClick={() => {
+                        toggleDrawer();
+                      }}
+                      href={menu.link ? menu.link : "#"}
+                      className="capitalize text-lg rounded-md relative"
+                    >
+                      {menu.menu}
+                    </Link>
                   )}
                 </div>
                 {hasSubMenu && (
@@ -81,7 +88,10 @@ export default function MobMenu({ Menus }) {
                       const isSubMenuOpen = openSubMenuIndex === idx;
                       return (
                         <li key={idx} className="cursor-pointer w-full">
-                          <div className="flex justify-between items-center rounded-md gap-x-2 w-full">
+                          <div
+                            onClick={() => toggleDrawer()}
+                            className="flex justify-between items-center rounded-md gap-x-2 w-full"
+                          >
                             <Link
                               href={submenu.link}
                               className="flex capitalize justify-between items-center w-full p-4 rounded-md cursor-pointer relative"

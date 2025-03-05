@@ -32,9 +32,8 @@ const TitleFounder = () => (
     </h2>
 );
 
-const Page = ({ params }) => {
-    const { service } = params;
-    console.log(service);
+const Page = async ({ params }) => {
+    const { service } = await params;
 
     return (
         <main>

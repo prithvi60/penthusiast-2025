@@ -1,4 +1,9 @@
-import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import {
+    FaFacebook,
+    FaInstagram,
+    FaLinkedinIn,
+    FaYoutube,
+} from "react-icons/fa6";
 
 export const navLinks = [
     { menu: "home", link: "/" },
@@ -15,9 +20,9 @@ export const navLinks = [
         menu: "resources",
         subMenus: [
             { menu: "Blog", link: "/resources/blog" },
-            { menu: "Work samples", link: "/resources/work-samples" },
+            { menu: "Work samples", link: "/resources/works" },
             { menu: "Media", link: "/resources/media" },
-            { menu: "History", link: "/resources/history" },
+            // { menu: "History", link: "/resources/history" },
         ],
     },
 ];
@@ -40,7 +45,7 @@ export const footerLinks2 = [
 
 export const footerLinks3 = [
     { menu: "Blog", href: "/resources/blog" },
-    { menu: "Work samples", href: "/resources/work-samples" },
+    { menu: "Work samples", href: "/resources/works" },
     { menu: "Media", href: "/resources/media" },
     { menu: "History", href: "/resources/history" },
 ];
@@ -57,19 +62,19 @@ export const socialLinks = [
         icon: (
             <FaInstagram className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
         ),
-        href: "#",
+        href: "https://www.instagram.com/penthusiasts_2017",
     },
     {
         icon: (
             <FaLinkedinIn className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
         ),
-        href: "#",
+        href: " https://www.linkedin.com/company/penthusiasts2017",
     },
     {
         icon: (
-            <FaYoutube className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
+            <FaFacebook className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
         ),
-        href: "#",
+        href: "https://www.facebook.com/penthusiasts",
     },
 ];
 
@@ -81,10 +86,13 @@ export const heroMarquee = [
 ];
 
 export const ourClients = [
-    { logo: "/client-1.png", alt: "logo" },
-    { logo: "/client-2.png", alt: "logo" },
-    { logo: "/client-3.png", alt: "logo" },
-    { logo: "/client-4.png", alt: "logo" },
+    { logo: "/client-1.png", alt: "congruent logo" },
+    { logo: "/client-2.png", alt: "inscribe logo" },
+    { logo: "/client-3.png", alt: "atlantic rcm logo" },
+    { logo: "/client-4.png", alt: "eClaim status logo" },
+    { logo: "/client-5.png", alt: "bitsCrunch logo" },
+    { logo: "/client-6.png", alt: "yuukke logo" },
+    { logo: "/client-7.png", alt: "cloudbankin logo" },
 ];
 
 // About Page
@@ -223,6 +231,67 @@ export const reviews = [
     },
 ];
 
+export const timeline = [
+    {
+        year: "2017",
+        title: "The Foundation",
+        lists: [
+            "Content is the King",
+            "established by Poornima TM",
+            "Blogs and article writing for B2C businesses - Derby menswear",
+            "Facebook & Instagram content creation",
+        ],
+    },
+    {
+        year: "2018",
+        title: "Expanding Horizons",
+        lists: [
+            "First B2B Fintech Blog Writing project Product Description Writing",
+        ],
+    },
+    {
+        year: "2019",
+        title: "Branding for Leaders",
+        lists: [
+            "First Personal Branding Project for FoundersFacebook Content Creation for Author Rakhi Kapoor & Vijay Kapoor",
+        ],
+    },
+    {
+        year: "2020 - 2021",
+        title: "Content Development",
+        lists: [
+            "First Govt Project with TN MSME Trade & Investment Promotion BureauWebsite Content Writing,Facebook Content Creation",
+        ],
+    },
+    {
+        year: "2021",
+        title: "Web3 Content Creation",
+        lists: [
+            "First Web3.o Project with bitsCrunch - Website Content Writing & Blog Writing",
+        ],
+    },
+    {
+        year: "2022",
+        title: "Team Transition",
+        lists: ["Transition of team from freelancers to employees on payroll"],
+    },
+    { year: "2023", title: "Team", lists: ["Team of 6"] },
+    {
+        year: "2024",
+        title: "7-Year Content Dominance",
+        lists: [
+            "7 years of operations",
+            "1000+ Content Delivery",
+            "500+ Projects",
+            "25+ domains",
+        ],
+    },
+    {
+        year: "2025",
+        title: "Stepping Up",
+        lists: ["Stepping into the 8th year with a fresh perspective"],
+    },
+];
 
 // services page
 
@@ -231,8 +300,7 @@ export const contentSolutions = [
     { icon: "/icon-2.svg", desc: "Landing page copywriting" },
     { icon: "/icon-3.svg", desc: "Blog Writing" },
     { icon: "/icon-4.svg", desc: "LinkedIn Content Creation for Founders" },
-]
-
+];
 
 // resources page
 
@@ -240,11 +308,61 @@ export const contentSolutions = [
 
 export const media = [
     { link: "https://www.youtube.com/watch?v=t3o9vdcM1Dw", img: "/media-1.png" },
-    { link: "https://www.penbugs.com/its-never-too-late-to-dream-entrepreneur-poornima-opens-up/", img: "/media-2.png" },
-    { link: "https://csufentrepreneurship.com/beyond-barriers-2024-csuf-center-for-entrepreneurship-supports-women-entrepreneurs-in-delhi/", img: "/media-3.png" },
-    { link: "https://www.bwmarketingworld.com/article/ai-generated-content-balancing-creativity-efficiency-in-content-marketing-476800", img: "/media-4.png" },
-    { link: "https://timesofindia.indiatimes.com/blogs/voices/uplifting-tech-startups-with-content-marketing-power-of-quality-content/", img: "/media-5.png" },
-    { link: "https://makerstribe.in/events/global-freelancers-festival/", img: "/media-1.png" },
-    { link: "https://cxotoday.com/cxo-bytes/what-role-does-content-marketing-play-in-any-tech-startup/", img: "/media-6.png" },
-    { link: "https://www.adgully.com/you-automatically-become-a-leader-the-moment-you-have-a-child-poornima-tm-132344.html", img: "/media-3.png" },
-]
+    {
+        link: "https://www.penbugs.com/its-never-too-late-to-dream-entrepreneur-poornima-opens-up/",
+        img: "/media-2.png",
+    },
+    {
+        link: "https://csufentrepreneurship.com/beyond-barriers-2024-csuf-center-for-entrepreneurship-supports-women-entrepreneurs-in-delhi/",
+        img: "/media-3.png",
+    },
+    {
+        link: "https://www.bwmarketingworld.com/article/ai-generated-content-balancing-creativity-efficiency-in-content-marketing-476800",
+        img: "/media-4.png",
+    },
+    {
+        link: "https://timesofindia.indiatimes.com/blogs/voices/uplifting-tech-startups-with-content-marketing-power-of-quality-content/",
+        img: "/media-5.png",
+    },
+    {
+        link: "https://makerstribe.in/events/global-freelancers-festival/",
+        img: "/media-1.png",
+    },
+    {
+        link: "https://cxotoday.com/cxo-bytes/what-role-does-content-marketing-play-in-any-tech-startup/",
+        img: "/media-6.png",
+    },
+    {
+        link: "https://www.adgully.com/you-automatically-become-a-leader-the-moment-you-have-a-child-poornima-tm-132344.html",
+        img: "/media-3.png",
+    },
+];
+
+// works
+
+export const WCP = [
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+];
+
+export const B2BContent = [
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+];
+
+export const B2CContent = [
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+];

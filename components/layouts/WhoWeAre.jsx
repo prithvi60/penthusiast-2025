@@ -4,7 +4,7 @@ const WhoWeAre = () => {
     return (
         <section className="relative flex flex-col items-center justify-center px-6 py-16 text-center padding">
             {/* Background Blur Effect */}
-            <Gradient rotate />
+            {/* <Gradient rotate /> */}
 
             {/* Content */}
             <div className="relative max-w-full md:max-w-5xl md:mx-auto z-10 space-y-5 md:space-y-8">

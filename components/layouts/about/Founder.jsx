@@ -21,7 +21,7 @@ const Founder = () => {
                         </h4>
                         <p className="text-base lg:text-lg">
                             Founder & CEO | Mentor | Faculty specializing in Content Creation
-                            And Traveler | Fitness Enthusiast
+                            Avid Traveler | Fitness Enthusiast
                         </p>
                     </div>
                     <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
