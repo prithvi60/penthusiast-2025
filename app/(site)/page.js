@@ -1,9 +1,9 @@
+import HomePageOurClients from "@/components/HomePageOurClients";
 import Reviews from "@/components/layouts/about/Reviews";
 import BuildOurStory from "@/components/layouts/BuildOurStory";
 import ExploreOurServices from "@/components/layouts/ExploreOurServices";
 import Faq from "@/components/layouts/Faq";
 import Hero from "@/components/layouts/Hero";
-import OurClients from "@/components/layouts/OurClients";
 import WhoWeAre from "@/components/layouts/WhoWeAre";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         title={"From Websites to Social Media—We Write It All!"}
       />
       <WhoWeAre />
-      <OurClients />
+      <HomePageOurClients />
       <Reviews />
       <ExploreOurServices
         subTitle={"Client Spotlights"}
