@@ -44,9 +44,11 @@ export const OurClientsReviews = () => {
             <Gradient rotate />
             <Marquee pauseOnHover speed={50} autoFill className="">
                 {reviews.map((item, idx) => (
-                    <div key={idx} className="flex gap-8 shadow-lg p-5 rounded-lg max-w-sm sm:max-w-md md:max-w-xl m-5 bg-white">
-                        {/* <Image src={""} alt="" width={150} height={150} className="rounded-full" /> */}
-                        <div className="rounded-full bg-gray-300 size-20 shrink-0" />
+                    <div key={idx} className="flex items-start sm:items-center gap-8 shadow-lg p-5 rounded-lg max-w-sm sm:max-w-md md:max-w-xl h-60 m-5 bg-white">
+                        <div className="h-14 w-64 sm:h-20 sm:w-56 relative overflow-hidden">
+                            <Image src={item.avatar} alt="" fill className="rounded-full object-cover object-center" />
+                        </div>
+                        {/* <div className="rounded-full bg-gray-300 size-20 shrink-0" /> */}
                         <div className="space-y-3.5">
                             <p className="text-sm">{item.review}</p>
                             <div>

@@ -11,7 +11,7 @@ const OurGuidingValues = () => {
                 {ourGuides.map((guide, index) => (
                     <div
                         key={index}
-                        className="w-full h-60 lg:h-72 xl:h-60 flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-b from-green-light to-green-darker"
+                        className="w-full h-60 lg:h-[260px] xl:h-60 flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-b from-green-light to-green-darker"
                     >
                         <p>{guide.desc}</p>
                         <h5 className="font-extrabold tracking-wider text-lg sm:text-xl lg:text-2xl">

@@ -13,7 +13,7 @@ export function generateEmailTemplateForUser(mainContent) {
             <p style="font-size: 16px; color: #555;">
                 Thanks & Regards,<br>
                 <strong>Penthusiasts</strong><br>
-                <a href="mailto:support@webibee.com" style="color: #007bff; text-decoration: none;">support@webibee.com</a><br>
+                <a href="mailto:reachout@penthusiasts.com" style="color: #007bff; text-decoration: none;">reachout@penthusiasts.com</a><br>
                 Chennai, Tamil Nadu, India
             </p>
             <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #aaa;">

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { GiFeather } from "react-icons/gi";
 
 export const CardComponent = () => {
     return (
@@ -16,8 +18,56 @@ export const CardComponent = () => {
                     <li>LinkedIn Content Creation for Founders</li>
                 </ul>
                 <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
-                    <Link href={"#"} className="p-3 rounded-lg border text-sm">Learn more</Link>
+                    <Link href={"#"} className="p-3 rounded-lg border text-sm">
+                        Learn more
+                    </Link>
                 </button>
+            </div>
+        </div>
+    );
+};
+
+export const Card = ({ bgColor, data, img }) => {
+    return (
+        <div className={`relative w-full h-auto min-h-[420px] sm:min-h-[540px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-10 group space-y-3 max-w-lg mx-auto pb-20 ${bgColor}`}>
+            <div className="size-20 overflow-hidden relative">
+                <Image src={img} alt="icon" fill className="object-contain object-center" />
+            </div>
+            <p className="text-xl sm:text-2xl xl:text-3xl font-semibold">
+                Content for B2B
+            </p>
+            <div className="z-10 p-10 space-y-3 absolute group-hover:-top-full transition-all transform duration-500 ease-in-out top-40 left-0 w-full max-h-[450px]">
+                <ul className="space-y-2">
+                    {data.map((list, idx) => (
+                        <li key={idx} className="text-base lg:text-lg flex items-start gap-x-3">
+                            <GiFeather className="text-base lg:text-lg mt-2" />
+                            <h4 className="text-black">{list}</h4>
+                        </li>
+                    ))}
+                </ul>
+                {/* <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
+                    <Link
+                        href={"#"}
+                        className="p-3 rounded-lg border-2 text-sm text-black border-black"
+                    >
+                        Learn more
+                    </Link>
+                </button> */}
+            </div>
+            <div className="absolute shadow-lg rounded-lg py-6 pr-6 pl-10 top-52 -left-full group-hover:-left-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out">
+                <p className="text-base lg:text-lg font-bold tracking-wide">
+                    Website Landing Page Content
+                </p>
+            </div>
+            <div className="absolute shadow-lg rounded-lg py-6 pr-10 pl-6 top-52 -right-full group-hover:-right-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out">
+                <p className="text-base lg:text-lg font-bold tracking-wide">
+                    Website Landing Page Content
+                </p>
+            </div>
+            <div className="absolute shadow-lg rounded-lg p-6 left-1/2 -translate-x-1/2 group-hover:-bottom-5 z-20 bg-white w-1/2 -bottom-full transition-all transform duration-500 ease-in-out">
+                <p className="text-base lg:text-lg font-bold tracking-wide">
+                    Website Landing Page Content
+                </p>
             </div>
         </div>
     );

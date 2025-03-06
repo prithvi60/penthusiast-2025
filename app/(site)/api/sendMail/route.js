@@ -1,4 +1,6 @@
 import nodemailer from "nodemailer";
+import fs from "fs";
+import path from "path";
 import { NextResponse } from "next/server";
 import {
   generateEmailTemplateForClient,
@@ -15,7 +17,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { name, email, message, title } = await req.json();
+  const { name, email, message, title, pdf } = await req.json();
 
   const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
 
@@ -55,11 +57,34 @@ export async function POST(req) {
     // bcc: [process.env.EMAIL_ID],
   };
 
+  // Function to read the PDF file from the public/files folder
+  const getPdfAttachment = () => {
+    if (pdf && title !== "contact") {
+      try {
+        const pdfPath = path.join(process.cwd(), "public", "files", pdf);
+        const pdfBuffer = fs.readFileSync(pdfPath);
+        return [
+          {
+            filename: `${title}.pdf`,
+            content: pdfBuffer,
+            contentType: "application/pdf",
+          },
+        ];
+      } catch (error) {
+        console.error("Error reading PDF file:", error);
+        return [];
+      }
+    }
+    return [];
+  };
+
+  // Email options for the user (with optional PDF attachment)
   const userMailOptions = {
-    from: `Webibee - "${process.env.EMAIL_ID}" <${"support@webibee.com"}>`,
+    from: `Webibee - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser),
+    attachments: getPdfAttachment(),
     // bcc: ["sales@vbccinstruments.com"],
   };
 

@@ -26,7 +26,7 @@ const Founder = () => {
                     </div>
                     <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
                         <Link
-                            href={"#"}
+                            href={"/resources/media"}
                             className="p-3 rounded-lg border border-black font-medium text-sm"
                         >
                             Learn more

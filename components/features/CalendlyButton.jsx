@@ -38,7 +38,7 @@ const CalendlyLink = ({ type }) => {
                 href="https://assets.calendly.com/assets/external/widget.css"
                 rel="stylesheet"
             />
-            <button onClick={handleCalendlyClick} className={`bg-linear-to-bl from-green-light to-green-darker hover:scale-90 transition-all  transform duration-500 ease-in-out text-white  cursor-pointer rounded-md border-b-3 text-sm md:text-base border-[#00FFE7] shadow-xl ${type ? "px-2 py-2 md:py-3" : "px-3 py-2 md:py-4 md:px-4"}`}>
+            <button onClick={handleCalendlyClick} className={`bg-linear-to-bl from-green-light to-green-darker hover:scale-90 transition-all  transform duration-500 ease-in-out text-white  cursor-pointer rounded-md border-b-3 text-sm md:text-base border-[#00FFE7] shadow-xl ${type ? "px-2 py-2 md:py-3" : "px-3 py-2 md:py-3.5 md:px-5"}`}>
                 Book a meeting
                 <span className="mx-2">
                     <FaArrowRightLong className="inline-block text-sm md:text-lg ml-2" />

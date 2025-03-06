@@ -1,14 +1,16 @@
 import React from "react";
 import { GetStartButton } from "../UI/Button";
-import { CardComponent } from "../UI/CardComponent";
+import { Card } from "../UI/CardComponent";
 import { Gradient } from "../UI/Gradient";
 import CalendlyLink from "../features/CalendlyButton";
+import { B2BContentHome, B2CContentHome, SMContentHome } from "@/utils/Data";
 
 const ExploreOurServices = ({ subTitle, title, explore }) => {
     return (
-        <section className="w-full h-full space-y-5 md:space-y-8 padding">
+        <section className="w-full h-full space-y-12 md:space-y-24 padding relative">
             <div className="space-y-4 text-center">
                 <h4 className="text-sm">{subTitle}</h4>
+                <Gradient rotate />
                 <h2 className="text-3xl sm:text-4xl w-[90%] md:w-3/5 mx-auto lg:text-5xl font-bold">
                     {title}
                 </h2>
@@ -20,11 +22,28 @@ const ExploreOurServices = ({ subTitle, title, explore }) => {
                     </div>
                 )}
             </div>
-            <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
-                <Gradient rotate />
-                <CardComponent />
-                <CardComponent />
-                <CardComponent />
+            <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-16 place-content-center place-items-center max-w-7xl mx-auto">
+                <Card
+                    bgColor={
+                        "bg-gradient-to-b from-[#FFFFFF] via-[#FEEDDB] to-[#FBBD78] text-[#603913]"
+                    }
+                    data={B2BContentHome}
+                    img={"/b2b-icon.svg"}
+                />
+                <Card
+                    bgColor={
+                        "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99] text-[#00A651]"
+                    }
+                    data={B2CContentHome}
+                    img={"/b2c-icon.svg"}
+                />
+                <Card
+                    bgColor={
+                        "bg-gradient-to-b from-[#FFFFFF] via-[#9799CCB2] to-[#21409A4D] text-[#21409A]"
+                    }
+                    data={SMContentHome}
+                    img={"/SM-icon.svg"}
+                />
             </div>
         </section>
     );

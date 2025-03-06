@@ -31,8 +31,8 @@ export const footerLinks1 = [
     // { menu: "Helpful Links", href: "/helpful-links" },
     { menu: "Home", href: "/" },
     { menu: "About", href: "/about" },
-    { menu: "Services", href: "/services" },
-    { menu: "Resources", href: "/resources" },
+    // { menu: "Services", href: "/services" },
+    // { menu: "Resources", href: "/resources" },
     { menu: "Contact Us", href: "/contact" },
 ];
 
@@ -47,7 +47,7 @@ export const footerLinks3 = [
     { menu: "Blog", href: "/resources/blog" },
     { menu: "Work samples", href: "/resources/works" },
     { menu: "Media", href: "/resources/media" },
-    { menu: "History", href: "/resources/history" },
+    // { menu: "History", href: "/resources/history" },
 ];
 
 export const footerLinks4 = [
@@ -111,6 +111,77 @@ export const domains = [
     "Fintech",
     "PE & Investments",
     "Deep Tech",
+    "Medical Billing & Coding",
+    // "Sales & Marketing",
+    // "HR & Payroll",
+    // "Food Tech",
+    // "Manufacturing",
+    // "Solar & Renewable Energy-FMCG",
+    // "Beauty",
+    // "Restaurant & Fine Dining",
+    // "Travel",
+    // "Lifestyle",
+    // "Sports",
+    // "Menswear",
+    // "Active wear",
+    // "Women's Fashion & Jewellery"
+];
+
+export const B2BContentHome = [
+    "Website Landing Page Content",
+    "Landing page copywriting",
+    "Blog Writing",
+    "LinkedIn Content Creation for Founders",
+];
+
+export const B2CContentHome = [
+    "Social Media Content Creation for Brands",
+    "LinkedIn Content Creation",
+    "Instagram Content Creation",
+    "Blogs & Articles",
+];
+
+export const SMContentHome = [
+    "Personal Branding Services",
+    "Linkedin, Instagram & Youtube for founders",
+];
+
+export const accordionItems = [
+    {
+        title:
+            "What sets your content marketing agency apart from others in the industry?",
+        content:
+            "We stand out by offering tailored content solutions, from writing diverse content types to providing comprehensive content audits, all designed to meet your unique requirements.",
+    },
+    {
+        title:
+            "Can we customize your services & avail content requirements based on our need?",
+        content:
+            "TWe are adaptable, and are always open to customizing our services to best suit your needs.",
+    },
+    {
+        title:
+            "Do you specialize in a particular content niche, or can you handle a wide range of industries?							",
+        content:
+            "We are versatile and skilled in crafting content for various sectors and in different forms like blogs, social media, PR articles, and more, ensuring a personalized approach for your business.",
+    },
+    {
+        title:
+            "Can you help us assess our existing content's performance and quality?",
+        content:
+            "Absolutely, we offer in-depth content audits as a standalone service, providing comprehensive reports to enhance your existing content strategies.",
+    },
+    {
+        title:
+            "How do you balance work commitments with work-life balance for your team?",
+        content:
+            "Our stress-free work culture prioritizes team well-being, allowing writers to take on projects based on bandwidth to ensure a healthy work-life balance while delivering quality results for our clients.",
+    },
+    {
+        title: "What are your work timings & how can I get in touch?",
+        content:
+            "We work between 9am to 6pm everyday from Monday to Friday.You can contact us by filling out the form or reach out to us at Phone: +91-90032 85687 | Email: reachout@penthusiasts.com",
+    },
 ];
 
 // About Page
@@ -220,32 +291,32 @@ export const ourGuides = [
 
 export const reviews = [
     {
-        avatar: "",
+        avatar: "/avatar-1.jpg",
         review:
-            "Draft has been instrumental in helping us scale our content while maintaining high quality that both users and search engines love. We've beaten all projections thanks to the fantastic team at Draft.",
-        name: "Krinal Mehta",
-        position: "Senior SEO Manager @ Freshbooks",
+            "Throughout our engagement with Penthusiasts, their meticulous approach to ensuring everything went according to plan impressed us. Their rigorous work ethic, dedication, and commitment to consistently delivering content and extensive follow-ups were remarkable. If you're looking for a reliable partner to produce quality content, look no further.",
+        name: "Congruent",
+        position: "Congruent Solutions",
     },
     {
-        avatar: "",
+        avatar: "/avatar-1.jpg",
         review:
-            "Draft has been instrumental in helping us scale our content while maintaining high quality that both users and search engines love. We've beaten all projections thanks to the fantastic team at Draft.",
-        name: "Krinal Mehta",
-        position: "Senior SEO Manager @ Freshbooks",
+            "We have been working with Penthusiasts for a while now. They handle some of our blog writing requirements. Their service has been extremely professional, with high-quality content delivered on time. More importantly, they do the necessary research and write a well-informed article as required. I wish them the best in the years to come. ",
+        name: "CANIT",
+        position: "CANIT Solutions",
     },
     {
-        avatar: "",
+        avatar: "/avatar-1.jpg",
         review:
-            "Draft has been instrumental in helping us scale our content while maintaining high quality that both users and search engines love. We've beaten all projections thanks to the fantastic team at Draft.",
-        name: "Krinal Mehta",
-        position: "Senior SEO Manager @ Freshbooks",
+            "During our partnership with penthusiast, we were shown promising new ways to market our company. Today we work with statistics and more accurate data and realize the digital space is an essential tool for our products to reach the right decision-maker in the industry. We highly recommend Penthusiast to any business that needs a hand in improving its business through digital marketing.",
+        name: "XYMA",
+        position: "XYMA Analytics",
     },
     {
-        avatar: "",
+        avatar: "/avatar-1.jpg",
         review:
-            "Draft has been instrumental in helping us scale our content while maintaining high quality that both users and search engines love. We've beaten all projections thanks to the fantastic team at Draft.",
-        name: "Krinal Mehta",
-        position: "Senior SEO Manager @ Freshbooks",
+            "Working with the Penthusiasts Team has been an absolute pleasure! Their dedication, expertise, deep understanding of our requirements, and commitment to excellence have positively impacted our work. Their creative solutions have always exceeded our expectations. I would recommend Penthusiast to anyone seeking excellent expertise and an outstanding partner for their work. They truly go above and beyond to deliver the job on time with excellence!",
+        name: "LYFOGO",
+        position: "LYFnGo",
     },
 ];
 
@@ -320,6 +391,18 @@ export const contentSolutions = [
     { icon: "/icon-4.svg", desc: "LinkedIn Content Creation for Founders" },
 ];
 
+export const contentSolutionsB2C = [
+    { icon: "/icon-1.svg", desc: "LinkedIn Content Creation" },
+    { icon: "/icon-2.svg", desc: "Instagram Content Creation" },
+    { icon: "/icon-3.svg", desc: "Blogs & Articles" },
+];
+
+export const contentSolutionsSM = [
+    { icon: "/icon-1.svg", desc: "Personal Branding Services" },
+    { icon: "/icon-2.svg", desc: "Linkedin, Instagram & Youtube for founders" },
+    { icon: "/icon-3.svg", desc: "Blog Writing" },
+];
+
 // resources page
 
 // media
@@ -359,28 +442,136 @@ export const media = [
 // works
 
 export const WCP = [
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
 ];
 
 export const B2BContent = [
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
 ];
 
 export const B2CContent = [
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
-    { field: "Field", type: "Saas", img: "/blog.png", alt: "image" },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "1mb.pdf",
+    },
+    {
+        field: "Field",
+        type: "Saas",
+        img: "/blog.png",
+        alt: "image",
+        pdf: "500kb.pdf",
+    },
 ];

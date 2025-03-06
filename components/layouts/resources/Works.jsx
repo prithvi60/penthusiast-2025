@@ -10,7 +10,7 @@ const Works = () => {
       </h2>
       <Gradient rotate />
       <div className='space-y-16 md:space-y-32'>
-        <WorksModal data={WCP} title={"Website Content Portfolio"} />
+        <WorksModal data={WCP} title={"PDF of Website Content Portfolio"} />
         <WorksModal data={B2BContent} title={"B2B Work Samples"} />
         <WorksModal data={B2CContent} title={"B2C Work Samples"} />
       </div>

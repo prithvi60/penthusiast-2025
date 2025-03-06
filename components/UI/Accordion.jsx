@@ -10,11 +10,11 @@ export const Accordion = ({ items }) => {
     };
 
     return (
-        <div className="w-full max-w-xl mx-auto">
+        <div className="w-full max-w-3xl mx-auto">
             {items.map((item, index) => (
                 <div key={index} className="mb-2">
                     <button
-                        className={`w-full flex justify-between items-center p-4 bg-linear-to-r from-text via-[#006565] to-green-darker focus:outline-none transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"}`}
+                        className={`w-full flex justify-between items-center px-6 py-9 bg-linear-to-r from-text via-[#006565] to-green-darker focus:outline-none transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"}`}
                         onClick={() => toggleAccordion(index)}
                     >
                         <span className="font-medium text-start text-white">

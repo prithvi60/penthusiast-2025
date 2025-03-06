@@ -12,6 +12,14 @@
   --color-gradient-2: #0be6e6b2;
 }
 
+body,
+a,
+button {
+  cursor:
+    url("/cursor-quill.svg") 16 16,
+    auto;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still

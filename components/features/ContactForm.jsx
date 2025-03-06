@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import toast from "react-hot-toast";
 import Loader from "../UI/Loader";
 
 const initialFormData = {
@@ -52,37 +51,6 @@ export const ContactForm = () => {
                 setStatus(false);
                 setFormData(initialFormData);
                 e.target.reset();
-                toast.success("Thank you! We will get back to you shortly.", {
-                    position: "top-right",
-                    duration: 3000,
-                    style: {
-                        border: "1px solid #65a34e",
-                        padding: "16px",
-                        color: "#65a34e",
-                    },
-                    iconTheme: {
-                        primary: "#65a34e",
-                        secondary: "#FFFAEE",
-                    },
-                });
-                // window.location.href = "/thankyou";
-            } else {
-                toast.error(
-                    "We are unable to receive your details. Please try again.",
-                    {
-                        position: "top-right",
-                        duration: 3000,
-                        style: {
-                            border: "1px solid #EB1C23",
-                            padding: "16px",
-                            color: "#EB1C23",
-                        },
-                        iconTheme: {
-                            primary: "#EB1C23",
-                            secondary: "#FFFAEE",
-                        },
-                    }
-                );
             }
         } catch (error) {
             console.error("Error sending emails:", error);

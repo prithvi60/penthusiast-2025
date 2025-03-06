@@ -1,9 +1,8 @@
-import { Geist, Geist_Mono, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "../globals.css";
 import NavBar from "@/components/layouts/NavBar";
 import Footer from "@/components/layouts/Footer";
 import SmoothScroll from "@/components/UI/SmoothScroll";
-import { Toaster } from "react-hot-toast";
 
 const manRope = Manrope({
   variable: "--font-geist-sans",
@@ -19,12 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${manRope.className} antialiased`}>
+      <body className={`${manRope.className} antialiased relative`}>
         <NavBar />
         {children}
         <SmoothScroll />
         <Footer />
-        <Toaster />
       </body>
     </html>
   );

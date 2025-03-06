@@ -22,18 +22,17 @@ export const BlogSpecificPage = ({ post }) => {
   });
   return (
     <section className="padding w-full space-y-14 relative">
-      <div className="w-full h-[35vh] md:h-[55vh] overflow-hidden relative max-w-3xl rounded-lg mx-auto">
+      {/* <div className="w-full h-[35vh] md:h-[55vh] overflow-hidden relative max-w-3xl rounded-lg mx-auto">
         <Image
           src={post.imageUrl}
           alt="blog background image"
           fill
           className=" object-cover object-center"
         />
-      </div>
-      <Gradient rotate />
+      </div> */}
       <div className="text-center space-y-5 relative">
         <Gradient rotate />
-        <h4 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
+        <h4 className="text-3xl font-semibold md:text-4xl lg:text-5xl">
           {post.title}
         </h4>
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center sm:gap-10">

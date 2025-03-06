@@ -5,7 +5,7 @@ const AnimatedOverlapCards = () => {
     return (
         <div className="padding w-full h-auto relative flex gap-10 flex-col lg:flex-row items-start">
             {/* Left Section */}
-            <div className="w-full lg:w-2/5 space-y-2 lg:sticky lg:top-40 block text-center lg:text-start z-10">
+            <div className="w-full lg:w-1/2 space-y-2 lg:sticky lg:top-40 block text-center lg:text-start z-10">
                 <h4 className="text-sm">Our Journey</h4>
                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
                     From a small idea to a content powerhouse, step by step.
@@ -13,8 +13,8 @@ const AnimatedOverlapCards = () => {
             </div>
 
             {/* Timeline Cards */}
-            <div className="w-full lg:w-3/5">
-                <div className="h-[420vh] lg:h-[400vh] space-y-10">
+            <div className="w-full lg:w-1/2">
+                <div className="h-auto max-h-[420vh] lg:max-h-[520vh] xl:max-h-[400vh] space-y-10">
                     {timeline.map((item, idx) => {
                         // const topPosition = `calc(${idx * timeline.length}% + ${idx * timeline.length}px)`;
                         return (

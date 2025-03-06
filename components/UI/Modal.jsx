@@ -2,12 +2,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Loader from "./Loader";
-import toast from "react-hot-toast";
 import Image from "next/image";
 
 export const WorksModal = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [thank, setThank] = useState(false);
+  const [pdf, setPdf] = useState("");
+
   return (
     <div>
       <div className="space-y-10">
@@ -25,6 +26,7 @@ export const WorksModal = ({ title, data }) => {
             <div
               key={idx}
               className="rounded-lg shadow-lg border border-[#AFACAC] max-w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer"
+              onClick={() => setPdf(item.pdf)}
             >
               <Image
                 src={item.img}
@@ -51,12 +53,13 @@ export const WorksModal = ({ title, data }) => {
         title={title}
         thank={thank}
         setThank={setThank}
+        pdf={pdf}
       />
     </div>
   );
 };
 
-export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank }) => {
+export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank, pdf }) => {
   const initialFormData = {
     name: "",
     email: "",
@@ -88,6 +91,7 @@ export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank }) => {
           email: formData.email,
           message: "",
           title: title,
+          pdf: pdf
         }),
       });
 
@@ -106,37 +110,6 @@ export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank }) => {
         setFormData(initialFormData);
         e.target.reset();
         setThank(true);
-        toast.success("Thank you! We will get back to you shortly.", {
-          position: "top-right",
-          duration: 3000,
-          style: {
-            border: "1px solid #65a34e",
-            padding: "16px",
-            color: "#65a34e",
-          },
-          iconTheme: {
-            primary: "#65a34e",
-            secondary: "#FFFAEE",
-          },
-        });
-        // window.location.href = "/thankyou";
-      } else {
-        toast.error(
-          "We are unable to receive your details. Please try again.",
-          {
-            position: "top-right",
-            duration: 3000,
-            style: {
-              border: "1px solid #EB1C23",
-              padding: "16px",
-              color: "#EB1C23",
-            },
-            iconTheme: {
-              primary: "#EB1C23",
-              secondary: "#FFFAEE",
-            },
-          }
-        );
       }
     } catch (error) {
       console.error("Error sending emails:", error);

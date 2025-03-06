@@ -22,7 +22,7 @@ const HomePageOurClients = () => {
     }, []);
 
     return (
-        <section className="w-full padding flex flex-col mx-auto max-w-7xl md:flex-row gap-10">
+        <section className="w-full padding flex flex-col mx-auto max-w-[1536px] md:flex-row gap-10">
             <div className="w-full md:w-2/4 block space-y-5 md:space-y-10">
                 <h2 className="text-2xl md:text-3xl font-semibold text-center">
                     Domains Covered
@@ -47,16 +47,14 @@ const HomePageOurClients = () => {
                         Trusted by our clients and associations
                     </h2>
                 </div>
-                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-[#E4E4E4] sm:before:absolute">
+                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3.5 md:gap-10 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-[#E4E4E4] sm:before:absolute">
                     {ourClients.map((item, idx) => (
-                        <div key={idx} className="size-36 lg:size-40 relative overflow-hidden">
+                        <div key={idx} className="w-36 h-20 lg:w-44 lg:h-24 relative overflow-hidden">
                             <Image
-                                // width={300}
-                                // height={300}
                                 fill
                                 alt={item.alt}
                                 src={item.logo}
-                                className="object-contain"
+                                className="object-contain object-center"
                             />
                         </div>
                     ))}

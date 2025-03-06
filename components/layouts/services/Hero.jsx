@@ -2,15 +2,13 @@ import { GetStartButton } from "@/components/UI/Button";
 import { Gradient } from "@/components/UI/Gradient";
 import React from "react";
 
-const Hero = ({ title }) => {
+const Hero = ({ title, desc }) => {
     return (
-        <section className="padding relative w-full h-full space-y-5 md:space-y-8 text-center max-w-5xl mx-auto">
+        <section className="padding relative w-full h-full space-y-4 md:space-y-7 text-center max-w-[1100px] mx-auto">
             <Gradient rotate />
             {title && title()}
-            <p className="text-base md:text-xl">
-                We craft compelling B2B content that builds trust, engages
-                decision-makers, and drives conversions. From blogs to website copy, we
-                help businesses communicate effectively.
+            <p className="text-base md:text-xl w-full lg:w-4/5 mx-auto">
+                {desc}
             </p>
             <div className="w-full flex justify-center items-center">
                 <GetStartButton />
