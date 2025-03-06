@@ -112,19 +112,19 @@ export const domains = [
     "PE & Investments",
     "Deep Tech",
     "Medical Billing & Coding",
-    // "Sales & Marketing",
-    // "HR & Payroll",
-    // "Food Tech",
-    // "Manufacturing",
-    // "Solar & Renewable Energy-FMCG",
-    // "Beauty",
-    // "Restaurant & Fine Dining",
-    // "Travel",
-    // "Lifestyle",
-    // "Sports",
-    // "Menswear",
-    // "Active wear",
-    // "Women's Fashion & Jewellery"
+    "Sales & Marketing",
+    "HR & Payroll",
+    "Food Tech",
+    "Manufacturing",
+    "Solar & Renewable Energy-FMCG",
+    "Beauty",
+    "Restaurant & Fine Dining",
+    "Travel",
+    "Lifestyle",
+    "Sports",
+    "Menswear",
+    "Active wear",
+    "Women's Fashion & Jewellery"
 ];
 
 export const B2BContentHome = [

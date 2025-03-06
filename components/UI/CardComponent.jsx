@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { GiFeather } from "react-icons/gi";
-
+import { BiSolidBookContent } from "react-icons/bi";
 export const CardComponent = () => {
     return (
         <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5 space-y-3 md:space-y-6">
@@ -29,7 +29,7 @@ export const CardComponent = () => {
 
 export const Card = ({ bgColor, data, img }) => {
     return (
-        <div className={`relative w-full h-auto min-h-[420px] sm:min-h-[540px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-10 group space-y-3 max-w-lg mx-auto pb-20 ${bgColor}`}>
+        <div className={`relative w-full h-auto min-h-[420px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-10 group space-y-3 max-w-lg mx-auto pb-20 ${bgColor}`}>
             <div className="size-20 overflow-hidden relative">
                 <Image src={img} alt="icon" fill className="object-contain object-center" />
             </div>
@@ -54,19 +54,22 @@ export const Card = ({ bgColor, data, img }) => {
                     </Link>
                 </button> */}
             </div>
-            <div className="absolute shadow-lg rounded-lg py-6 pr-6 pl-10 top-52 -left-full group-hover:-left-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out">
-                <p className="text-base lg:text-lg font-bold tracking-wide">
-                    Website Landing Page Content
+            <div className="absolute shadow-lg rounded-lg py-6 pr-6 pl-10 top-44 -left-full group-hover:-left-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-3">
+                <BiSolidBookContent className="text-3xl md:text-4xl" />
+                <p className="text-base font-bold tracking-wide">
+                    Website Content
                 </p>
             </div>
-            <div className="absolute shadow-lg rounded-lg py-6 pr-10 pl-6 top-52 -right-full group-hover:-right-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out">
-                <p className="text-base lg:text-lg font-bold tracking-wide">
-                    Website Landing Page Content
+            <div className="absolute shadow-lg rounded-lg py-6 pr-10 pl-6 top-44 -right-full group-hover:-right-5 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-3">
+                <BiSolidBookContent className="text-3xl md:text-4xl" />
+                <p className="text-base font-bold tracking-wide">
+                    Website Content
                 </p>
             </div>
-            <div className="absolute shadow-lg rounded-lg p-6 left-1/2 -translate-x-1/2 group-hover:-bottom-5 z-20 bg-white w-1/2 -bottom-full transition-all transform duration-500 ease-in-out">
-                <p className="text-base lg:text-lg font-bold tracking-wide">
-                    Website Landing Page Content
+            <div className="absolute shadow-lg rounded-lg p-6 left-1/2 -translate-x-1/2 group-hover:-bottom-5 z-20 bg-white w-1/2 -bottom-full transition-all transform duration-500 ease-in-out space-y-3">
+                <BiSolidBookContent className="text-3xl md:text-4xl" />
+                <p className="text-base font-bold tracking-wide">
+                    Website Content
                 </p>
             </div>
         </div>
