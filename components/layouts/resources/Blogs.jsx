@@ -18,8 +18,8 @@ const Blogs = ({ posts }) => {
                     Blogs
                 </h2>
                 <Gradient rotate />
-                <div className="flex flex-col bg-white shadow lg:gap-28 lg:flex-row items-center max-w-5xl mx-auto rounded-lg p-8">
-                    <div className="relative overflow-hidden w-[480px] h-80">
+                <div className="flex flex-col bg-white shadow lg:gap-28 lg:flex-row items-center max-w-5xl mx-auto rounded-lg p-8 gap-10">
+                    <div className="relative overflow-hidden w-full md:w-[480px] h-80">
                         <Image
                             src={"/blog-1.png"}
                             alt="blog image"

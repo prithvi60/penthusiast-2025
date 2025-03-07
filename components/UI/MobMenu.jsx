@@ -35,7 +35,7 @@ export default function MobMenu({ Menus }) {
         onClick={() => toggleDrawer()}
       >
         {isOpen ? (
-          <IoClose className="text-red-600 text-xl rounded-full border border-red-600 p-0.5" />
+          <IoClose className="text-black text-2xl rounded-full border border-black p-1" />
         ) : (
           <GiHamburgerMenu className="text-lg" />
         )}

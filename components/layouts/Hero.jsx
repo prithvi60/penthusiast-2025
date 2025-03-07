@@ -27,7 +27,7 @@ const Hero = () => {
                     viewport={{ amount: 0.3, once: true }}
                     initial="initial"
                     whileInView="animate"
-                    className="w-full h-[30vh] md:h-[50vh] lg:h-[68vh] xl:h-[78vh] overflow-hidden relative mb-5"
+                    className="w-full h-[30vh] md:h-[50vh] lg:h-[68vh] xl:h-screen overflow-hidden relative mb-5"
                 >
                     <Image
                         src={"/hero-bg.svg"}

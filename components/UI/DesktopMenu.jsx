@@ -54,10 +54,10 @@ export default function DesktopMenu({ menu }) {
               <div className="px-3.5 py-4 w-full grid grid-cols-2 gap-10 place-content-center place-items-center">
                 <Image
                   alt="image"
-                  width={200}
+                  width={180}
                   height={200}
-                  src={"/contact-illustration.png"}
-                  className="object-contain object-center"
+                  src={"/menu.svg"}
+                  className="object-contain object-center pl-5"
                 />
                 <div className="relative sm:before:top-5 md:before:-left-4 lg:before:-left-8 xl:before:-left-6 sm:before:h-40 sm:before:w-0.5 sm:before:bg-[#E4E4E4] sm:before:absolute">
                   {menu.subMenus?.map((submenu, i) => (

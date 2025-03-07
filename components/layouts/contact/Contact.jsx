@@ -20,10 +20,10 @@ const Contact = () => {
             </div>
             <div className="space-y-4 md:space-y-10 w-full md:w-2/5">
                 <Image
-                    src={"/contact-illustration.png"}
+                    src={"/contact.svg"}
                     alt="illustration"
-                    width={500}
-                    height={500}
+                    width={250}
+                    height={250}
                     className="pb-10"
                 />
                 <div className="space-y-3">

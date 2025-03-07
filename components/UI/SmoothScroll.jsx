@@ -1,46 +1,40 @@
-// components/SmoothScroll.tsx
-"use client"
-import { useEffect, useState } from 'react';
-import lenis from 'lenis';
-
+"use client";
+import { useEffect, useRef } from "react";
+import Lenis from "lenis";
 
 const SmoothScroll = () => {
-    const [lenisInstance, setLenisInstance] = useState(null);
+    const lenisRef = useRef(null);
+    const rafIdRef = useRef(null);
 
     useEffect(() => {
-        const lenisInstance = new lenis({
-            duration: 0.75, // Adjust duration
-            easing: (t) =>
-                t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,
-
+        // Initialize Lenis
+        const lenis = new Lenis({
+            duration: 0.85,
+            easing: (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t),
         });
 
-        function raf(time) {
-            lenisInstance.raf(time);
-            requestAnimationFrame(raf);
-        }
+        lenisRef.current = lenis;
 
-        requestAnimationFrame(raf);
+        // Animation frame function
+        const raf = (time) => {
+            lenisRef.current?.raf(time);
+            rafIdRef.current = requestAnimationFrame(raf);
+        };
 
-        setLenisInstance(lenisInstance);
+        rafIdRef.current = requestAnimationFrame(raf);
 
-        // Cleanup on component unmount
         return () => {
-            if (lenisInstance) {
-                lenisInstance.destroy();
+            // Cleanup function to avoid memory leaks
+            if (lenisRef.current) {
+                lenisRef.current.destroy();
+            }
+            if (rafIdRef.current) {
+                cancelAnimationFrame(rafIdRef.current);
             }
         };
     }, []);
-
-    useEffect(() => {
-        if (lenisInstance) {
-            lenisInstance.on('scroll', () => {
-            });
-        }
-    }, [lenisInstance]);
 
     return null;
 };
 
 export default SmoothScroll;
-

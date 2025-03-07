@@ -12,9 +12,7 @@
   --color-gradient-2: #0be6e6b2;
 }
 
-body,
-a,
-button {
+body {
   cursor:
     url("/cursor-quill.svg") 16 16,
     auto;

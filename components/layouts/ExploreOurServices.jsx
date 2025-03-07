@@ -29,6 +29,7 @@ const ExploreOurServices = ({ subTitle, title, explore }) => {
                     }
                     data={B2BContentHome}
                     img={"/b2b-icon.svg"}
+                    title="Content for B2B"
                 />
                 <Card
                     bgColor={
@@ -36,6 +37,7 @@ const ExploreOurServices = ({ subTitle, title, explore }) => {
                     }
                     data={B2CContentHome}
                     img={"/b2c-icon.svg"}
+                    title="Content for B2C"
                 />
                 <Card
                     bgColor={
@@ -43,6 +45,7 @@ const ExploreOurServices = ({ subTitle, title, explore }) => {
                     }
                     data={SMContentHome}
                     img={"/SM-icon.svg"}
+                    title="Social Media for Founders"
                 />
             </div>
         </section>

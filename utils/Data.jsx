@@ -124,27 +124,48 @@ export const domains = [
     "Sports",
     "Menswear",
     "Active wear",
-    "Women's Fashion & Jewellery"
+    "Women's Fashion & Jewellery",
 ];
 
-export const B2BContentHome = [
-    "Website Landing Page Content",
-    "Landing page copywriting",
-    "Blog Writing",
-    "LinkedIn Content Creation for Founders",
-];
+export const B2BContentHome =
+{
+    lists: [
+        "Website Landing Page Content",
+        "Landing page copywriting",
+        "Blog Writing",
+        "LinkedIn Content Creation for Founders",
+    ],
+    tag: [
+        { number: "1M+", name: "Impressions" },
+        { number: "1000+", name: "Projects" },
+        { number: "AI", name: "Content" }
+    ],
+}
 
-export const B2CContentHome = [
-    "Social Media Content Creation for Brands",
-    "LinkedIn Content Creation",
-    "Instagram Content Creation",
-    "Blogs & Articles",
-];
+export const B2CContentHome =
+{
+    lists: ["Social Media Content Creation for Brands",
+        "LinkedIn Content Creation",
+        "Instagram Content Creation",
+        "Blogs & Articles"],
+    tag: [
+        { number: "9K+", name: "Traffic" },
+        { number: "2M+", name: "Impressions" },
+        { number: "5000+", name: "Pieces " }
+    ],
+}
 
-export const SMContentHome = [
-    "Personal Branding Services",
-    "Linkedin, Instagram & Youtube for founders",
-];
+export const SMContentHome =
+{
+    lists: ["Personal Branding Services",
+        "Linkedin, Instagram & Youtube for founders"],
+    tag: [
+        { number: "10K+", name: "Followers - LinkedIn" },
+        { number: "10K+", name: "Impressions" },
+        { number: "25+", name: "Leaders" }
+    ],
+}
+
 
 export const accordionItems = [
     {

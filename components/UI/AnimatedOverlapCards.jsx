@@ -1,5 +1,6 @@
 import { timeline } from "@/utils/Data";
 import React from "react";
+import { GiFeather } from "react-icons/gi";
 
 const AnimatedOverlapCards = () => {
     return (
@@ -14,30 +15,37 @@ const AnimatedOverlapCards = () => {
 
             {/* Timeline Cards */}
             <div className="w-full lg:w-1/2">
-                <div className="h-auto max-h-[420vh] lg:max-h-[520vh] xl:max-h-[400vh] space-y-10">
+                <div className="h-auto max-h-[720vh] lg:max-h-[650vh] xl:max-h-[560vh] space-y-10">
                     {timeline.map((item, idx) => {
                         // const topPosition = `calc(${idx * timeline.length}% + ${idx * timeline.length}px)`;
                         return (
                             <div
                                 key={idx}
-                                className="sticky w-full max-w-xl mx-auto p-1 bg-white rounded-lg shadow-lg h-fit 
-                                        z-0 top-40"
+                                className="sticky w-full max-w-xl mx-auto p-1 bg-white rounded-lg shadow-lg h-[320px] md:h-[380px] z-0 top-32 md:top-40"
                             // style={{
                             //     top: 0,
                             // }}
                             >
-                                <div className="p-10 bg-[#00808012]">
-                                    <h4 className="text-3xl tracking-widest font-semibold sm:text-4xl lg:text-6xl">
+                                <div
+                                    className={`p-10 flex flex-col justify-between items-start gap-6 h-full ${idx % 2 === 0
+                                        ? "bg-gradient-to-br from-[#FFFFFF] via-[#FEEDDB] to-[#FBBD78]"
+                                        : "bg-gradient-to-br from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]"
+                                        }`}
+                                >
+                                    <h4
+                                        className={`text-3xl tracking-widest font-semibold sm:text-4xl lg:text-6xl   ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
+                                    >
                                         {item.year}
                                     </h4>
                                     <div className="space-y-3">
                                         <h5 className="text-xl tracking-wide font-semibold sm:text-2xl lg:text-3xl">
                                             {item.title}
                                         </h5>
-                                        <ul className="list-disc list-inside">
+                                        <ul className="">
                                             {item.lists.map((list, id) => (
-                                                <li key={id} className="text-base md:text-lg">
-                                                    {list}
+                                                <li key={id} className="text-base md:text-lg flex items-start gap-x-3">
+                                                    <GiFeather className={`text-base shrink-0 lg:text-lg mt-2 ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`} />
+                                                    <p>{list}</p>
                                                 </li>
                                             ))}
                                         </ul>
