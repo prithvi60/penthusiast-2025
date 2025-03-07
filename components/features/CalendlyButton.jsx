@@ -2,10 +2,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-// Load Calendly styles globally (e.g., in a layout file or index.html)
-// Add this to your root layout or HTML file:
-// <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-
 const CalendlyLink = ({ type }) => {
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
     const url = "https://calendly.com/gokulgandhi97";
@@ -31,22 +27,33 @@ const CalendlyLink = ({ type }) => {
         };
     }, []);
 
-    const handleCalendlyClick = (e) => {
-        e.preventDefault(); // Prevent any default behavior
-        e.stopPropagation(); // Stop event bubbling, if any
+    // Function to detect if the device is an Apple device
+    const isAppleDevice = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /(iphone|ipad|ipod|macintosh)/i.test(userAgent);
+    };
 
-        if (window.Calendly && isScriptLoaded) {
-            window.Calendly.initPopupWidget({ url });
+    const handleCalendlyClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (isAppleDevice()) {
+            // Redirect to Calendly URL for Apple devices
+            window.location.href = url;
         } else {
-            console.error("Calendly not ready. Script loaded:", isScriptLoaded);
-            // Fallback: Retry after a short delay
-            setTimeout(() => {
-                if (window.Calendly) {
-                    window.Calendly.initPopupWidget({ url });
-                } else {
-                    alert("Unable to load Calendly. Please try again later.");
-                }
-            }, 500);
+            // Use popup for non-Apple devices
+            if (window.Calendly && isScriptLoaded) {
+                window.Calendly.initPopupWidget({ url });
+            } else {
+                console.error("Calendly not ready. Script loaded:", isScriptLoaded);
+                setTimeout(() => {
+                    if (window.Calendly) {
+                        window.Calendly.initPopupWidget({ url });
+                    } else {
+                        alert("Unable to load Calendly. Please try again later.");
+                    }
+                }, 500);
+            }
         }
     };
 
