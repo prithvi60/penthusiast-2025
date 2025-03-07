@@ -27,23 +27,23 @@ const Hero = () => {
                     viewport={{ amount: 0.3, once: true }}
                     initial="initial"
                     whileInView="animate"
-                    className="w-full h-[30vh] md:h-[50vh] lg:h-[68vh] xl:h-screen overflow-hidden relative mb-5"
+                    className="w-full h-[30vh] md:h-[60vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden relative mb-5"
                 >
                     <Image
                         src={"/hero-bg.svg"}
                         alt="hero illustration"
                         fill
-                        className="object-contain md:object-cover object-center"
+                        className="object-contain object-center"
                     />
                 </motion.div>
             </AnimatePresence>
             <div className="px-5 pb-[40px] pt-0 md:px-[80px] md:pb-[70px]; w-full h-full space-y-4 text-center max-w-5xl mx-auto">
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+                {/* <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
                     Is your website telling the{" "}
                     <span className="uppercase font-extrabold text-text px-3">right</span>
                     story?
-                </h2>
-                <p className="text-base md:text-xl">
+                </h2> */}
+                <p className="text-sm md:text-lg xl:text-xl">
                     We help you turn YOUR experience into content that converts while
                     you&apos;re asleep.We work with people like YOU as a plug-and-play
                     team to meet your Website, Blogs & Social Media Content Needs.
