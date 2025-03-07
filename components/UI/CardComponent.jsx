@@ -170,6 +170,25 @@ export const Card = ({ bgColor, data, img, title }) => {
     );
 };
 
+export const CardClient = ({ bgColor, img, title, icon }) => {
+    return (
+        <div
+            className={`relative w-full h-auto min-h-[150px] sm:min-h-[240px] xl:min-h-[240px] shadow-lg rounded-lg overflow-hidden space-y-3 max-w-lg mx-auto ${bgColor} 
+                group lg:group-hover:active touch:hover-none`}
+        >
+            <div className="size-36 overflow-hidden relative top-10 left-10">
+                <Image src={icon} alt="icon" fill className="object-contain object-center" />
+            </div>
+            <p className="text-xl sm:text-2xl xl:text-3xl font-semibold px-10 py-5">
+                {title}
+            </p>
+            <div className="w-full h-60 overflow-hidden relative px-10 pt-10">
+                <Image src={img} alt="icon" fill className="object-contain object-center" />
+            </div>
+        </div>
+    )
+}
+
 {/* <motion.div
     className={`relative w-full h-auto min-h-[420px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-10 space-y-3 max-w-lg mx-auto lg:group-hover:active pb-20 ${bgColor} group`}
     {...(!isDesktop && {

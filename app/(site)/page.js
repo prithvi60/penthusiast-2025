@@ -1,7 +1,9 @@
 import HomePageOurClients from "@/components/HomePageOurClients";
 import Reviews from "@/components/layouts/about/Reviews";
 import BuildOurStory from "@/components/layouts/BuildOurStory";
-import ExploreOurServices from "@/components/layouts/ExploreOurServices";
+import ExploreOurServices, {
+  ClientSpotlight,
+} from "@/components/layouts/ExploreOurServices";
 import Faq from "@/components/layouts/Faq";
 import Hero from "@/components/layouts/Hero";
 import WhoWeAre from "@/components/layouts/WhoWeAre";
@@ -17,7 +19,7 @@ export default function Home() {
       <WhoWeAre />
       {/* <HomePageOurClients /> */}
       <Reviews />
-      <ExploreOurServices
+      <ClientSpotlight
         subTitle={"Client Spotlights"}
         title={"Showcasing our most impactful client collaborations"}
         explore
