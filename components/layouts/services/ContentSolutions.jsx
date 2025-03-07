@@ -6,7 +6,7 @@ const ContentSolutions = ({ title, data }) => {
     const [isActive, setIsActive] = useState(0);
     return (
         <section className="padding relative w-full h-full space-y-5 md:space-y-8">
-            <h2 className="text-3xl sm:text-5xl text-center leading-16 lg:text-6xl font-bold w-full lg:w-4/5 mx-auto">
+            <h2 className="text-3xl sm:text-5xl text-center md:leading-16 lg:text-6xl font-bold w-full lg:w-4/5 mx-auto">
                 {title}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto place-content-center">

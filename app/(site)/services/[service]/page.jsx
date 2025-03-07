@@ -9,7 +9,7 @@ import {
 import React from "react";
 
 const TitleB2B = () => (
-    <h2 className="text-3xl sm:text-5xl lg:text-[70px] !leading-20 tracking-wider font-bold">
+    <h2 className="text-3xl sm:text-5xl lg:text-[70px] md:!leading-20 tracking-wider font-bold">
         Strategic Content for{" "}
         <span className="font-extrabold text-text px-3">
             Growing B2B
@@ -19,7 +19,7 @@ const TitleB2B = () => (
 );
 
 const TitleB2C = () => (
-    <h2 className="text-3xl sm:text-5xl lg:text-[70px] !leading-20 tracking-wider font-bold">
+    <h2 className="text-3xl sm:text-5xl lg:text-[70px] md:!leading-20 tracking-wider font-bold">
         Strategic Content for{" "}
         <span className="font-extrabold text-text px-3">
             Growing B2C
@@ -29,7 +29,7 @@ const TitleB2C = () => (
 );
 
 const TitleFounder = () => (
-    <h2 className="text-3xl sm:text-5xl lg:text-[64px] tracking-wider font-bold">
+    <h2 className="text-3xl sm:text-5xl lg:text-[64px] md:!leading-20 tracking-wider font-bold">
         <span className="font-extrabold text-text">
             Personal Branding
         </span>{" "}

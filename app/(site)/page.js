@@ -17,7 +17,7 @@ export default function Home() {
         title={"From Websites to Social Media—We Write It All!"}
       />
       <WhoWeAre />
-      {/* <HomePageOurClients /> */}
+      <HomePageOurClients />
       <Reviews />
       <ClientSpotlight
         subTitle={"Client Spotlights"}

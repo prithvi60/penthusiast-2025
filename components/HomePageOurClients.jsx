@@ -9,8 +9,10 @@ const HomePageOurClients = () => {
     const scrollRef = useRef(null);
     const containerRef = useRef(null);
 
-    // Handle auto-cycling
+    // Handle auto-cycling only when in view
     useEffect(() => {
+        if (!isInView) return; // Pause cycling when not in view
+
         const timer = setInterval(() => {
             setIsActive((prev) => {
                 return prev >= domains.length - 1 ? 0 : prev + 1;
@@ -18,7 +20,7 @@ const HomePageOurClients = () => {
         }, 3000);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [isInView])
 
     // Detect if component is in viewport
     useEffect(() => {
@@ -29,7 +31,7 @@ const HomePageOurClients = () => {
             { threshold: 0.1 }
         );
 
-        const currentRef = containerRef.current; // Store reference
+        const currentRef = containerRef.current;
 
         if (currentRef) {
             observer.observe(currentRef);
@@ -43,15 +45,19 @@ const HomePageOurClients = () => {
         };
     }, []);
 
-    // Only scroll when in view
+    // Scroll to active element when in view
     useEffect(() => {
         if (isInView && scrollRef.current) {
             const activeElement = scrollRef.current.children?.[isActive];
             if (activeElement) {
-                activeElement.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                });
+                try {
+                    activeElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center",
+                    });
+                } catch (error) {
+                    console.error("Error during scrollIntoView:", error);
+                }
             }
         }
     }, [isActive, isInView]);

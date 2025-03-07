@@ -128,7 +128,7 @@ export const Card = ({ bgColor, data, img, title }) => {
             </p>
             <div
                 className={`z-10 p-10 space-y-3 absolute transition-all transform duration-500 ease-in-out top-48 left-0 w-full max-h-[450px]
-                    ${isActive ? 'opacity-0' : 'opacity-100'} opacity-100 lg:group-hover:opacity-0`}
+                    ${isActive ? 'opacity-0' : 'opacity-100'} lg:opacity-100 lg:group-hover:opacity-0`}
             >
                 <ul className="space-y-2">
                     {data.lists.map((list, idx) => (
