@@ -7,7 +7,6 @@ import ExploreOurServices, {
 import Faq from "@/components/layouts/Faq";
 import Hero from "@/components/layouts/Hero";
 import WhoWeAre from "@/components/layouts/WhoWeAre";
-import LottieAnimation from "@/components/UI/LottieAnimation";
 
 export default function Home() {
   const jsonLd = {
@@ -52,7 +51,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
       />
       <Hero />
-      <LottieAnimation />
       <ExploreOurServices
         subTitle={"Explore our services"}
         title={"From Websites to Social Media—We Write It All!"}
