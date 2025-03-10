@@ -66,7 +66,7 @@ export default function MobMenu({ Menus }) {
                       />
                     </div>
                   ) : (
-                    <Link
+                    <Link title={menu.menu}
                       onClick={() => {
                         toggleDrawer();
                       }}
@@ -92,7 +92,7 @@ export default function MobMenu({ Menus }) {
                             onClick={() => toggleDrawer()}
                             className="flex justify-between items-center rounded-md gap-x-2 w-full"
                           >
-                            <Link
+                            <Link title={submenu.menu}
                               href={submenu.link}
                               className="flex capitalize justify-between items-center w-full p-4 rounded-md cursor-pointer relative"
                               onClick={() =>

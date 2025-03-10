@@ -1,5 +1,6 @@
 import { ourGuides } from "@/utils/Data";
 import React from "react";
+import { GiFeather } from "react-icons/gi";
 
 const OurGuidingValues = () => {
     return (
@@ -11,9 +12,12 @@ const OurGuidingValues = () => {
                 {ourGuides.map((guide, index) => (
                     <div
                         key={index}
-                        className="w-full h-60 lg:h-[260px] xl:h-60 flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-b from-green-light to-green-darker"
+                        className="w-full h-60 lg:h-[290px] xl:h-64 flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-br from-text via-text to-green-lighter"
                     >
-                        <p>{guide.desc}</p>
+                        <div className="flex gap-2">
+                            <GiFeather className="text-base shrink-0 lg:text-lg mt-1" />
+                            <p>{guide.desc}</p>
+                        </div>
                         <h5 className="font-extrabold tracking-wider text-lg sm:text-xl lg:text-2xl">
                             {guide.title}
                         </h5>

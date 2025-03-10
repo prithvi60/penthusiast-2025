@@ -94,6 +94,7 @@ const HomePageOurClients = () => {
                     {ourClients.map((item, idx) => (
                         <div key={idx} className="w-24 h-12 lg:w-36 lg:h-20 relative overflow-hidden">
                             <Image
+                                title={item.alt}
                                 fill
                                 alt={item.alt}
                                 src={item.logo}

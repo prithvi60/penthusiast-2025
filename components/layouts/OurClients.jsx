@@ -12,6 +12,7 @@ const OurClients = () => {
                 {ourClients.map((item, idx) => (
                     <div key={idx} className="w-24 h-12 lg:w-36 lg:h-20 relative overflow-hidden">
                         <Image
+                            title={item.alt}
                             key={idx}
                             fill
                             alt={item.alt}

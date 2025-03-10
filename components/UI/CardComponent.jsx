@@ -7,29 +7,29 @@ import { GiFeather } from "react-icons/gi";
 // import { motion } from "framer-motion";
 
 // CardComponent remains unchanged
-export const CardComponent = () => {
-    return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5 space-y-3 md:space-y-6">
-            <div className="bg-zinc-300 w-full h-32"></div>
-            <div className="p-4 space-y-3">
-                <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800">
-                    Content for B2B
-                </p>
-                <ul className="list-disc list-inside space-y-2">
-                    <li className="text-base lg:text-lg">Website Landing Page Content</li>
-                    <li className="text-base lg:text-lg">Landing page copywriting</li>
-                    <li className="text-base lg:text-lg">Blog Writing</li>
-                    <li>LinkedIn Content Creation for Founders</li>
-                </ul>
-                <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
-                    <Link href={"#"} className="p-3 rounded-lg border text-sm">
-                        Learn more
-                    </Link>
-                </button>
-            </div>
-        </div>
-    );
-};
+// export const CardComponent = () => {
+//     return (
+//         <div className="bg-white shadow-lg rounded-lg overflow-hidden p-5 space-y-3 md:space-y-6">
+//             <div className="bg-zinc-300 w-full h-32"></div>
+//             <div className="p-4 space-y-3">
+//                 <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800">
+//                     Content for B2B
+//                 </p>
+//                 <ul className="list-disc list-inside space-y-2">
+//                     <li className="text-base lg:text-lg">Website Landing Page Content</li>
+//                     <li className="text-base lg:text-lg">Landing page copywriting</li>
+//                     <li className="text-base lg:text-lg">Blog Writing</li>
+//                     <li>LinkedIn Content Creation for Founders</li>
+//                 </ul>
+//                 <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
+//                     <Link title="blog post page" href={"#"} className="p-3 rounded-lg border text-sm">
+//                         Learn more
+//                     </Link>
+//                 </button>
+//             </div>
+//         </div>
+//     );
+// };
 
 export const Card = ({ bgColor, data, img, title }) => {
     const [isActive, setIsActive] = useState(false);
@@ -121,7 +121,7 @@ export const Card = ({ bgColor, data, img, title }) => {
             onTouchStart={handleInteraction} // For touch devices
         >
             <div className="size-20 overflow-hidden relative">
-                <Image src={img} alt="icon" fill className="object-contain object-center" />
+                <Image title="icon" src={img} alt="icon" fill className="object-contain object-center" />
             </div>
             <p className="text-xl sm:text-2xl xl:text-3xl font-semibold">
                 {title}
@@ -177,13 +177,13 @@ export const CardClient = ({ bgColor, img, title, icon }) => {
                 group lg:group-hover:active touch:hover-none`}
         >
             <div className="size-36 overflow-hidden relative top-10 left-10">
-                <Image src={icon} alt="icon" fill className="object-contain object-center" />
+                <Image title="icon" src={icon} alt="icon" fill className="object-contain object-center" />
             </div>
             <p className="text-xl sm:text-2xl xl:text-3xl font-semibold px-10 py-5">
                 {title}
             </p>
             <div className="w-full h-60 overflow-hidden relative px-10 pt-10">
-                <Image src={img} alt="icon" fill className="object-contain object-center" />
+                <Image title="icon" src={img} alt="icon" fill className="object-contain object-center" />
             </div>
         </div>
     )

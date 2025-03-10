@@ -21,6 +21,7 @@ const Blogs = ({ posts }) => {
                 <div className="flex flex-col bg-white shadow lg:gap-28 lg:flex-row items-center max-w-5xl mx-auto rounded-lg p-8 gap-10">
                     <div className="relative overflow-hidden w-full md:w-[480px] h-80">
                         <Image
+                            title="blog picture"
                             src={"/blog-1.png"}
                             alt="blog image"
                             fill
@@ -47,20 +48,21 @@ const Blogs = ({ posts }) => {
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center xl:grid-cols-3 gap-8">
                     {posts.map((item, idx) => (
-                        <Link
+                        <Link title="blog post page"
                             href={`/resources/blog/${item.slug.current}`}
                             key={idx}
                             className="rounded-lg shadow-lg border border-[#AFACAC] overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer w-full max-w-[450px]"
                         >
                             <div className="w-full h-60 overflow-hidden relative">
                                 <Image
+                                    title={item.imageAlt}
                                     src={item.imageUrl}
                                     alt={item.imageAlt}
                                     fill
                                     className="object-cover object-center rounded-lg"
                                 />
                             </div>
-                            <p className="text-base p-3.5 sm:text-lg lg:text-xl font-semibold tracking-wide">
+                            <p className="text-base p-3.5 sm:text-lg md:text-xl font-semibold tracking-wide">
                                 {item.blogShortRead}
                             </p>
                             <div className="flex justify-between items-center p-3.5">

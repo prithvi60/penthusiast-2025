@@ -11,8 +11,9 @@ const NavBar = () => {
     <header className="px-5 md:px-10 py-6 md:py-4 text-lg z-50 sticky inset-0 flex items-center backdrop-blur-md bg-white bg-opacity-30">
       <nav className="flex justify-between items-center w-full">
         <div className="md:w-36 w-32 relative h-16">
-          <Link href="/" >
+          <Link href="/" title="logo" >
             <Image
+              title={"logo"}
               src={"/logo.png"}
               alt="logo"
               fill

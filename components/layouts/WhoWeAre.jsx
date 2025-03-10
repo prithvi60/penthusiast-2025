@@ -21,7 +21,7 @@ const WhoWeAre = () => {
                     in the digital space brighter than your competitors.
                 </p>
                 <div>
-                    <Link href={"/about"} className="bg-linear-to-bl from-green-light to-green-darker px-2 py-2 md:py-3 hover:scale-90 transition-all transform duration-500 ease-in-out text-white md:px-4 cursor-pointer rounded-md border-b-3 border-[#00FFE7] shadow-xl capitalize text-sm">
+                    <Link title="about link" href={"/about"} className="bg-linear-to-bl from-green-light to-green-darker px-2 py-2 md:py-3 hover:scale-90 transition-all transform duration-500 ease-in-out text-white md:px-4 cursor-pointer rounded-md border-b-3 border-[#00FFE7] shadow-xl capitalize text-sm">
                         To know more about us!
                     </Link>
                 </div>

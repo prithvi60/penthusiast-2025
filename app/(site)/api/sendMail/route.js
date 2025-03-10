@@ -80,7 +80,7 @@ export async function POST(req) {
 
   // Email options for the user (with optional PDF attachment)
   const userMailOptions = {
-    from: `Webibee - "${process.env.EMAIL_ID}" <support@webibee.com>`,
+    from: `Penthusiasts - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser),

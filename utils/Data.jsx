@@ -68,7 +68,7 @@ export const socialLinks = [
         icon: (
             <FaLinkedinIn className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
         ),
-        href: " https://www.linkedin.com/company/penthusiasts2017",
+        href: "https://www.linkedin.com/company/penthusiasts2017",
     },
     {
         icon: (
@@ -165,7 +165,6 @@ export const SMContentHome =
         { number: "25+", name: "Leaders" }
     ],
 }
-
 
 export const accordionItems = [
     {
@@ -312,31 +311,38 @@ export const ourGuides = [
 
 export const reviews = [
     {
-        avatar: "/avatar-1.jpg",
+        avatar: "/client-1.png",
         review:
             "Throughout our engagement with Penthusiasts, their meticulous approach to ensuring everything went according to plan impressed us. Their rigorous work ethic, dedication, and commitment to consistently delivering content and extensive follow-ups were remarkable. If you're looking for a reliable partner to produce quality content, look no further.",
         name: "Congruent",
         position: "Congruent Solutions",
     },
     {
-        avatar: "/avatar-1.jpg",
+        avatar: "/client-10.png",
         review:
-            "We have been working with Penthusiasts for a while now. They handle some of our blog writing requirements. Their service has been extremely professional, with high-quality content delivered on time. More importantly, they do the necessary research and write a well-informed article as required. I wish them the best in the years to come. ",
+            "During the early days of Ticket9, we had a vision that needed the right words to bring it to life. That’s where Penthusiasts came in. They didn’t just create content, hey understood our story, our passion, and our mission.From brand messaging to platform content, they crafted words that resonated with our audience and helped shape brand message and identity. Their dedication, creativity, and ability to adapt made a real difference in our journey.Grateful to have worked with a team that truly brings stories to life!",
+        name: "Santhos Premraj",
+        position: " Co-founder, HOP - Ticket9",
+    },
+    {
+        avatar: "/client-7.png",
+        review:
+            "We have been working with Penthusiasts for a while now. They handle some of our blog writing requirements. Their service has been extremely professional, with high-quality content delivered on time. More importantly, they do the necessary research and write a well-informed article as required. I wish them the best in the years to come.",
         name: "CANIT",
         position: "CANIT Solutions",
     },
     {
-        avatar: "/avatar-1.jpg",
+        avatar: "/xymalogo.png",
         review:
             "During our partnership with penthusiast, we were shown promising new ways to market our company. Today we work with statistics and more accurate data and realize the digital space is an essential tool for our products to reach the right decision-maker in the industry. We highly recommend Penthusiast to any business that needs a hand in improving its business through digital marketing.",
         name: "XYMA",
         position: "XYMA Analytics",
     },
     {
-        avatar: "/avatar-1.jpg",
+        avatar: "/LYFnGO_logo.svg",
         review:
             "Working with the Penthusiasts Team has been an absolute pleasure! Their dedication, expertise, deep understanding of our requirements, and commitment to excellence have positively impacted our work. Their creative solutions have always exceeded our expectations. I would recommend Penthusiast to anyone seeking excellent expertise and an outstanding partner for their work. They truly go above and beyond to deliver the job on time with excellence!",
-        name: "LYFOGO",
+        name: "LYFnGO",
         position: "LYFnGo",
     },
 ];

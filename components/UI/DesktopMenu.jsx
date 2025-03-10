@@ -27,13 +27,13 @@ export default function DesktopMenu({ menu }) {
           <>
             <h4 className="capitalize">{menu.menu}</h4>
             <IoIosArrowDown
-              className={`mt-[0.6px] group-hover/link:rotate-180 duration-200 text-black`}
+              className={`mt-[0.6px] group-hover/link:rotate-180 group-hover/link:text-text duration-200 text-black`}
             />
           </>
         ) : (
-          <Link
+          <Link title={menu.menu}
             href={menu.link || "#"}
-            className="flex capitalize items-center gap-1"
+            className="flex capitalize items-center gap-1 hover:underline underline-offset-4 decoration-text"
           >
             <span>{menu.menu}</span>
           </Link>
@@ -53,18 +53,19 @@ export default function DesktopMenu({ menu }) {
               // Card-based layout for Expert & Financial Consultation
               <div className="px-3.5 py-4 w-full grid grid-cols-2 gap-10 place-content-center place-items-center">
                 <Image
-                  alt="image"
+                  title="icon"
+                  alt="icon"
                   width={180}
                   height={200}
-                  src={"/menu.svg"}
+                  src={`${menu.menu === "services" ? "/menu.svg" : "/contact-illustration.png"}`}
                   className="object-contain object-center pl-5"
                 />
-                <div className="relative sm:before:top-5 md:before:-left-4 lg:before:-left-8 xl:before:-left-6 sm:before:h-40 sm:before:w-0.5 sm:before:bg-[#E4E4E4] sm:before:absolute">
+                <div className="relative sm:before:top-5 md:before:-left-4 lg:before:-left-8 xl:before:-left-6 sm:before:bg-text/50 sm:before:rounded-2xl sm:before:h-40 sm:before:w-0.5 sm:before:absolute">
                   {menu.subMenus?.map((submenu, i) => (
                     <div key={i} className="py-2 rounded-lg transition">
-                      <Link
+                      <Link title={submenu.menu}
                         href={submenu.link || "#"}
-                        className="flex items-center gap-2 rounded-md p-3 hover:bg-text/50 transition"
+                        className="flex items-center gap-2 rounded-md p-3 hover:underline hover:scale-105 transition-all duration-300 underline-offset-4 decoration-text"
                       >
                         {/* <span className="mr-2">{submenu.icon}</span> */}
                         <span className="font-semibold text-base text-primary">
@@ -81,7 +82,7 @@ export default function DesktopMenu({ menu }) {
               <div className={`px-6 py-10 w-full`}>
                 {menu.subMenus?.map((item, idx) => (
                   <div key={idx}>
-                    <Link
+                    <Link title={item.menu}
                       href={item.link}
                       className="text-lg font-semibold pb-2.5"
                     >

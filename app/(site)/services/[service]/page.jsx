@@ -41,7 +41,7 @@ const Page = async ({ params }) => {
     const { service } = await params;
 
     return (
-        <main>
+        <div>
             <Hero
                 title={
                     service === "content-B2B"
@@ -75,7 +75,7 @@ const Page = async ({ params }) => {
                 }
             />
             <BuildOurStory />
-        </main>
+        </div>
     );
 };
 

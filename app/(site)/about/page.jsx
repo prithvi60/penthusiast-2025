@@ -9,7 +9,7 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <main>
+        <div>
             <Hero />
             <AnimatedOverlapCards />
             <Achievements />
@@ -17,7 +17,7 @@ const Page = () => {
             <OurClients />
             <Reviews />
             <Founder />
-        </main>
+        </div>
     )
 }
 

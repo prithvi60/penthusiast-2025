@@ -29,6 +29,7 @@ export const WorksModal = ({ title, data }) => {
               onClick={() => setPdf(item.pdf)}
             >
               <Image
+                title={item.alt}
                 src={item.img}
                 alt={item.alt}
                 width={300}
@@ -138,7 +139,8 @@ export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank, pdf }) 
             className="relative w-full max-w-xl overflow-scroll no_scrollbar bg-white rounded-lg shadow-xl cursor-default md:p-8 md:max-w-xl no-scrollbar"
           >
             {thank ? (
-              <div className="w-full mt-5 space-y-4">
+              <div className="w-full mt-5 space-y-2">
+                <Image title="thumbs up icon" src={"/thumbs-up.gif"} alt="thumbs up icon" width={65} height={65} />
                 <h3 className="text-base font-bold text-text md:text-lg">
                   You're All Set!
                 </h3>

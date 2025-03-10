@@ -23,7 +23,7 @@ const Achievements = () => {
                     ))}
                 </ul>
                 <div className='w-full lg:w-2/4 relative h-[40vh] md:h-[50vh] lg:h-[70vh]'>
-                    <Image fill src="/achievement-illustration.png" alt="achievements" className='object-contain object-center' />
+                    <Image title={"achievements illustration"} fill src="/achievement-illustration.png" alt="achievements illustration" className='object-contain object-center' />
                 </div>
             </div>
         </section>

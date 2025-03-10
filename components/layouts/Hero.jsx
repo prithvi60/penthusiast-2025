@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { GetStartButton } from "../UI/Button";
 import { AnimatePresence, motion } from "framer-motion";
+import { HeroSvg } from "../features/HeroSvg";
 
 const Hero = () => {
     const variantTitle = {
@@ -30,11 +31,13 @@ const Hero = () => {
                     className="w-full h-[30vh] md:h-[60vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden relative mb-5"
                 >
                     <Image
+                        title={"hero illustration"}
                         src={"/hero-bg.svg"}
                         alt="hero illustration"
                         fill
                         className="object-contain object-center"
                     />
+                    {/* <HeroSvg /> */}
                 </motion.div>
             </AnimatePresence>
             <div className="px-5 pb-[40px] pt-0 md:px-[80px] md:pb-[70px]; w-full h-full space-y-4 text-center max-w-5xl mx-auto">

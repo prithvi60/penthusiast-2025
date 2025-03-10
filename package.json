@@ -13,6 +13,7 @@
     "@sanity/vision": "^3.77.1",
     "framer-motion": "^12.4.7",
     "lenis": "^1.1.22",
+    "lottie-react": "^2.4.1",
     "next": "15.1.7",
     "next-sanity": "^9.8.59",
     "nodemailer": "^6.10.0",
@@ -21,6 +22,7 @@
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
     "sanity": "^3.77.1",
+    "sitemap": "^8.0.0",
     "styled-components": "^6.1.15"
   },
   "devDependencies": {

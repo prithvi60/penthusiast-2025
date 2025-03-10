@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <section className='padding w-full space-y-14'>
       <h2 className="text-3xl text-center uppercase sm:text-5xl lg:text-6xl font-bold">
-        MEDIA
+        WORKS
       </h2>
       <Gradient rotate />
       <div className='space-y-16 md:space-y-32'>

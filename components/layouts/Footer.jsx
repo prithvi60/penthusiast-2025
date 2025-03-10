@@ -12,15 +12,16 @@ const Footer = () => {
             <div className="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:justify-between gap-6 lg:gap-8 w-full">
                 <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-y-6">
                     <Link
+                        title="logo"
                         href={"/"}
                         className="flex items-center gap-2"
                     >
-                        <Image src={"/logo.png"} alt="logo" width={150} height={150} className="" />
+                        <Image title={"logo"} src={"/logo.png"} alt="logo" width={150} height={150} className="" />
                     </Link>
                     <ul className="flex md:hidden items-center gap-2.5">
                         {socialLinks.map((list, idx) => (
                             <li key={idx} className="flex-shrink-0">
-                                <Link href={list.href}>{list.icon}</Link>
+                                <Link title="footer social icons" href={list.href}>{list.icon}</Link>
                             </li>
                         ))}
                     </ul>
@@ -36,7 +37,7 @@ const Footer = () => {
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link href={list.href}>{list.menu}</Link>
+                                    <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -51,7 +52,7 @@ const Footer = () => {
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link href={list.href}>{list.menu}</Link>
+                                    <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -66,7 +67,7 @@ const Footer = () => {
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link href={list.href}>{list.menu}</Link>
+                                    <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -81,7 +82,7 @@ const Footer = () => {
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link href={list.href}>{list.menu}</Link>
+                                    <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -92,7 +93,7 @@ const Footer = () => {
                 <ul className="hidden md:flex items-center gap-2.5">
                     {socialLinks.map((list, idx) => (
                         <li key={idx} className="flex-shrink-0">
-                            <Link href={list.href}>{list.icon}</Link>
+                            <Link title="icons" href={list.href}>{list.icon}</Link>
                         </li>
                     ))}
                 </ul>
