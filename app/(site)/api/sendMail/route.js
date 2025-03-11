@@ -1,11 +1,10 @@
 import nodemailer from "nodemailer";
-import fs from "fs";
-import path from "path";
 import { NextResponse } from "next/server";
 import {
   generateEmailTemplateForClient,
   generateEmailTemplateForUser,
 } from "@/utils/EmailTemplate";
+import fetch from "node-fetch";
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -57,34 +56,42 @@ export async function POST(req) {
     // bcc: [process.env.EMAIL_ID],
   };
 
-  // Function to read the PDF file from the public/files folder
-  const getPdfAttachment = () => {
+  // Function to fetch the PDF file from the URL and convert it to Base64
+  const getPdfAttachment = async () => {
     if (pdf && title !== "contact") {
       try {
-        const pdfPath = path.join(process.cwd(), "public", "files", pdf);
-        const pdfBuffer = fs.readFileSync(pdfPath);
+        // Fetch the PDF content from the URL
+        const response = await fetch(pdf);
+        const arrayBuffer = await response.arrayBuffer();
+        const pdfBuffer = Buffer.from(arrayBuffer);
+
+        // Convert the PDF content to Base64
+        const pdfBase64 = pdfBuffer.toString("base64");
+
+        // Extract filename from the URL or use the title
+        const fileName = `${title}.pdf`;
         return [
           {
-            filename: `${title}.pdf`,
-            content: pdfBuffer,
+            filename: fileName,
+            content: pdfBase64,
+            encoding: "base64",
             contentType: "application/pdf",
           },
         ];
       } catch (error) {
-        console.error("Error reading PDF file:", error);
+        console.error("Error fetching or converting PDF file:", error);
         return [];
       }
     }
     return [];
   };
-
   // Email options for the user (with optional PDF attachment)
   const userMailOptions = {
     from: `Penthusiasts - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser),
-    attachments: getPdfAttachment(),
+    attachments: await getPdfAttachment(),
     // bcc: ["sales@vbccinstruments.com"],
   };
 

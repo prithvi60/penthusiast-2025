@@ -8,12 +8,9 @@ const manRope = Manrope({
 });
 
 export const metadata = {
-  title: "Penthusiasts content that converts",
+  title: "Content is the King | Content Writing Agency | Penthusiasts",
   description:
     "Elevate your brand with our content writing services. Expert copywriting services to engage your audience and boost your online presence. Contact us today!",
-  verification: {
-    google: "G-7T9F0FKPQM",
-  },
   canonical: "https://penthusiasts.com",
   metadataBase: new URL("https://penthusiasts.com"),
   openGraph: {

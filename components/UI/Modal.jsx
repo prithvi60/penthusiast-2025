@@ -25,16 +25,20 @@ export const WorksModal = ({ title, data }) => {
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-lg shadow-lg border border-[#AFACAC] max-w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer"
-              onClick={() => setPdf(item.pdf)}
+              className="rounded-lg shadow-lg max-w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white"
+              onClick={() => {
+                setPdf(item.pdfUrl)
+                console.log(item.pdfUrl);
+
+              }}
             >
               <Image
-                title={item.alt}
-                src={item.img}
-                alt={item.alt}
+                title={item.altText}
+                src={item.imageUrl}
+                alt={item.altText}
                 width={300}
                 height={350}
-                className="object-contain object-center "
+                className="object-contain object-center"
               />
               <div className="flex justify-between items-center p-3.5">
                 <h5 className="text-xl font-medium tracking-wider md:text-2xl">
@@ -60,7 +64,14 @@ export const WorksModal = ({ title, data }) => {
   );
 };
 
-export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank, pdf }) => {
+export const SpringModal = ({
+  isOpen,
+  setIsOpen,
+  title,
+  thank,
+  setThank,
+  pdf,
+}) => {
   const initialFormData = {
     name: "",
     email: "",
@@ -92,7 +103,7 @@ export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank, pdf }) 
           email: formData.email,
           message: "",
           title: title,
-          pdf: pdf
+          pdf: pdf,
         }),
       });
 
@@ -140,7 +151,13 @@ export const SpringModal = ({ isOpen, setIsOpen, title, thank, setThank, pdf }) 
           >
             {thank ? (
               <div className="w-full mt-5 space-y-2">
-                <Image title="thumbs up icon" src={"/thumbs-up.gif"} alt="thumbs up icon" width={65} height={65} />
+                <Image
+                  title="thumbs up icon"
+                  src={"/thumbs-up.gif"}
+                  alt="thumbs up icon"
+                  width={65}
+                  height={65}
+                />
                 <h3 className="text-base font-bold text-text md:text-lg">
                   You're All Set!
                 </h3>

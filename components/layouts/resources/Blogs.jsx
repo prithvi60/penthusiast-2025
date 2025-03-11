@@ -51,7 +51,7 @@ const Blogs = ({ posts }) => {
                         <Link title="blog post page"
                             href={`/resources/blog/${item.slug.current}`}
                             key={idx}
-                            className="rounded-lg shadow-lg border border-[#AFACAC] overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer w-full max-w-[450px]"
+                            className="rounded-lg shadow-lg overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer w-full max-w-[450px]"
                         >
                             <div className="w-full h-60 overflow-hidden relative">
                                 <Image
@@ -62,7 +62,7 @@ const Blogs = ({ posts }) => {
                                     className="object-cover object-center rounded-lg"
                                 />
                             </div>
-                            <p className="text-base p-3.5 sm:text-lg md:text-xl font-semibold tracking-wide">
+                            <p className="p-3.5 text-lg md:text-xl font-semibold tracking-wide">
                                 {item.blogShortRead}
                             </p>
                             <div className="flex justify-between items-center p-3.5">

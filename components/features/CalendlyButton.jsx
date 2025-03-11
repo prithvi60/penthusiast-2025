@@ -5,7 +5,7 @@ import NeuFollowButton from "../UI/NeuFollowButton";
 
 const CalendlyLink = ({ type }) => {
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
-    const url = "https://calendly.com/gokulgandhi97";
+    const url = process.env.NEXT_PUBLIC_CALENDLY_ID
 
     useEffect(() => {
         const existingScript = document.querySelector(

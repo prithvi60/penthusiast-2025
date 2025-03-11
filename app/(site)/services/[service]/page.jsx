@@ -1,4 +1,5 @@
 import BuildOurStory from "@/components/layouts/BuildOurStory";
+import Faq from "@/components/layouts/Faq";
 import ContentSolutions from "@/components/layouts/services/ContentSolutions";
 import Hero from "@/components/layouts/services/Hero";
 import {
@@ -12,9 +13,8 @@ const TitleB2B = () => (
     <h2 className="text-3xl sm:text-5xl lg:text-[70px] md:!leading-20 tracking-wider font-bold">
         Strategic Content for{" "}
         <span className="font-extrabold text-text px-3">
-            Growing B2B
+            Growing B2B / Sass
         </span>{" "}
-        Brands
     </h2>
 );
 
@@ -74,6 +74,7 @@ const Page = async ({ params }) => {
                             : contentSolutionsSM
                 }
             />
+            <Faq />
             <BuildOurStory />
         </div>
     );

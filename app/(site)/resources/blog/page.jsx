@@ -10,7 +10,7 @@ const Page = async () => {
         {
             cache: "no-cache",
             next: {
-                tags: ["post"],
+                tags: ["post", "media", "wcp", "b2b", "b2c"],
             },
         }
     );
