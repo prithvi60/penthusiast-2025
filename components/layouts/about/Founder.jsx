@@ -18,9 +18,9 @@ const Founder = () => {
                         className="object-cover object-center"
                     />
                 </div>
-                <div className="space-y-4 shadow-xl flex flex-col w-full lg:w-3/5 justify-between items-start md:space-y-7 p-10 bg-gradient-to-br from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]">
+                <div className="space-y-4 shadow-xl flex flex-col w-full lg:w-3/5 justify-between items-start md:space-y-5 p-10 bg-gradient-to-br from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]">
                     <div className="space-y-3 md:pb-8">
-                        <h4 className="text-lg md:text-xl font-bold tracking-wider text-[#00A651]">
+                        <h4 className="text-xl md:text-2xl font-extrabold tracking-wider text-[#00A651]">
                             Poornima TM
                         </h4>
                         <p className="text-base lg:text-lg">

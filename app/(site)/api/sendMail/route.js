@@ -21,7 +21,7 @@ export async function POST(req) {
   const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
 
   const messageForClient = `
-  <p style="font-size: 16px; color: #555;"><strong>Customer Details from ${title}:</strong></p>
+  <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from ${title}:</strong></p>
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${email}</p>
             ${
@@ -90,7 +90,7 @@ export async function POST(req) {
     from: `Penthusiasts - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
-    html: generateEmailTemplateForUser(messageForUser),
+    html: generateEmailTemplateForUser(messageForUser, title),
     attachments: await getPdfAttachment(),
     // bcc: ["sales@vbccinstruments.com"],
   };

@@ -20,8 +20,8 @@ const WhoWeAre = () => {
                     drives conversions. No matter your industry, we&apos;ll make you shine
                     in the digital space brighter than your competitors.
                 </p>
-                <div>
-                    <Link title="about link" href={"/about"} className="bg-linear-to-bl from-green-light to-green-darker px-2 py-2 md:py-3 hover:scale-90 transition-all transform duration-500 ease-in-out text-white md:px-4 cursor-pointer rounded-md border-b-3 border-[#00FFE7] shadow-xl capitalize text-sm">
+                <div className="w-full flex justify-center items-center">
+                    <Link title="about link" href={"/about"} className="rounded-lg border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-white text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                         To know more about us!
                     </Link>
                 </div>

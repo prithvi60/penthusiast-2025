@@ -52,7 +52,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
       />
       <Hero />
-      {/* <LottieAnimation /> */}
       <ExploreOurServices
         subTitle={"Explore our services"}
         title={"From Websites to Social Media—We Write It All!"}

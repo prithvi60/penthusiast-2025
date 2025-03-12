@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { GetStartButton } from "../UI/Button";
 import { AnimatePresence, motion } from "framer-motion";
-import { HeroSvg } from "../features/HeroSvg";
+import HeroSVG from "../features/HeroSVG";
 
 const Hero = () => {
     const variantTitle = {
@@ -37,7 +37,7 @@ const Hero = () => {
                         fill
                         className="object-contain object-center"
                     /> */}
-                    <HeroSvg />
+                    <HeroSVG />
                 </motion.div>
             </AnimatePresence>
             <div className="px-5 pb-[40px] pt-0 md:px-[80px] md:pb-[70px]; w-full h-full space-y-4 text-center max-w-5xl mx-auto">

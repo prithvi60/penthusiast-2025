@@ -175,7 +175,7 @@ export const accordionItems = [
   },
   {
     title:
-      "Do you specialize in a particular content niche, or can you handle a wide range of industries?							",
+      "Do you specialize in a particular content niche, or can you handle a wide range of industries?",
     content:
       "We are versatile and skilled in crafting content for various sectors and in different forms like blogs, social media, PR articles, and more, ensuring a personalized approach for your business.",
   },

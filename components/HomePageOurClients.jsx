@@ -28,7 +28,7 @@ const HomePageOurClients = () => {
             ([entry]) => {
                 setIsInView(entry.isIntersecting);
             },
-            { threshold: 0.1 }
+            { threshold: 0.8 }
         );
 
         const currentRef = containerRef.current;

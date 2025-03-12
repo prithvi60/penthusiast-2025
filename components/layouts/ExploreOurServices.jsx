@@ -22,6 +22,7 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     data={B2BContentHome}
                     img={"/b2b-icon.svg"}
                     title="Content for B2B"
+                    href="/services/content-B2B"
                 />
                 <Card
                     bgColor={
@@ -30,6 +31,7 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     data={B2CContentHome}
                     img={"/b2c-icon.svg"}
                     title="Content for B2C"
+                    href="/services/content-B2C"
                 />
                 <Card
                     bgColor={
@@ -38,6 +40,7 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     data={SMContentHome}
                     img={"/SM-icon.svg"}
                     title="Social Media for Founders"
+                    href="/services/founders"
                 />
             </div>
         </section>
@@ -65,6 +68,7 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                     icon={"/client-10.png"}
                     img={"/Rectangle.png"}
                     title={"Website content"}
+                    href="https://www.theticket9.com/"
                 />
                 <CardClient
                     bgColor={
@@ -73,6 +77,7 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                     icon={"/client-11.png"}
                     img={"/Rectangle-2.png"}
                     title={"Website content"}
+                    href="https://vurvesalon.com"
                 />
                 <CardClient
                     bgColor={
@@ -81,6 +86,7 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                     icon={"/client-5.png"}
                     img={"/Rectangle-3.png"}
                     title={"Blog content"}
+                    href="https://bitscrunch.com"
                 />
             </div>
         </section>
