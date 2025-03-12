@@ -6,7 +6,7 @@ import {
 } from "@/utils/Variants";
 import { motion } from "framer-motion";
 
-const HeroSVG = () => {
+const HeroSvgComponent = () => {
     return (
         <svg width="100%" height="100%" viewBox="0 0 1361 603" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1346" height="602" transform="translate(8 1)" fill="white" />
@@ -281,4 +281,4 @@ const HeroSVG = () => {
     )
 }
 
-export default HeroSVG
+export default HeroSvgComponent

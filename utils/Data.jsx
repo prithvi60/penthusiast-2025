@@ -374,7 +374,7 @@ export const timeline = [
   },
   {
     year: "2020 - 2021",
-    title: "Resilient Content Creators",
+    title: "Navigating COVID - Govt Content & Digital Outreach",
     lists: [
       "First Govt Project with TN MSME Trade : Website Content Writing,Facebook Content Creation",
       "Investment Promotion Bureau:  Website Content Writing,Facebook Content Creation",
