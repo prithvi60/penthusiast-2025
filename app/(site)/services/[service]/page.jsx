@@ -2,10 +2,18 @@ import BuildOurStory from "@/components/layouts/BuildOurStory";
 import Faq from "@/components/layouts/Faq";
 import ContentSolutions from "@/components/layouts/services/ContentSolutions";
 import Hero from "@/components/layouts/services/Hero";
+import HowWeMake from "@/components/layouts/services/HowWeMake";
+import WhyQualityContent from "@/components/layouts/services/WhyQualityContent";
 import {
     contentSolutions,
     contentSolutionsB2C,
     contentSolutionsSM,
+    HWEB2BContent,
+    HWEB2CContent,
+    HWEFounderContent,
+    WQCB2BContent,
+    WQCB2CContent,
+    WQCFounderContent,
 } from "@/utils/Data";
 import React from "react";
 
@@ -18,22 +26,47 @@ const TitleB2B = () => (
     </h2>
 );
 
+const HWEB2B = () => (
+    <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
+        How we make an{" "}
+        <span className="font-extrabold text-text px-3">Impact on B2C?</span>{" "}
+    </h2>
+);
+
 const TitleB2C = () => (
     <h2 className="text-3xl sm:text-5xl lg:text-[70px] md:!leading-20 tracking-wider font-bold">
         Strategic Content for{" "}
-        <span className="font-extrabold text-text px-3">
-            Growing B2C
-        </span>{" "}
-        Brands
+        <span className="font-extrabold text-text px-3">Growing B2C</span> Brands
+    </h2>
+);
+
+const HWEB2C = () => (
+    <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
+        How we make an{" "}
+        <span className="font-extrabold text-text px-3">Impact on B2C?</span>{" "}
     </h2>
 );
 
 const TitleFounder = () => (
     <h2 className="text-3xl sm:text-5xl lg:text-[64px] md:!leading-20 tracking-wider font-bold">
-        <span className="font-extrabold text-text">
-            Personal Branding
+        <span className="font-extrabold text-text">Personal Branding</span> through
+        powerful social media
+    </h2>
+);
+
+const HWEFounder = () => (
+    <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
+        How we make an{" "}
+        <span className="font-extrabold text-text px-3">
+            Impact for Founders?
         </span>{" "}
-        through powerful social media
+    </h2>
+);
+
+const WQCTitle = () => (
+    <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
+        Why Quality <span className="font-extrabold text-text px-3">Content</span>{" "}
+        Matters?
     </h2>
 );
 
@@ -74,7 +107,32 @@ const Page = async ({ params }) => {
                             : contentSolutionsSM
                 }
             />
-            <Faq />
+            <HowWeMake
+                title={
+                    service === "content-B2B"
+                        ? HWEB2B
+                        : service === "content-B2C"
+                            ? HWEB2C
+                            : HWEFounder
+                }
+                data={
+                    service === "content-B2B"
+                        ? HWEB2BContent
+                        : service === "content-B2C"
+                            ? HWEB2CContent
+                            : HWEFounderContent
+                }
+            />
+            <WhyQualityContent
+                title={WQCTitle}
+                data={
+                    service === "content-B2B"
+                        ? WQCB2BContent
+                        : service === "content-B2C"
+                            ? WQCB2CContent
+                            : WQCFounderContent
+                }
+            />
             <BuildOurStory />
         </div>
     );

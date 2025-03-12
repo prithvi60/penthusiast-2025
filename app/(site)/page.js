@@ -1,4 +1,4 @@
-import HomePageOurClients from "@/components/HomePageOurClients";
+import HomePageOurClients from "@/components/layouts/HomePageOurClients";
 import Reviews from "@/components/layouts/about/Reviews";
 import BuildOurStory from "@/components/layouts/BuildOurStory";
 import ExploreOurServices, {

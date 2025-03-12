@@ -1,50 +1,54 @@
 import { Gradient } from "@/components/UI/Gradient";
 import React from "react";
+import { GiFeather } from "react-icons/gi";
 
-const Legal = ({ title }) => {
+const Legal = ({ data, title, type }) => {
     return (
-        <section className="w-full padding space-y-14">
+        <section className="w-full padding space-y-20 md:space-y-32">
             <h2 className="text-3xl text-center uppercase sm:text-5xl lg:text-6xl font-bold">
                 {title}
             </h2>
             <div className="space-y-8 relative max-w-6xl mx-auto">
                 <Gradient rotate />
-                <h4 className="uppercase text-xl sm:text-2xl lg:text-3xl tracking-wider font-medium">
-                    ARTICLE 1- DEFINITIONS
-                </h4>
-                <div className="space-y-2">
-                    <p className="text-base md:text-lg lg:text-xl">
-                        Applicable Website: This Privacy Policy applies to Content Whale, and
-                        henceforth content-whale.com will be referred to as “Website.”
-                        “Website” will also cover any future development of subsidiary
-                        websites and mobile applications.
+                {type && (
+                    <h3 className="uppercase text-xl sm:text-2xl lg:text-3xl tracking-wider font-bold">
+                        Terms and Conditions
+                    </h3>
+                )}
+
+                <p className="text-base md:text-lg xl:text-xl font-medium">
+                    {data.desc}
+                </p>
+                {data.lists.map((list, idx) => (
+                    <div className="space-y-6" key={idx}>
+                        <h4 className="text-xl md:text-2xl xl:text-3xl font-bold tracking-wider">
+                            {list.title}
+                        </h4>
+                        {list.para && (
+                            <p className="text-base md:text-lg xl:text-xl font-medium">
+                                {list.para}
+                            </p>
+                        )}
+                        {list.points && (
+                            <ul className={`"text-base md:text-lg lg:text-xl space-y-2 list-disc list-inside ${(list.title === "3. User Conduct" || list.title === "9. Contact Us") ? "ml-5" : "ml-2"}`}>
+                                {list.points.map((point, id) => (
+                                    <li
+                                        key={id}
+                                        className="text-base md:text-lg xl:text-xl font-medium flex items-start gap-x-3"
+                                    >
+                                        <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                        <p>{point}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                ))}
+                {title === "terms of service" && (
+                    <p className="text-base md:text-lg xl:text-xl font-medium">
+                        By using Penthusiasts, you acknowledge that you have read, understood, and agree to these Terms of Service.
                     </p>
-                    <ul className="list-decimal list-inside text-base md:text-lg lg:text-xl space-y-2">
-                        <li>
-                            Effective Date: The date that this Privacy Policy comes into effect
-                            will be known as “Effective Date.” So, the effective date for this
-                            Privacy Policy is (insert date).
-                        </li>
-                        <li>
-                            Parties: The data controller, Content Whale, and the user, you, will
-                            hereafter be individually referred to as “Party” and unitedly
-                            referred to as “Parties.”
-                        </li>
-                        <li>
-                            Data Controller: The owner, publisher, and operator of the website
-                            are the Data Controller. Data Controller is the party responsible
-                            for the collection of data. The Data Controller or the Data
-                            Controller's property will be referred to using first-person
-                            pronouns such as we, us, our and ours.
-                        </li>
-                        <li>
-                            User: Contingent on your agreement to the Privacy Policy and
-                            continued use of the website, the user will here forth be referred
-                            to like you, the user or any applicable second-person pronoun such
-                            as your and yours.
-                        </li>
-                    </ul>
-                </div>
+                )}
             </div>
         </section>
     );

@@ -55,9 +55,9 @@ export default function DesktopMenu({ menu }) {
                 <Image
                   title="icon"
                   alt="icon"
-                  width={180}
-                  height={200}
-                  src={`${menu.menu === "services" ? "/menu.svg" : "/contact-illustration.png"}`}
+                  width={`${menu.menu === "services" ? 180 : 150}`}
+                  height={`${menu.menu === "services" ? 200 : 180}`}
+                  src={`${menu.menu === "services" ? "/menu.svg" : "/resources.svg"}`}
                   className="object-contain object-center pl-5"
                 />
                 <div className="relative sm:before:top-5 md:before:-left-4 lg:before:-left-8 xl:before:-left-6 sm:before:bg-text/50 sm:before:rounded-2xl sm:before:h-40 sm:before:w-0.5 sm:before:absolute">
