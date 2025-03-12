@@ -68,7 +68,7 @@ export const socialLinks = [
     icon: (
       <FaLinkedinIn className="text-xl md:text-3xl text-[#008080] hover:text-[#008080]/60 hover:animate-pulse" />
     ),
-    href: "https://www.linkedin.com/company/penthusiasts2017",
+    href: "https://www.linkedin.com/in/poornima-t-m-895b9095",
   },
   {
     icon: (
