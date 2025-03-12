@@ -1,5 +1,4 @@
 import BuildOurStory from "@/components/layouts/BuildOurStory";
-import Faq from "@/components/layouts/Faq";
 import ContentSolutions from "@/components/layouts/services/ContentSolutions";
 import Hero from "@/components/layouts/services/Hero";
 import HowWeMake from "@/components/layouts/services/HowWeMake";

@@ -4,7 +4,7 @@ import React from 'react'
 const Page = () => {
     return (
         <div>
-            <Legal title={"other policies"} />
+            {/* <Legal title={"other policies"} /> */}
         </div>
     )
 }
