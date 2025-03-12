@@ -3,7 +3,7 @@
 import React from "react";
 import { GetStartButton } from "../UI/Button";
 import { AnimatePresence, motion } from "framer-motion";
-import HeroSvgComponent from "../features/HeroSVG";
+import HeroSvgComponent from "../features/HeroSvgComponent";
 
 const Hero = () => {
     const variantTitle = {
