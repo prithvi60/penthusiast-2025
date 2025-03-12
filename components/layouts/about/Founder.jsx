@@ -28,7 +28,7 @@ const Founder = () => {
                             Avid Traveler |  Fitness Enthusiast
                         </p>
                     </div>
-                    <button className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
+                    <button role="link" aria-label="founder's linkedin profile" className="mt-8 hover:scale-90 transition-all transform duration-500 ease-in-out">
                         <Link title="founder linkedin page"
                             href={"https://www.linkedin.com/company/penthusiasts2017"}
                             className="rounded-lg bg-linear-to-bl from-green-light to-green-darker px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-white text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"

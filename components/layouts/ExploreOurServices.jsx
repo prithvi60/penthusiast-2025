@@ -8,7 +8,7 @@ const ExploreOurServices = ({ subTitle, title }) => {
     return (
         <section className="w-full h-full space-y-12 md:space-y-24 padding relative">
             <div className="space-y-4 text-center">
-                <h4 className="text-sm">{subTitle}</h4>
+                <p className="text-sm">{subTitle}</p>
                 <Gradient rotate />
                 <h2 className="text-3xl sm:text-4xl w-[90%] md:w-3/5 mx-auto lg:text-5xl font-bold">
                     {title}

@@ -13,7 +13,7 @@ export const Accordion = ({ items }) => {
         <div className="w-full max-w-3xl mx-auto">
             {items.map((item, index) => (
                 <div key={index} className="mb-2">
-                    <button
+                    <button role="button" aria-label="accordion"
                         className={`w-full flex justify-between items-center px-6 py-9 bg-linear-to-r from-text via-[#006565] to-green-darker focus:outline-none transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"}`}
                         onClick={() => toggleAccordion(index)}
                     >

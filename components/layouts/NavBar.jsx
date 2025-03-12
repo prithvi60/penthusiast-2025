@@ -14,10 +14,10 @@ const NavBar = () => {
           <Link href="/" title="logo" >
             <Image
               title={"logo"}
-              src={"/logo.png"}
-              alt="logo"
+              src={"https://ik.imagekit.io/webibee/penthusiast_logo_full.png?updatedAt=1741588644745"}
+              alt="penthusiasts logo"
               fill
-              className=""
+              className="object-contain object-center"
             />
           </Link>
         </div>

@@ -109,6 +109,8 @@ export const ContactForm = () => {
                     />
                 </div>
                 <button
+                    role="button"
+                    aria-label="Submit Form"
                     type="submit"
                     className="rounded-lg border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker px-3.5 cursor-pointer py-2 md:py-3 md:px-5 font-semibold capitalize text-white text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
                 >

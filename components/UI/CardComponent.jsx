@@ -48,7 +48,7 @@ export const Card = ({ bgColor, data, img, title }) => {
                     {data.lists.map((list, idx) => (
                         <li key={idx} className="text-base lg:text-lg flex items-start gap-x-3">
                             <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
-                            <h4 className="text-black">{list}</h4>
+                            <h3 className="text-black">{list}</h3>
                         </li>
                     ))}
                 </ul>

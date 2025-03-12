@@ -16,7 +16,9 @@ const Footer = () => {
                         href={"/"}
                         className="flex items-center gap-2"
                     >
-                        <Image title={"logo"} src={"/logo.png"} alt="logo" width={150} height={150} className="" />
+                        <Image title={"logo"}
+                            src={"https://ik.imagekit.io/webibee/penthusiast_logo_full.png?updatedAt=1741588644745"}
+                            alt="penthusiasts logo" width={150} height={150} className="object-contain object-center" />
                     </Link>
                     <ul className="flex md:hidden items-center gap-2.5">
                         {socialLinks.map((list, idx) => (
@@ -98,7 +100,7 @@ const Footer = () => {
                     ))}
                 </ul>
                 <p className="text-sm text-center font-medium lg:text-start md:text-base">
-                    © {new Date().getFullYear()} Penthusiasts Inc. All rights reserved
+                    © {new Date().getFullYear()} <span className="text-text font-semibold">Penthusiasts Inc</span>{" "}. All rights reserved
                 </p>
             </div>
         </footer>
