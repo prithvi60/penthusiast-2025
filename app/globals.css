@@ -43,3 +43,7 @@ body {
 .no_scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.slick-slide > div {
+  margin: 0 10px !important;
+}

@@ -1,6 +1,6 @@
 import { Gradient } from "@/components/UI/Gradient";
 import React from "react";
-import { GiFeather } from "react-icons/gi";
+import { GoDotFill } from "react-icons/go";
 
 const Legal = ({ data, title, type }) => {
     return (
@@ -36,7 +36,7 @@ const Legal = ({ data, title, type }) => {
                                         key={id}
                                         className="text-base md:text-lg xl:text-xl font-medium flex items-start gap-x-3"
                                     >
-                                        <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                        <GoDotFill className="text-sm shrink-0 lg:text-base mt-2" />
                                         <p>{point}</p>
                                     </li>
                                 ))}

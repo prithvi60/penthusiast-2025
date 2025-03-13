@@ -1,4 +1,5 @@
 import BuildOurStory from "@/components/layouts/BuildOurStory";
+import { ClientSpotlight } from "@/components/layouts/ClientSpotLight";
 import ContentSolutions from "@/components/layouts/services/ContentSolutions";
 import Hero from "@/components/layouts/services/Hero";
 import HowWeMake from "@/components/layouts/services/HowWeMake";
@@ -28,7 +29,7 @@ const TitleB2B = () => (
 const HWEB2B = () => (
     <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
         How we make an{" "}
-        <span className="font-extrabold text-text px-3">Impact on B2C?</span>{" "}
+        <span className="font-extrabold text-text px-3">Impact on B2B?</span>{" "}
     </h2>
 );
 
@@ -131,6 +132,14 @@ const Page = async ({ params }) => {
                             ? WQCB2CContent
                             : WQCFounderContent
                 }
+            />
+            <ClientSpotlight
+                subTitle={"Client Spotlights"}
+                title={service === "content-B2B"
+                    ? "Showcasing our B2B impactful client collaborations"
+                    : service === "content-B2C"
+                        ? "Showcasing our B2C impactful client collaborations"
+                        : "Showcasing our Founder's impactful client collaborations"}
             />
             <BuildOurStory />
         </div>

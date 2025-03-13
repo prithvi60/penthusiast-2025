@@ -25,6 +25,7 @@ export const navLinks = [
       // { menu: "History", link: "/resources/history" },
     ],
   },
+  { menu: "contact us", link: "/contact" },
 ];
 
 export const footerLinks1 = [
@@ -79,11 +80,11 @@ export const socialLinks = [
 ];
 
 export const ourClients = [
-  { logo: "/client-1.png", alt: "congruent logo" },
+  { logo: "/client-1.svg", alt: "congruent logo" },
   { logo: "/client-2.png", alt: "atlantic rcm logo" },
   { logo: "/client-3.png", alt: "eClaim status logo" },
   { logo: "/client-4.png", alt: "cloudbankin logo" },
-  { logo: "/client-5.png", alt: "bitsCrunch logo" },
+  { logo: "/client-5.svg", alt: "bitsCrunch logo" },
   { logo: "/client-6.png", alt: "SKC logo" },
   { logo: "/client-7.png", alt: "canit solution logo" },
   { logo: "/client-8.png", alt: "clique logo" },
@@ -197,6 +198,32 @@ export const accordionItems = [
       "We work between 9am to 6pm everyday from Monday to Friday.You can contact us by filling out the form or reach out to us at Phone: +91-90032 85687 | Email: reachout@penthusiasts.com",
   },
 ];
+
+//  //   client spot
+
+export const t10SportTags = [
+  { number: "10K", name: "20K" },
+  { number: "Just", name: "2 Years" },
+  { number: "100,000+", name: "Impression" },
+  { number: "Within", name: "24 hrs" },
+]
+
+export const bitsCrunchTags = [
+  { number: "1M+", name: "Impression" },
+  { number: "4 Years", name: "of Service" }
+]
+
+export const congruentTags = [
+  { number: "5K", name: "28K" },
+  { number: "Just", name: "21 Months" },
+  { number: "Increased", name: "Engagement" },
+  { number: "Organic", name: "Traffic" },
+]
+
+export const vurveTags = [
+  { number: "9162", name: "Reach" },
+  { number: "Within", name: "1 Year" }
+]
 
 // About Page
 
@@ -481,7 +508,7 @@ export const HWEFounderContent = [
   { title: "Multi-Platform Optimization", desc: "We tailor content for LinkedIn, Instagram, and YouTube to maximize impact." },
   { title: "Authenticity-Driven Approach", desc: "We highlight personal stories and professional insights to create meaningful connections." },
   { title: "Community Building", desc: "We engage audiences through thought-provoking content that sparks discussions." },
-  { title: "Visibility & Networking", desc: "Visibility & Networking" },
+  { title: "Visibility & Networking", desc: "Our strategy enhances reach and fosters valuable business connections." },
 ]
 
 export const WQCFounderContent = [
@@ -602,7 +629,7 @@ export const TOS = {
     },
     {
       title: "3. User Responsibilities",
-      points: ["You must be at least 13 years old to use our services.", "You are responsible for maintaining the confidentiality of your account.", "You agree not to engage in any prohibited activities, including but not limited to spamming, hacking, or distributing harmful content.",]
+      points: ["You must be at least 18 years old to use our services.", "You are responsible for maintaining the confidentiality of your account.", "You agree not to engage in any prohibited activities, including but not limited to spamming, hacking, or distributing harmful content.",]
     },
     {
       title: "4. Intellectual Property",

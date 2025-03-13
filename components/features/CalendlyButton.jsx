@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import NeuFollowButton from "../UI/NeuFollowButton";
 
 const CalendlyLink = ({ type }) => {
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -58,16 +58,22 @@ const CalendlyLink = ({ type }) => {
     };
 
     return (
-        <button
-            onClick={handleCalendlyClick}
-            className={`bg-linear-to-bl from-green-light font-bold to-green-darker transition-all duration-300 rounded-lg border-2 border-solid border-white text-white cursor-pointer text-sm md:text-base hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl ${type ? "px-2 py-2 md:py-3" : "px-3 py-2 md:py-3.5 md:px-5"
-                }`}
-        >
-            Book a meeting
-            <span className="mx-2">
-                <FaArrowRight className="inline-block text-sm md:text-lg ml-2" />
-            </span>
-        </button>
+        <NeuFollowButton handleClick={handleCalendlyClick} type={type} />
+        // <button
+        //     style={{
+        //         transform,
+        //     }}
+        //     onClick={handleCalendlyClick}
+        //     className={`bg-linear-to-bl group from-green-light font-bold to-green-darker transition-all duration-300 rounded-lg border-2 border-solid border-white text-white cursor-pointer text-sm md:text-base hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl ${type ? "px-2 py-2 md:py-3" : "px-3 py-2 md:py-3.5 md:px-5"
+        //         }`}
+        // >
+        //     <Copy>Book a meeting</Copy>
+        //     <Arrow />
+        //     {/* Book a meeting
+        //     <span className="mx-2">
+        //         <FaArrowRight className="inline-block text-sm md:text-lg ml-2" />
+        //     </span> */}
+        // </button>
     );
 };
 

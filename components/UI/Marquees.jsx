@@ -14,7 +14,7 @@ export const OurClientsReviews = () => {
                 {reviews.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-8 shadow-lg p-5 rounded-lg max-w-sm sm:max-w-md md:max-w-xl h-[450px] md:h-72 m-5 bg-white">
                         <div className="size-20 sm:size-24 shrink-0 relative overflow-hidden">
-                            <Image title="icon" src={item.avatar} alt="icon" fill className={`rounded-full object-contain border-2 border-green-lighter shadow-lg object-center p-1 ${item.name === "XYMA" && "bg-green-darker"}`} />
+                            <Image title="icon" src={item.avatar} alt="icon" fill className={`rounded-full object-contain border-2 border-green-lighter object-center p-1 ${item.name === "XYMA" && "bg-green-darker"}`} />
                         </div>
                         <div className="space-y-3.5 flex flex-col justify-between h-full items-start">
                             <p className="text-sm">{item.review}</p>

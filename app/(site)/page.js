@@ -1,13 +1,11 @@
 import HomePageOurClients from "@/components/layouts/HomePageOurClients";
 import Reviews from "@/components/layouts/about/Reviews";
 import BuildOurStory from "@/components/layouts/BuildOurStory";
-import ExploreOurServices, {
-  ClientSpotlight,
-} from "@/components/layouts/ExploreOurServices";
+import ExploreOurServices from "@/components/layouts/ExploreOurServices";
 import Faq from "@/components/layouts/Faq";
 import Hero from "@/components/layouts/Hero";
 import WhoWeAre from "@/components/layouts/WhoWeAre";
-import LottieAnimation from "@/components/UI/LottieAnimation";
+import { ClientSpotlight } from "@/components/layouts/ClientSpotLight";
 
 export default function Home() {
   const jsonLd = {
@@ -62,7 +60,6 @@ export default function Home() {
       <ClientSpotlight
         subTitle={"Client Spotlights"}
         title={"Showcasing our most impactful client collaborations"}
-        explore
       />
       <Faq />
       <BuildOurStory />
