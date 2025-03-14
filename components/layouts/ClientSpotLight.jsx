@@ -49,7 +49,7 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                             "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999] text-[#BF1E2D]"
                         }
                         data={t10SportTags}
-                        icon={"/client-10.png"}
+                        icon={"/client-14.png"}
                         img={"/spot-1.svg"}
                         title={"Brand Awareness on LinkedIn"}
                         href="https://t10sports.com"
@@ -107,11 +107,11 @@ function NextArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker absolute -top-10 md:top-1/2 cursor-pointer hover:opacity-80 right-4 md:-right-10 xl:-right-14 group"
+                "p-1.5 md:p-2 xl:p-3 rounded-full border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker absolute -bottom-12 md:bottom-1/2 cursor-pointer hover:opacity-80 right-32 md:-right-10 xl:-right-16 group"
             }
             onClick={onClick}
         >
-            <FaArrowRight className="text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary" />
+            <FaArrowRight className="text-base text-white md:text-lg xl:text-xl group-hover:text-secondary" />
         </div>
     );
 }
@@ -121,11 +121,11 @@ function PrevArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker absolute -top-10 md:top-1/2 cursor-pointer left-64 hover:opacity-80 md:-left-10 xl:-left-14 group"
+                "p-1.5 md:p-2 xl:p-3 rounded-full border-2 border-solid border-white bg-linear-to-bl from-green-light to-green-darker absolute -bottom-12 md:bottom-1/2 cursor-pointer left-32 hover:opacity-80 md:-left-10 xl:-left-16 group"
             }
             onClick={onClick}
         >
-            <FaArrowLeft className="text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary" />
+            <FaArrowLeft className="text-base text-white md:text-lg xl:text-xl group-hover:text-secondary" />
         </div>
     );
 }

@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { GiFeather } from "react-icons/gi";
 import { FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import { MdPersonAddAlt1 } from "react-icons/md";
+import CalendlyLink from "../features/CalendlyButton";
+import { Gradient } from "./Gradient";
 
 export const Card = ({ bgColor, data, img, title, href }) => {
     const [isActive, setIsActive] = useState(false);
@@ -126,7 +128,17 @@ export const Card = ({ bgColor, data, img, title, href }) => {
     );
 };
 
-export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, para }) => {
+export const CardClient = ({
+    bgColor,
+    img,
+    title,
+    icon,
+    data,
+    href,
+    type,
+    col,
+    para,
+}) => {
     const [isActive, setIsActive] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
     const router = useRouter();
@@ -147,9 +159,9 @@ export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, p
 
     const handleClick = () => {
         if (isDesktop) {
-            router.push(href)
+            router.push(href);
         }
-    }
+    };
 
     // Check screen size on mount and resize
     useEffect(() => {
@@ -198,7 +210,7 @@ export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, p
         //     </div>
         // </Link>
         <div
-            className={`relative w-full h-auto min-h-[520px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 space-y-3 max-w-sm mx-auto pb-20 cursor-pointer ${bgColor} 
+            className={`relative w-full h-auto min-h-[450px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 space-y-3 max-w-sm mx-auto pb-20 cursor-pointer ${bgColor} 
                 group lg:group-hover:active touch:hover-none`}
             onTouchStart={handleInteraction}
             onTouchEnd={handleInteractionEnd}
@@ -211,8 +223,12 @@ export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, p
             >
                 <FaExternalLinkAlt className="text-xl md:text-lg" />
             </Link> */}
-            <div className={`${col ? "block space-y-2 text-center" : "flex items-center gap-3 text-start"}`}>
-                <div className={`${col ? "w-full h-10" : "h-16 w-1/4 shrink-0"} overflow-hidden relative`}>
+            <div
+                className={`${col ? "block space-y-2 text-center" : "flex items-center gap-3 text-start"}`}
+            >
+                <div
+                    className={`${col ? "w-full h-10" : "h-16 w-1/4 shrink-0"} overflow-hidden relative`}
+                >
                     <Image
                         title="icon"
                         src={icon}
@@ -227,7 +243,7 @@ export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, p
             </div>
             <div
                 className={`z-10 p-10 space-y-3 absolute transition-all transform duration-500 ease-in-out left-0 w-full max-h-[450px]
-                    ${isActive ? "top-96 lg:group-hover:top-[350px]" : "top-24 sm:top-28"}`}
+                    ${isActive ? "top-[320px] lg:group-hover:top-[350px]" : "top-20 sm:top-28"}`}
             >
                 <div className="w-full sm:w-[340px] h-[320px] overflow-hidden relative">
                     <Image
@@ -239,93 +255,162 @@ export const CardClient = ({ bgColor, img, title, icon, data, href, type, col, p
                     />
                 </div>
             </div>
-            <div
-                className={`absolute shadow-lg rounded-lg p-3 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
-                    ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
-            >
-                {!type ? (
-                    <>
-                        <h4 className="text-2xl md:text-3xl tracking-wider font-extrabold">
+            {!type ? (
+                <div
+                    className={`absolute shadow-lg rounded-lg p-3 top-56 sm:top-52 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
+                        ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
+                >
+                    <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
+                        {data[0].number}
+                    </h4>
+                    <p className="text-base md:text-lg tracking-wider font-semibold text-black">
+                        {data[0].name}
+                    </p>
+                </div>
+            ) : (
+                <div
+                    className={`absolute shadow-lg rounded-lg p-3 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
+                        ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
+                >
+                    <div className="w-full flex justify-end items-center">
+                        <MdPersonAddAlt1 className="text-xl sm:text-2xl" />
+                    </div>
+                    <div className="flex justify-center gap-2 items-center">
+                        <h4 className="text-lg md:text-xl tracking-wider font-semibold text-black">
                             {data[0].number}
                         </h4>
-                        <p className="text-lg md:text-xl tracking-wider font-semibold text-black">
+                        <FaArrowRight className="text-sm sm:text-base text-black" />
+                        <p className="text-2xl md:text-3xl tracking-wider font-extrabold">
                             {data[0].name}
                         </p>
-                    </>
-                ) : (
-                    <>
-                        <div className="w-full flex justify-end items-center">
-                            <MdPersonAddAlt1 className="text-xl sm:text-2xl" />
-                        </div>
-                        <div className="flex justify-center gap-2 items-center">
-                            <h4 className="text-lg md:text-xl tracking-wider font-semibold text-black">
-                                {data[0].number}
-                            </h4>
-                            <FaArrowRight className="text-sm sm:text-base text-black" />
-                            <p className="text-2xl md:text-3xl tracking-wider font-extrabold">
-                                {data[0].name}
-                            </p>
-                        </div>
-                    </>
-                )}
-            </div>
-            <div
-                className={`absolute shadow-lg rounded-lg py-3.5 px-4.5 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out
-                    ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
-            >
-                {!type ? (
-                    <>
-                        <h4 className="text-2xl md:text-3xl tracking-wider font-extrabold">
-                            {data[1].number}
-                        </h4>
-                        <p className="text-lg md:text-xl tracking-wider font-semibold text-black">
-                            {data[1].name}
-                        </p>
-                    </>
-                ) : (
-                    <>
-                        <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
-                            {data[1].number}
-                        </h4>
-                        <p className="text-2xl md:text-3xl font-bold tracking-wide">
-                            {data[1].name}
-                        </p>
-                    </>
-                )}
-            </div>
+                    </div>
+                </div>
+            )}
             {!type ? (
-                <p
-                    className={`text-sm text-[#181726] text-justify absolute transition-all transform duration-500 ease-in-out top-64 sm:top-60 left-0 w-full p-5
-                    ${isActive ? "opacity-100 lg:group-hover:opacity-100" : "opacity-0 lg:opacity-0"}`}
+                <div
+                    className={`absolute shadow-lg rounded-lg py-3.5 px-4.5 top-56 sm:top-52 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out
+                        ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                 >
-                    {para}
-                </p>
+                    <h4
+                        className={`text-xl md:text-2xl lg:text-2xl tracking-wider font-extrabold `}
+                    >
+                        {data[1].number}
+                    </h4>
+                    <p className="text-base md:text-lg tracking-wider font-semibold text-black">
+                        {data[1].name}
+                    </p>
+                </div>
             ) : (
+                <div
+                    className={`absolute shadow-lg rounded-lg py-3.5 px-4.5 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out
+                    ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
+                >
+                    <h4 className="text-base md:text-lg tracking-wider font-extrabold">
+                        {data[1].number}
+                    </h4>
+                    <p className="text-xl md:text-2xl tracking-wider font-semibold text-black">
+                        {data[1].name}
+                    </p>
+                </div>
+            )}
+            {type && (
                 <>
                     <div
-                        className={`absolute shadow-lg rounded-lg py-3 px-5 top-64 sm:top-64 z-20 bg-white w-[55%] transition-all transform duration-500 ease-in-out space-y-1.5
+                        className={`absolute shadow-lg rounded-lg py-3 px-5 top-64 sm:top-64 z-20 bg-white w-[55%] transition-all transform duration-500 ease-in-out
                     ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                     >
-                        <h4 className="text-2xl md:text-3xl tracking-wider font-extrabold">
+                        <h4
+                            className={`text-xl md:text-2xl tracking-wider font-extrabold  ${data[2].number === "100,000+" ? "text-xl md:text-2xl " : "text-base md:text-lg text-black"}`}
+                        >
                             {data[2].number}
                         </h4>
-                        <p className="text-lg md:text-xl tracking-wider font-semibold text-black">
+                        <p
+                            className={` font-bold tracking-wide ${data[2].name === "Impression" ? "text-black text-base md:text-lg" : "text-xl md:text-2xl"}`}
+                        >
                             {data[2].name}
                         </p>
                     </div>
                     <div
-                        className={`absolute shadow-lg rounded-lg p-3 top-64 sm:top-64 z-20 bg-white w-[45%] transition-all transform duration-500 ease-in-out space-y-1.5
+                        className={`absolute shadow-lg rounded-lg p-3 top-64 sm:top-64 z-20 bg-white w-[45%] transition-all transform duration-500 ease-in-out
                     ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                     >
-                        <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
-                            {data[3].name}
+                        <h4 className="text-base md:text-lg tracking-wider font-extrabold text-black">
+                            {data[3].number}
                         </h4>
-                        <p className="text-2xl md:text-3xl font-bold tracking-wide">
+                        <p className="text-xl md:text-2xl font-bold tracking-wide">
                             {data[3].name}
                         </p>
                     </div>
                 </>
             )}
         </div>
+    );
+};
+
+export const ServiceCard = ({ col, subTitle, title, data }) => {
+    return (
+        <section className="w-full h-full space-y-12 md:space-y-24 padding relative">
+            <div className="space-y-4 text-center">
+                <h4 className="text-sm">{subTitle}</h4>
+                <Gradient rotate />
+                <h2 className="text-3xl sm:text-4xl w-[90%] md:w-3/5 mx-auto lg:text-5xl font-bold md:leading-16">
+                    {title}
+                </h2>
+                <CalendlyLink type />
+            </div>
+            <div className="w-full relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-6 lg:gap-8 xl:gap-20">
+                {data.map((list, idx) => (
+                    <div key={idx}
+                        className={`relative w-full h-auto min-h-fit sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 md:p-10 space-y-5 md:space-y-8 max-w-xl mx-auto
+                group lg:group-hover:active touch:hover-none ${list.bgColor}`}
+                    // onClick={handleClick}
+                    >
+                        <div
+                            className={`pb-5 ${list.col ? "block space-y-2" : "flex items-center gap-3 text-start"}`}
+                        >
+                            <div
+                                className={`${list.col ? "w-full h-12 md:h-14" : "h-16 w-1/4 shrink-0"} overflow-hidden relative`}
+                            >
+                                <Image
+                                    title="icon"
+                                    src={list.icon}
+                                    alt="icon"
+                                    fill
+                                    className="object-contain object-center w-3/4"
+                                />
+                            </div>
+                            <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-[#484646]">
+                                {list.title}
+                            </p>
+                        </div>
+                        <div className="space-y-4 md:space-y-4 bg-white p-6 rounded-lg">
+                            <div className="space-y-2 md:space-y-4">
+                                <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
+                                    Achievements:
+                                </h4>
+                                <ul className="list-disc pl-8 text-base sm:text-lg text-justify">
+                                    {list.achievements.map((item, id) => (
+                                        <li key={id}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="space-y-2 md:space-y-4">
+                                <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
+                                    Important Metrics:
+                                </h4>
+                                <ul className="list-disc pl-8 text-base sm:text-lg text-justify">
+                                    {list.importantMetrics.map((item, id) => (
+                                        <li key={id}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="text-base sm:text-lg text-justify text-[#181726]">
+                            {list.summary}
+                        </p>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 };

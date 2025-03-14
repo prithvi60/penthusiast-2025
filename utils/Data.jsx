@@ -206,24 +206,24 @@ export const t10SportTags = [
   { number: "Just", name: "2 Years" },
   { number: "100,000+", name: "Impression" },
   { number: "Within", name: "24 hrs" },
-]
+];
 
 export const bitsCrunchTags = [
   { number: "1M+", name: "Impression" },
-  { number: "4 Years", name: "of Service" }
-]
+  { number: "4 Years", name: "of Service" },
+];
 
 export const congruentTags = [
   { number: "5K", name: "28K" },
   { number: "Just", name: "21 Months" },
   { number: "Increased", name: "Engagement" },
   { number: "Organic", name: "Traffic" },
-]
+];
 
 export const vurveTags = [
   { number: "9162", name: "Reach" },
-  { number: "Within", name: "1 Year" }
-]
+  { number: "Within", name: "1 Year" },
+];
 
 // About Page
 
@@ -457,20 +457,50 @@ export const contentSolutions = [
 ];
 
 export const HWEB2BContent = [
-  { title: "Lead Generation Focus", desc: "We create persuasive landing pages and blogs that drive conversions and attract high-quality leads." },
-  { title: "Thought Leadership", desc: "Our content positions your brand as an industry expert, building trust and credibility." },
-  { title: "SEO-Driven Approach", desc: "We optimize website and blog content to improve search rankings and organic traffic." },
-  { title: "Tailored Messaging", desc: "We craft content that speaks directly to decision-makers and stakeholders." },
-  { title: "Data-Backed Strategies", desc: "Our approach is informed by analytics and market insights to maximize engagement and ROI." },
-]
+  {
+    title: "Lead Generation Focus",
+    desc: "We create persuasive landing pages and blogs that drive conversions and attract high-quality leads.",
+  },
+  {
+    title: "Thought Leadership",
+    desc: "Our content positions your brand as an industry expert, building trust and credibility.",
+  },
+  {
+    title: "SEO-Driven Approach",
+    desc: "We optimize website and blog content to improve search rankings and organic traffic.",
+  },
+  {
+    title: "Tailored Messaging",
+    desc: "We craft content that speaks directly to decision-makers and stakeholders.",
+  },
+  {
+    title: "Data-Backed Strategies",
+    desc: "Our approach is informed by analytics and market insights to maximize engagement and ROI.",
+  },
+];
 
 export const WQCB2BContent = [
-  { title: "Builds Brand Authority", desc: "Well-researched content establishes your business as a trusted industry leader." },
-  { title: "Drives Organic Traffic", desc: "SEO-optimized content improves visibility and attracts potential clients." },
-  { title: "Enhances Lead Conversion", desc: "Compelling copy encourages visitors to take action." },
-  { title: "Strengthens B2B Relationships", desc: "Thoughtful content fosters trust and long-term partnerships." },
-  { title: "Supports Multi-Channel Marketing", desc: "Consistent messaging across blogs, websites, and LinkedIn enhances brand recall." },
-]
+  {
+    title: "Builds Brand Authority",
+    desc: "Well-researched content establishes your business as a trusted industry leader.",
+  },
+  {
+    title: "Drives Organic Traffic",
+    desc: "SEO-optimized content improves visibility and attracts potential clients.",
+  },
+  {
+    title: "Enhances Lead Conversion",
+    desc: "Compelling copy encourages visitors to take action.",
+  },
+  {
+    title: "Strengthens B2B Relationships",
+    desc: "Thoughtful content fosters trust and long-term partnerships.",
+  },
+  {
+    title: "Supports Multi-Channel Marketing",
+    desc: "Consistent messaging across blogs, websites, and LinkedIn enhances brand recall.",
+  },
+];
 
 export const contentSolutionsB2C = [
   { icon: "/icon-1.svg", desc: "Website Copywriting" },
@@ -482,20 +512,50 @@ export const contentSolutionsB2C = [
 ];
 
 export const HWEB2CContent = [
-  { title: "Emotion-Driven Storytelling", desc: "We craft relatable content that resonates with your target audience." },
-  { title: "Engagement-Focused Strategy", desc: "Our social media posts and blogs are designed to maximize interactions and shares." },
-  { title: "Platform-Specific Content", desc: "We optimize content for LinkedIn, Instagram, and blogs to match audience behavior." },
-  { title: "Consistent Brand Voice", desc: "We ensure your brand message remains clear and compelling across all platforms." },
-  { title: "Trend-Driven Approach", desc: "We incorporate the latest trends to keep your content fresh and relevant." },
-]
+  {
+    title: "Emotion-Driven Storytelling",
+    desc: "We craft relatable content that resonates with your target audience.",
+  },
+  {
+    title: "Engagement-Focused Strategy",
+    desc: "Our social media posts and blogs are designed to maximize interactions and shares.",
+  },
+  {
+    title: "Platform-Specific Content",
+    desc: "We optimize content for LinkedIn, Instagram, and blogs to match audience behavior.",
+  },
+  {
+    title: "Consistent Brand Voice",
+    desc: "We ensure your brand message remains clear and compelling across all platforms.",
+  },
+  {
+    title: "Trend-Driven Approach",
+    desc: "We incorporate the latest trends to keep your content fresh and relevant.",
+  },
+];
 
 export const WQCB2CContent = [
-  { title: "Increases Audience Engagement", desc: "Creative and interactive content keeps your audience hooked." },
-  { title: "Boosts Brand Visibility", desc: " High-quality posts improve social reach and brand awareness." },
-  { title: "Encourages Customer Loyalty", desc: "Engaging storytelling fosters a strong brand-community relationship." },
-  { title: "Drives Sales & Conversions", desc: "Compelling copy moves customers through the buying journey." },
-  { title: "Enhances Social Proof", desc: "Authentic and valuable content builds credibility and trust among consumers." },
-]
+  {
+    title: "Increases Audience Engagement",
+    desc: "Creative and interactive content keeps your audience hooked.",
+  },
+  {
+    title: "Boosts Brand Visibility",
+    desc: " High-quality posts improve social reach and brand awareness.",
+  },
+  {
+    title: "Encourages Customer Loyalty",
+    desc: "Engaging storytelling fosters a strong brand-community relationship.",
+  },
+  {
+    title: "Drives Sales & Conversions",
+    desc: "Compelling copy moves customers through the buying journey.",
+  },
+  {
+    title: "Enhances Social Proof",
+    desc: "Authentic and valuable content builds credibility and trust among consumers.",
+  },
+];
 
 export const contentSolutionsSM = [
   { icon: "/icon-1.svg", desc: "Personal Branding Services" },
@@ -504,20 +564,124 @@ export const contentSolutionsSM = [
 ];
 
 export const HWEFounderContent = [
-  { title: "Personal Brand Growth", desc: "We help founders establish their expertise and industry influence." },
-  { title: "Multi-Platform Optimization", desc: "We tailor content for LinkedIn, Instagram, and YouTube to maximize impact." },
-  { title: "Authenticity-Driven Approach", desc: "We highlight personal stories and professional insights to create meaningful connections." },
-  { title: "Community Building", desc: "We engage audiences through thought-provoking content that sparks discussions." },
-  { title: "Visibility & Networking", desc: "Our strategy enhances reach and fosters valuable business connections." },
-]
+  {
+    title: "Personal Brand Growth",
+    desc: "We help founders establish their expertise and industry influence.",
+  },
+  {
+    title: "Multi-Platform Optimization",
+    desc: "We tailor content for LinkedIn, Instagram, and YouTube to maximize impact.",
+  },
+  {
+    title: "Authenticity-Driven Approach",
+    desc: "We highlight personal stories and professional insights to create meaningful connections.",
+  },
+  {
+    title: "Community Building",
+    desc: "We engage audiences through thought-provoking content that sparks discussions.",
+  },
+  {
+    title: "Visibility & Networking",
+    desc: "Our strategy enhances reach and fosters valuable business connections.",
+  },
+];
 
 export const WQCFounderContent = [
-  { title: "Positions You as a Leader", desc: "High-value content showcases your expertise and industry knowledge." },
-  { title: "Expands Professional Reach", desc: "Strategic content creation attracts a wider audience." },
-  { title: "Builds Trust & Credibility", desc: "Authentic storytelling strengthens your professional reputation." },
-  { title: "Drives Engagement", desc: "Engaging content leads to higher interactions and meaningful conversations." },
-  { title: "Creates Long-Term Impact", desc: " Consistently high-quality content establishes a strong digital presence over time." },
-]
+  {
+    title: "Positions You as a Leader",
+    desc: "High-value content showcases your expertise and industry knowledge.",
+  },
+  {
+    title: "Expands Professional Reach",
+    desc: "Strategic content creation attracts a wider audience.",
+  },
+  {
+    title: "Builds Trust & Credibility",
+    desc: "Authentic storytelling strengthens your professional reputation.",
+  },
+  {
+    title: "Drives Engagement",
+    desc: "Engaging content leads to higher interactions and meaningful conversations.",
+  },
+  {
+    title: "Creates Long-Term Impact",
+    desc: " Consistently high-quality content establishes a strong digital presence over time.",
+  },
+];
+
+export const serviceB2BClients = [
+  {
+    icon: "/client-5.svg",
+    title: "Blockchain Analytics Content Strategy",
+    achievements: [
+      "Significant increase in brand visibility",
+      "Enhanced engagement (likes, comments, shares)",
+      "Consistent engagement rates with audience",
+    ],
+    importantMetrics: [
+      "Follower growth: 10k to 29k in 2 years",
+      "Over 100,000 impressions on a single post within 24 hours",
+    ],
+    summary:
+      "Our team collaborated closely with various internal departments to understand bitsCrunch's operations. We developed a clear strategy, combining subject knowledge with consistency and patience. Content creation spanned multiple formats, including informative blogs, PRs, C-suite interviews, and podcasts, contributing to the client's growth in the blockchain and NFT space.",
+    col: false,
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]"
+  },
+  {
+    icon: "/client-1.svg",
+    title: "LinkedIn Content for the Company's Handle",
+    achievements: [
+      "Enhanced visibility in retirement services",
+      "Engaging a targeted professional audience",
+      "Stronger thought leadership positioning",
+    ],
+    importantMetrics: [
+      "Organic traffic growth: 5k to 28k within 21 months",
+      "Increased engagement on LinkedIn posts",
+    ],
+    summary:
+      "Our team developed and executed a strategic content plan focused on thought leadership, leveraging Congruent Solutions' expertise in retirement technology. By creating insightful and engaging LinkedIn posts, the initiative successfully boosted organic traffic and positioned the company as a trusted voice in its industry.",
+    col: true,
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]"
+  },
+];
+
+export const serviceB2CClients = [
+  {
+    icon: "/client-11.png",
+    title: "Enhancing Online Presence through Blogs",
+    achievements: [
+      "Improved website visibility through targeted content in a year ",
+      "Enhanced customer engagement with salon services",
+      "Strengthened online presence in the beauty industry",
+    ],
+    importantMetrics: [
+      "Organic reach: 9,162 within a year ",
+      "Website engagement increase",
+    ],
+    summary:
+      "our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
+    col: true,
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]"
+  },
+  {
+    icon: "/client-14.png",
+    title: "Brand Awareness on LinkedIn",
+    achievements: [
+      "Significant increase in brand visibility",
+      "Enhanced engagement (likes, comments, shares)",
+      "Consistent engagement rates with audience",
+    ],
+    importantMetrics: [
+      "Follower growth: 10k to 29k in 2 years",
+      "Over 100,000 impressions on a single post within 24 hours",
+    ],
+    summary:
+      "Over two years, we delivered well-researched, engaging content tailored to trends and sporting events. We collaborated closely with internal teams, developed a clear strategy, and maintained consistency in content delivery, resulting in improved brand awareness and positioning as an authority in the sports apparel sector.",
+    col: false,
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]"
+  },
+];
 
 // legal services
 
@@ -578,15 +742,31 @@ export const privacyPolicy = {
   lists: [
     {
       title: "1. Information We Collect",
-      points: ["We may collect the following types of information:", "Personal Information: Name, email address, phone number, and other contact details when you register or subscribe.", "Non-Personal Information: Browser type, IP address, device information, and browsing activity collected through cookies and similar technologies.", "User-Generated Content: Comments, reviews, and messages you submit on our platform."]
+      points: [
+        "We may collect the following types of information:",
+        "Personal Information: Name, email address, phone number, and other contact details when you register or subscribe.",
+        "Non-Personal Information: Browser type, IP address, device information, and browsing activity collected through cookies and similar technologies.",
+        "User-Generated Content: Comments, reviews, and messages you submit on our platform.",
+      ],
     },
     {
       title: "2. How We Use Your Information",
-      points: ["We use the collected data for:", "Providing and improving our services", "Sending newsletters, updates, or promotional content", "Analyzing website performance and user engagement", "Responding to inquiries and customer support requests"]
+      points: [
+        "We use the collected data for:",
+        "Providing and improving our services",
+        "Sending newsletters, updates, or promotional content",
+        "Analyzing website performance and user engagement",
+        "Responding to inquiries and customer support requests",
+      ],
     },
     {
       title: "3. How We Share Your Information",
-      points: ["We do not sell or rent your personal information. However, we may share your data with:", "Service Providers: Third-party vendors assisting in website operations", "Legal Authorities: If required by law, court order, or to protect our rights", "Business Transfers: In case of a merger, sale, or asset transfer"]
+      points: [
+        "We do not sell or rent your personal information. However, we may share your data with:",
+        "Service Providers: Third-party vendors assisting in website operations",
+        "Legal Authorities: If required by law, court order, or to protect our rights",
+        "Business Transfers: In case of a merger, sale, or asset transfer",
+      ],
     },
     {
       title: "4. Cookies and Tracking Technologies",
@@ -598,7 +778,12 @@ export const privacyPolicy = {
     },
     {
       title: "6. Your Rights and Choices",
-      points: ["Depending on your location, you may have rights to:", "Access, update, or delete your data", "Opt out of marketing communications", "Restrict data processing under certain conditions"]
+      points: [
+        "Depending on your location, you may have rights to:",
+        "Access, update, or delete your data",
+        "Opt out of marketing communications",
+        "Restrict data processing under certain conditions",
+      ],
     },
     {
       title: "7. Third-Party Links",
@@ -611,10 +796,13 @@ export const privacyPolicy = {
     {
       title: "9. Contact Us",
       para: "For questions or concerns about this Privacy Policy, contact us at:",
-      points: ["Email: reachout@penthusiasts.com", "Phone Number: +91-90032 85687",]
-    }
-  ]
-}
+      points: [
+        "Email: reachout@penthusiasts.com",
+        "Phone Number: +91-90032 85687",
+      ],
+    },
+  ],
+};
 
 export const TOS = {
   desc: "Welcome to Penthusiasts! By accessing or using our website, you agree to comply with and be bound by these Terms of Service. Please read them carefully before using our platform.",
@@ -629,7 +817,11 @@ export const TOS = {
     },
     {
       title: "3. User Responsibilities",
-      points: ["You must be at least 18 years old to use our services.", "You are responsible for maintaining the confidentiality of your account.", "You agree not to engage in any prohibited activities, including but not limited to spamming, hacking, or distributing harmful content.",]
+      points: [
+        "You must be at least 18 years old to use our services.",
+        "You are responsible for maintaining the confidentiality of your account.",
+        "You agree not to engage in any prohibited activities, including but not limited to spamming, hacking, or distributing harmful content.",
+      ],
     },
     {
       title: "4. Intellectual Property",
@@ -637,7 +829,10 @@ export const TOS = {
     },
     {
       title: "5. User-Generated Content",
-      points: ["By submitting content to Penthusiasts, you grant us a non-exclusive, royalty-free license to use, modify, and display your content.", "You are responsible for ensuring that any content you submit does not infringe on third-party rights.",]
+      points: [
+        "By submitting content to Penthusiasts, you grant us a non-exclusive, royalty-free license to use, modify, and display your content.",
+        "You are responsible for ensuring that any content you submit does not infringe on third-party rights.",
+      ],
     },
     {
       title: "6. Limitation of Liability",
@@ -659,5 +854,5 @@ export const TOS = {
       title: "10. Contact Us",
       para: "For any questions or concerns, please contact us at reachout@penthusiasts.com.",
     },
-  ]
-}
+  ],
+};

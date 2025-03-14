@@ -53,7 +53,7 @@ export async function POST(req) {
     to: process.env.EMAIL_ID,
     subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: generateEmailTemplateForClient(messageForClient),
-    bcc: ["reachout@penthusiasts.com"],
+    // bcc: ["reachout@penthusiasts.com"],
   };
 
   // Function to fetch the PDF file from the URL and convert it to Base64

@@ -4,6 +4,7 @@ import ContentSolutions from "@/components/layouts/services/ContentSolutions";
 import Hero from "@/components/layouts/services/Hero";
 import HowWeMake from "@/components/layouts/services/HowWeMake";
 import WhyQualityContent from "@/components/layouts/services/WhyQualityContent";
+import { ServiceCard } from "@/components/UI/CardComponent";
 import {
     contentSolutions,
     contentSolutionsB2C,
@@ -11,6 +12,8 @@ import {
     HWEB2BContent,
     HWEB2CContent,
     HWEFounderContent,
+    serviceB2BClients,
+    serviceB2CClients,
     WQCB2BContent,
     WQCB2CContent,
     WQCFounderContent,
@@ -133,14 +136,16 @@ const Page = async ({ params }) => {
                             : WQCFounderContent
                 }
             />
-            <ClientSpotlight
-                subTitle={"Client Spotlights"}
-                title={service === "content-B2B"
-                    ? "Showcasing our B2B impactful client collaborations"
-                    : service === "content-B2C"
-                        ? "Showcasing our B2C impactful client collaborations"
-                        : "Showcasing our Founder's impactful client collaborations"}
-            />
+            {service !== "founders" && (
+                <ServiceCard subTitle={"Client Spotlights"}
+                    title={service === "content-B2B"
+                        ? "Showcasing our B2B impactful client collaborations"
+                        : service === "content-B2C"
+                            ? "Showcasing our B2C impactful client collaborations"
+                            : "Showcasing our Founder's impactful client collaborations"} data={
+                                service === "content-B2B" ? serviceB2BClients : serviceB2CClients
+                            } />
+            )}
             <BuildOurStory />
         </div>
     );

@@ -16,7 +16,7 @@ export const WorksModal = ({ title, data }) => {
           {title}
         </h4>
         <div
-          className="grid grid-cols-1 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          className="flex flex-wrap justify-center items-center w-full h-full gap-8 sm:gap-10 lg:gap-16"
           onClick={() => {
             setIsOpen(true);
             setThank(false);
@@ -25,7 +25,7 @@ export const WorksModal = ({ title, data }) => {
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-lg shadow-lg max-w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white"
+              className="rounded-lg shadow-lg w-72 sm:w-60 lg:w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white"
               onClick={() => {
                 setPdf(item.pdfUrl)
                 console.log(item.pdfUrl);

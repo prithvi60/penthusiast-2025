@@ -24,7 +24,13 @@ export function generateEmailTemplateForUser(mainContent, title) {
                 Founder & C.E.O,
             </p>
             <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #008080;">
-                <p style="display: flex; align-items: center; gap: 10px;">© ${new Date().getFullYear()}<a href="https://penthusiasts.com/" style="color: #007bff; text-decoration: none; padding-left: 0.5px; padding-right: 0.5px;">Penthusiasts<br></a>. All rights reserved.</p>
+                <p style="margin: 0;">
+                    © ${new Date().getFullYear()} 
+                    <span style="margin-left: 1.5px; margin-right: 1.5px;">
+                        <a href="https://penthusiasts.com/" style="color: #007bff; text-decoration: none;">Penthusiasts</a>
+                    </span>
+                    . All rights reserved.
+                </p>
             </div>
         </div>
           `;

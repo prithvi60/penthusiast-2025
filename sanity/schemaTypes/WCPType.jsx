@@ -15,7 +15,7 @@ export const WCPType = defineType({
             name: "type",
             type: "string",
             title: "Type",
-            validation: (rule) => rule.required(),
+            // validation: (rule) => rule.required(),
         }),
         defineField({
             name: "image",
