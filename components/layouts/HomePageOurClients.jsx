@@ -146,6 +146,14 @@ const HomePageOurClients = () => {
         beforeChange: (current, next) => {
             setIsActive(current)
         },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ],
     };
 
     // Detect if component is in viewport
@@ -188,7 +196,7 @@ const HomePageOurClients = () => {
                     <h1 className="text-2xl md:text-3xl font-semibold text-center">
                         Domains Covered
                     </h1>
-                    <div className="w-full max-h-[320px] md:max-h-[460px] py-8">
+                    <div className="w-full max-h-[340px] md:max-h-[460px] py-8">
                         <Slider ref={sliderRef} {...settings}>
                             {domains.map((list, idx) => (
                                 <div key={idx} className="py-2 outline-none">
@@ -212,7 +220,7 @@ const HomePageOurClients = () => {
                         Trusted by our clients and associations
                     </h3>
                 </div>
-                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3.5 gap-x-0 md:gap-10 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-[#E4E4E4] sm:before:absolute">
+                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3.5 gap-x-0 md:gap-10 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-text sm:before:absolute">
                     {ourClients.map((item, idx) => (
                         <div
                             key={idx}

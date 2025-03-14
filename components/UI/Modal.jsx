@@ -140,7 +140,7 @@ export const SpringModal = ({
             setIsOpen(false);
             setThank(false);
           }}
-          className="fixed inset-0 !z-[9999] grid w-full h-full p-8 overflow-y-scroll no_scrollbar cursor-pointer bg-[#0000001A] backdrop-blur place-items-center font-Montserrat"
+          className="fixed inset-0 !z-[9999] grid w-full h-full p-6 md:p-8 overflow-y-scroll no_scrollbar cursor-pointer bg-[#0000001A] backdrop-blur place-items-center font-Montserrat"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
@@ -150,7 +150,7 @@ export const SpringModal = ({
             className="relative w-full max-w-xl overflow-scroll no_scrollbar bg-white rounded-lg shadow-xl cursor-default md:p-8 md:max-w-xl no-scrollbar"
           >
             {thank ? (
-              <div className="w-full mt-5 space-y-2">
+              <div className="w-full mt-5 space-y-2 p-4 md:p-8">
                 <Image
                   title="thumbs up icon"
                   src={"/thumbs-up.gif"}
@@ -166,7 +166,7 @@ export const SpringModal = ({
                 </p>
               </div>
             ) : (
-              <div className="relative z-10 p-16">
+              <div className="relative z-10 p-6 md:p-16">
                 <div className="w-full mt-5 space-y-4">
                   <h3 className="text-base font-bold text-text md:text-lg">
                     One - Click Away!

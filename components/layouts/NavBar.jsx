@@ -22,7 +22,7 @@ const NavBar = () => {
           </Link>
         </div>
         {/* navbar menu lists */}
-        <div className="flex items-center gap-x-3.5 xl:gap-x-5">
+        <div className="flex items-center gap-0.5 sm:gap-x-3.5 xl:gap-x-5">
           <ul className="gap-x-1 lg:!flex items-center hidden">
             {navLinks.map((menu, idx) => (
               <DesktopMenu key={idx} menu={menu} />
