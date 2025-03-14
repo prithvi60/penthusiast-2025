@@ -660,7 +660,7 @@ export const serviceB2CClients = [
       "Website engagement increase",
     ],
     summary:
-      "our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
+      "Our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
     col: true,
     bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]"
   },

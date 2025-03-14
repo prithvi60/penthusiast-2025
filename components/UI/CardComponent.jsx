@@ -257,7 +257,7 @@ export const CardClient = ({
             </div>
             {!type ? (
                 <div
-                    className={`absolute shadow-lg rounded-lg p-3 top-56 sm:top-52 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
+                    className={`absolute shadow-lg rounded-lg py-3 pr-3 pl-6 top-56 sm:top-52 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
                         ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                 >
                     <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
@@ -272,15 +272,12 @@ export const CardClient = ({
                     className={`absolute shadow-lg rounded-lg p-3 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
                         ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                 >
-                    <div className="w-full flex justify-end items-center">
-                        <MdPersonAddAlt1 className="text-xl sm:text-2xl" />
-                    </div>
-                    <div className="flex justify-center gap-2 items-center">
+                    <div className="flex justify-center gap-2 items-center py-3.5">
                         <h4 className="text-lg md:text-xl tracking-wider font-semibold text-black">
                             {data[0].number}
                         </h4>
                         <FaArrowRight className="text-sm sm:text-base text-black" />
-                        <p className="text-2xl md:text-3xl tracking-wider font-extrabold">
+                        <p className="text-xl md:text-2xl tracking-wider font-extrabold">
                             {data[0].name}
                         </p>
                     </div>
@@ -305,10 +302,10 @@ export const CardClient = ({
                     className={`absolute shadow-lg rounded-lg py-3.5 px-4.5 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out
                     ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                 >
-                    <h4 className="text-base md:text-lg tracking-wider font-extrabold">
+                    <h4 className="text-base md:text-lg tracking-wider font-extrabold text-black">
                         {data[1].number}
                     </h4>
-                    <p className="text-xl md:text-2xl tracking-wider font-semibold text-black">
+                    <p className="text-xl md:text-2xl tracking-wider font-semibold">
                         {data[1].name}
                     </p>
                 </div>
@@ -320,12 +317,12 @@ export const CardClient = ({
                     ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                     >
                         <h4
-                            className={`text-xl md:text-2xl tracking-wider font-extrabold  ${data[2].number === "100,000+" ? "text-xl md:text-2xl " : "text-base md:text-lg text-black"}`}
+                            className={`tracking-wider font-extrabold  ${data[2].number === "100,000+" ? "text-xl md:text-2xl " : "text-base md:text-lg text-black"}`}
                         >
                             {data[2].number}
                         </h4>
                         <p
-                            className={` font-bold tracking-wide ${data[2].name === "Impression" ? "text-black text-base md:text-lg" : "text-xl md:text-2xl"}`}
+                            className={`font-bold tracking-wide ${data[2].name === "Impression" ? "text-black text-base md:text-lg" : "text-xl md:text-2xl"}`}
                         >
                             {data[2].name}
                         </p>
@@ -347,7 +344,7 @@ export const CardClient = ({
     );
 };
 
-export const ServiceCard = ({ col, subTitle, title, data }) => {
+export const ServiceCard = ({ subTitle, title, data }) => {
     return (
         <section className="w-full h-full space-y-12 md:space-y-24 padding relative">
             <div className="space-y-4 text-center">
@@ -360,7 +357,8 @@ export const ServiceCard = ({ col, subTitle, title, data }) => {
             </div>
             <div className="w-full relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-6 lg:gap-8 xl:gap-20">
                 {data.map((list, idx) => (
-                    <div key={idx}
+                    <div
+                        key={idx}
                         className={`relative w-full h-auto min-h-fit sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 md:p-10 space-y-5 md:space-y-8 max-w-xl mx-auto
                 group lg:group-hover:active touch:hover-none ${list.bgColor}`}
                     // onClick={handleClick}
@@ -383,14 +381,20 @@ export const ServiceCard = ({ col, subTitle, title, data }) => {
                                 {list.title}
                             </p>
                         </div>
+                        <p className="text-base sm:text-lg text-justify text-semibold text-[#181726]">
+                            {list.summary}
+                        </p>
                         <div className="space-y-4 md:space-y-4 bg-white p-6 rounded-lg">
                             <div className="space-y-2 md:space-y-4">
                                 <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
                                     Achievements:
                                 </h4>
-                                <ul className="list-disc pl-8 text-base sm:text-lg text-justify">
+                                <ul className="text-base sm:text-lg text-justify">
                                     {list.achievements.map((item, id) => (
-                                        <li key={id}>{item}</li>
+                                        <li key={id} className="flex items-start gap-x-3">
+                                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                            <p>{item}</p>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -398,16 +402,16 @@ export const ServiceCard = ({ col, subTitle, title, data }) => {
                                 <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
                                     Important Metrics:
                                 </h4>
-                                <ul className="list-disc pl-8 text-base sm:text-lg text-justify">
+                                <ul className="text-base sm:text-lg text-justify">
                                     {list.importantMetrics.map((item, id) => (
-                                        <li key={id}>{item}</li>
+                                        <li key={id} className="flex items-start gap-x-3">
+                                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                            <p>{item}</p>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
                         </div>
-                        <p className="text-base sm:text-lg text-justify text-[#181726]">
-                            {list.summary}
-                        </p>
                     </div>
                 ))}
             </div>

@@ -220,7 +220,7 @@ const HomePageOurClients = () => {
                         Trusted by our clients and associations
                     </h3>
                 </div>
-                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3.5 gap-x-0 md:gap-10 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-text sm:before:absolute">
+                <div className="w-full relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3.5 gap-x-0 md:gap-10 place-content-center place-items-center sm:before:top-0 md:before:-left-4 lg:before:-left-8 xl:before:-left-16 sm:before:h-full sm:before:w-1 sm:before:bg-[#E4E4E4] sm:before:absolute">
                     {ourClients.map((item, idx) => (
                         <div
                             key={idx}
