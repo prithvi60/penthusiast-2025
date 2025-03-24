@@ -54,8 +54,7 @@ export const Card = ({ bgColor, data, img, title, href }) => {
 
     return (
         <div
-            className={`relative w-full h-auto min-h-[420px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-10 space-y-3 max-w-lg mx-auto pb-20 cursor-pointer ${bgColor} 
-                group lg:group-hover:active touch:hover-none`}
+            className={`relative w-full h-auto min-h-[460px] sm:min-h-[490px] md:min-h-[580px] xl:min-h-[530px] shadow-lg rounded-lg overflow-hidden p-10 space-y-3 max-w-lg mx-auto pb-20 cursor-pointer ${bgColor} group lg:group-hover:active touch:hover-none`}
             onTouchStart={handleInteraction}
             onTouchEnd={handleInteractionEnd}
             onMouseEnter={handleInteraction}
@@ -85,7 +84,7 @@ export const Card = ({ bgColor, data, img, title, href }) => {
                     {data.lists.map((list, idx) => (
                         <li
                             key={idx}
-                            className="text-base lg:text-lg flex items-start gap-x-3"
+                            className="text-base xl:text-lg flex items-start gap-x-3"
                         >
                             <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
                             <h3 className="text-black">{list}</h3>

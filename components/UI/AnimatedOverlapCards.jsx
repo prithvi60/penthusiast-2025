@@ -17,14 +17,10 @@ const AnimatedOverlapCards = () => {
             <div className="w-full lg:w-1/2">
                 <div className="h-auto max-h-[720vh] lg:max-h-[650vh] xl:max-h-[560vh] space-y-10">
                     {timeline.map((item, idx) => {
-                        // const topPosition = `calc(${idx * timeline.length}% + ${idx * timeline.length}px)`;
                         return (
                             <div
                                 key={idx}
-                                className="sticky w-full max-w-xl mx-auto p-1 bg-white rounded-lg shadow-lg h-[340px] sm:h-[320px] xl:h-[380px] z-0 top-32 md:top-40"
-                            // style={{
-                            //     top: 0,
-                            // }}
+                                className="sticky w-full max-w-xl mx-auto p-1 bg-white rounded-lg shadow-lg h-[380px] sm:h-[350px] lg:h-[410px] z-0 top-32 md:top-40"
                             >
                                 <div
                                     className={`p-6 xl:p-10 flex flex-col justify-between items-start gap-6 h-full ${idx % 2 === 0
@@ -41,14 +37,48 @@ const AnimatedOverlapCards = () => {
                                         <h5 className="text-xl tracking-wide font-semibold sm:text-2xl xl:text-3xl">
                                             {item.title}
                                         </h5>
-                                        <ul className="">
-                                            {item.lists.map((list, id) => (
-                                                <li key={id} className="text-base xl:text-lg flex items-start gap-x-3">
-                                                    <GiFeather className={`text-base shrink-0 lg:text-lg mt-2 ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`} />
-                                                    <p>{list}</p>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        {item.para && (
+                                            <div
+                                                className={`${item.year === "2022-2024" ? "text-xs" : "text-sm"}  flex items-start gap-x-3`}
+                                            >
+                                                <GiFeather
+                                                    className={`${item.year === "2022-2024" ? "text-xs" : "text-sm"} shrink-0 lg:text-lg mt-2 ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
+                                                />
+                                                <p>{item.para}</p>
+                                            </div>
+                                        )}
+                                        {item.para2 && (
+                                            <div
+                                                className="text-xs flex items-start gap-x-3"
+                                            >
+                                                <GiFeather
+                                                    className={`text-xs shrink-0 lg:text-lg mt-2 ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
+                                                />
+                                                <p>{item.para2}</p>
+                                            </div>
+                                        )}
+                                        {item.lists && (
+                                            <ul className="">
+                                                {item.lists.map((list, id) => (
+                                                    <li key={id} className="block space-y-1 md:space-y-2">
+                                                        <h5 className={`${item.year === "2022-2024" ? "text-sm" : "text-base"} font-semibold`}>
+                                                            {list.listTitle}
+                                                        </h5>
+                                                        {list.points.map((point, i) => (
+                                                            <div
+                                                                key={i}
+                                                                className={`${item.year === "2022-2024" ? "text-xs" : "text-sm"} flex items-start gap-x-3 ml-3.5`}
+                                                            >
+                                                                <GiFeather
+                                                                    className={`${item.year === "2022-2024" ? "text-xs" : "text-sm"} shrink-0 lg:text-lg mt-2 ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
+                                                                />
+                                                                <p>{point}</p>
+                                                            </div>
+                                                        ))}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </div>
                                 </div>
                             </div>

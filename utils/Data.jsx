@@ -123,10 +123,10 @@ export const domains = [
 
 export const B2BContentHome = {
   lists: [
-    "Website Landing Page Content",
-    "Landing page copywriting",
-    "Blog Writing",
-    "LinkedIn Content Creation for Founders",
+    "Blog & Article Writing",
+    "Website & Landing Page Content Writing",
+    "SEO Content & Optimization",
+    "Social Media Content Creation & Management (Linkedin | Instagram | Facebook | YouTube)",
   ],
   tag: [
     { number: "1M+", name: "Impressions" },
@@ -137,10 +137,10 @@ export const B2BContentHome = {
 
 export const B2CContentHome = {
   lists: [
-    "Social Media Content Creation for Brands",
-    "LinkedIn Content Creation",
-    "Instagram Content Creation",
-    "Blogs & Articles",
+    "Blog & Article Writing",
+    "Website & Landing Page Content Writing",
+    "SEO Content & Optimization",
+    "Social Media Content Creation & Management (Linkedin | Instagram | Facebook | YouTube)",
   ],
   tag: [
     { number: "9K+", name: "Traffic" },
@@ -151,8 +151,9 @@ export const B2CContentHome = {
 
 export const SMContentHome = {
   lists: [
-    "Personal Branding Services",
-    "Linkedin, Instagram & Youtube for founders",
+    "Personal Branding Services for Founders",
+    "Linkedin Thought Leadership Content Creation",
+    "Instagram | Facebook | YouTube Content Creation & Management"
   ],
   tag: [
     { number: "10K+", name: "Followers - LinkedIn" },
@@ -233,44 +234,31 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            Content support for AI modules of SaaS products
+            <span className="font-bold px-1">Diverse Sectors:</span>Successfully delivered <span className="font-bold px-1">1,000+</span>projects across <span className="font-bold px-1">25+</span> domains, spanning B2B and B2C industries.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">1M</span>impressions on
-            bitsCrunch's website contributing to blog traffic
+            <span className="font-bold px-1">Content at Scale:</span>Published<span className="font-bold px-1">5,000+</span>content pieces, reinforcing our expertise in digital storytelling and brand communication.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            Assisted<span className="font-bold px-1">25+</span>Founders &
-            Thought leaders with their Social Media presence & Personal
-            Branding.
+            <span className="font-bold px-1">Overall Digital Influence: </span>Generated a total of<span className="font-bold px-1">2M+</span>impressions through website content and blogs, amplifying brand visibility for our clients
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            Delivered over<span className="font-bold px-1">1000</span>projects
-            across diverse domains with B2B and B2C sectors over the past 7
-            years.
+            <span className="font-bold px-1">Sports & Apparel:</span>Created high-impact social media content for<span className="font-bold px-1">T10 Sports,</span>a leading sportswear brand, achieving <span className="font-bold px-1">100K+</span>impressions on LinkedIn.
           </li>
         ),
-      },
-      {
-        para: (
-          <li className="text-base md:text-lg">
-            Created and published<span className="font-bold px-1">5000+</span>
-            content pieces.
-          </li>
-        ),
-      },
+      }
     ],
   },
   {
@@ -278,35 +266,24 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">9k+</span>Organic traffic on a
-            client's website in the beauty services sector
+            <span className="font-bold px-1">Blockchain & Web3:</span>Helped<span className="font-bold px-1">bitsCrunch,</span>a blockchain analytics company, achieve<span className="font-bold px-1">1M+</span>impressions on its website through insightful blog content in the Web3 space.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">10k</span>followers on a client
-            company's LinkedIn handle in 2 years of engagement
+            <span className="font-bold px-1">Beauty & Wellness:</span>Boosted<span className="font-bold px-1">Vurve Salon’s</span>online presence by generating<span className="font-bold px-1">9K+</span>organic visitors through strategic blog content for the beauty services sector.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            Garnered<span className="font-bold px-1">2M+</span>impressions on
-            Website Content & Blogs
+            <span className="font-bold px-1">FinTech:</span> Led a content-driven LinkedIn strategy for<span className="font-bold px-1">Congruent Solutions,</span>a US-based retirement plan administration services and technology solutions provider, helping them gain<span className="font-bold px-1">10K+</span>followers in just two years.
           </li>
         ),
-      },
-      {
-        para: (
-          <li className="text-base md:text-lg">
-            Achieved<span className="font-bold px-1">10K+</span>impressions on
-            Social Media Content for Businesses
-          </li>
-        ),
-      },
+      }
     ],
   },
 ];
@@ -375,75 +352,76 @@ export const reviews = [
 export const timeline = [
   {
     year: "2017",
-    title: "The Foundation",
+    title: "The Spark - Where It All Began",
+    para: "Poornima launched Penthusiasts with a simple yet powerful belief - “Content is King”.",
     lists: [
-      "Content is the King",
-      "Established by Poornima TM",
-      "Blogs and article writing for B2C businesses - Derby menswear",
-      "Facebook & Instagram content creation",
+      {
+        listTitle: "The first steps included:",
+        points: ["Writing blogs and articles for B2C brands like Derby Menswear",]
+      }
     ],
   },
   {
     year: "2018",
-    title: "Expanding Horizons",
+    title: "The Leap into B2B",
     lists: [
-      "First B2B Fintech Blog Writing project",
-      "Product Description Writing for D2C/E-commerce",
+      {
+        listTitle: "Penthusiasts expanded into the corporate world with:",
+        points: ["The first B2B fintech blog project for Cloudbankin", "Product description writing diving deeper into brand storytelling"]
+      }
     ],
   },
   {
     year: "2019",
-    title: "Branding for Leaders",
+    title: "Building Brands, One Story at a Time",
     lists: [
-      "First Personal Branding Project for Founders",
-      "Facebook Content Creation for Author Rakhi Kapoor & Vijay Kapoor",
+      {
+        listTitle: "This year marked the entry into personal branding, working with:",
+        points: ["Vijay Kapoor & Rakhi Kapoor to shape their digital presence with Facebook Content Creation", "A new B2C win - Vurve Salon blog writing"]
+      }
     ],
   },
   {
     year: "2020 - 2021",
-    title: "Navigating COVID - Govt Content & Digital Outreach",
+    title: "Making Waves in the Government Sector",
     lists: [
-      "First Govt Project with TN MSME Trade : Website Content Writing,Facebook Content Creation",
-      "Investment Promotion Bureau:  Website Content Writing,Facebook Content Creation",
+      {
+        listTitle: "A proud milestone:",
+        points: ["Penthusiasts secured its first government project with Tamil Nadu"]
+      },
+      {
+        listTitle: "MTIPB (Trade & Investment Promotion Bureau):",
+        points: ["Website content writing to support public initiatives", "Facebook content creation to enhance outreach"]
+      }
     ],
   },
   {
-    year: "2021-2024",
-    title: "Web3 Content Creation",
+    year: "2021",
+    title: "Embracing the Future with Web3.0 & Tec",
     lists: [
-      "First Web3.o Project with bitsCrunch - Website Content Writing & Blog Writing, PR",
-      "Article Writing, Social Media Copies",
+      {
+        listTitle: "Venturing into the next-gen digital world, Penthusiasts collaborated with:",
+        points: ["bitsCrunch for Web3.0 website & blog content", "Xyma Analytics for LinkedIn & Instagram content strategies"]
+      }
     ],
   },
   {
-    year: "2022",
-    title: "Team Transition",
-    lists: ["Transition of team from freelancers to employees on payroll"],
-  },
-  {
-    year: "2023",
-    title: "Team-Powered Impact Writing",
+    year: "2022-2024",
+    title: "Growth, Balance & Milestones",
+    para: "Penthusiasts transitioned from freelancers to a strong in-house team, focusing on both growth and well-being.",
+    para2: "Expanded as a 6 member team to take on bigger, more diverse projects Introduced wellness holidays to encourage work-life balance Launched employee wellness programs to foster a healthy work environment",
     lists: [
-      "Team of 6",
-      "Bitscrunch 1M impression milestone",
-      "10k impressions on T10 ",
-    ],
-  },
-  {
-    year: "2024",
-    title: "7-Year Content Dominance",
-    lists: [
-      "7 years of operations",
-      "1000+ Content Delivery",
-      "500+ Projects",
-      "25+ domains",
+      {
+        listTitle: "By 2024, Penthusiasts celebrated seven years of excellence with:",
+        points: ["1000+ projects delivered", "Expertise across 25+ domains"]
+      }
     ],
   },
   {
     year: "2025",
-    title: "Stepping Up",
-    lists: ["Stepping into the 8th year with a fresh perspective"],
-  },
+    title: "The Next Chapter - Bigger, Bolder, and Better!",
+    para: "With fresh perspectives and unstoppable momentum, Penthusiasts steps into its 8th year, ready to redefine content marketing once again."
+  }
 ];
 
 // services page
