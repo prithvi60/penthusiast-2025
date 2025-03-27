@@ -51,7 +51,7 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"${email}" <${"support@webibee.com"}>`,
     to: process.env.EMAIL_ID,
-    subject: `New Customer Form Submitted - ${capitalized} Page`,
+    subject: `New Customer Form Submitted - ${capitalized}`,
     html: generateEmailTemplateForClient(messageForClient),
     // bcc: ["reachout@penthusiasts.com"],
   };

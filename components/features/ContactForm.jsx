@@ -77,7 +77,7 @@ export const ContactForm = () => {
                         required
                         value={formData.name || ""}
                         onChange={handleChange}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none bg-white"
                     />
                 </div>
                 <div className="gap-2 flex flex-col">
@@ -91,7 +91,7 @@ export const ContactForm = () => {
                         value={formData.email || ""}
                         onChange={handleChange}
                         required
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none bg-white"
                     />
                 </div>
                 <div className="gap-2 flex flex-col">
@@ -105,7 +105,7 @@ export const ContactForm = () => {
                         value={formData.message || ""}
                         onChange={handleChange}
                         rows={3}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none bg-white"
                     />
                 </div>
                 <button

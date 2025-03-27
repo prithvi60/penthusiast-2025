@@ -386,7 +386,7 @@ export const ServiceCard = ({ subTitle, title, data }) => {
                         <div className="space-y-4 md:space-y-4 bg-white p-6 rounded-lg">
                             <div className="space-y-2 md:space-y-4">
                                 <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
-                                    Achievements:
+                                    Results:
                                 </h4>
                                 <ul className="text-base sm:text-lg text-justify">
                                     {list.achievements.map((item, id) => (
@@ -399,7 +399,7 @@ export const ServiceCard = ({ subTitle, title, data }) => {
                             </div>
                             <div className="space-y-2 md:space-y-4">
                                 <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
-                                    Important Metrics:
+                                    ROI:
                                 </h4>
                                 <ul className="text-base sm:text-lg text-justify">
                                     {list.importantMetrics.map((item, id) => (

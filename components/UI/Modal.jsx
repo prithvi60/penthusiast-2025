@@ -8,6 +8,7 @@ export const WorksModal = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [thank, setThank] = useState(false);
   const [pdf, setPdf] = useState("");
+  const [field, setField] = useState("");
 
   return (
     <div>
@@ -25,21 +26,23 @@ export const WorksModal = ({ title, data }) => {
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-lg shadow-lg w-72 sm:w-60 lg:w-72 overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white"
+              className="rounded-lg shadow-lg w-72 sm:w-60 lg:w-72 h-[350px] hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white overflow-hidden flex flex-col justify-between"
               onClick={() => {
                 setPdf(item.pdfUrl)
-                console.log(item.pdfUrl);
-
+                setField(item.field)
               }}
             >
-              <Image
-                title={item.altText}
-                src={item.imageUrl}
-                alt={item.altText}
-                width={300}
-                height={350}
-                className="object-contain object-center"
-              />
+              <div className="w-full h-64 flex items-center justify-center">
+                <Image
+                  title={item.altText}
+                  src={item.imageUrl}
+                  alt={item.altText}
+                  width={300}
+                  height={256}
+                  quality={85}
+                  className="object-contain object-center w-full h-full rounded-t-lg"
+                />
+              </div>
               <div className="flex justify-between items-center p-3.5">
                 <h5 className="text-xl font-medium tracking-wider md:text-2xl">
                   {item.field}
@@ -55,7 +58,7 @@ export const WorksModal = ({ title, data }) => {
       <SpringModal
         isOpen={isOpen}
         setIsOpen={setIsOpen}
-        title={title}
+        title={field}
         thank={thank}
         setThank={setThank}
         pdf={pdf}
