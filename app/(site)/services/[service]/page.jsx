@@ -53,7 +53,7 @@ const HWEB2C = () => (
 const TitleFounder = () => (
     <h2 className="text-3xl sm:text-5xl lg:text-[64px] md:!leading-20 tracking-wider font-bold">
         <span className="font-extrabold text-text">Personal Branding</span> through
-        powerful social media
+        powerful social media presence
     </h2>
 );
 
@@ -88,7 +88,7 @@ const Page = async ({ params }) => {
                 }
                 desc={
                     service === "content-B2B"
-                        ? "We craft compelling B2B content that builds trust, engages decision-makers, and drives conversions. From blogs to website copy, we help businesses communicate effectively."
+                        ? "We craft compelling B2B content that builds trust, engages decision-makers, and drives traffic. From blogs to website copy, we help businesses communicate effectively."
                         : service === "content-B2C"
                             ? "We create compelling B2C content that captures attention, builds brand loyalty, and drives engagement. From social media to blogs, we help brands connect with their audience effectively."
                             : "We empower founders to build credibility, expand their reach, and create meaningful connections. From LinkedIn to YouTube, we craft content that positions you as a leader in your industry."

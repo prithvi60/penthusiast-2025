@@ -15,7 +15,7 @@ const AnimatedOverlapCards = () => {
 
             {/* Timeline Cards */}
             <div className="w-full lg:w-1/2">
-                <div className="h-auto max-h-[720vh] lg:max-h-[650vh] xl:max-h-[560vh]space-y-12 md:space-y-24 xl:space-y-10">
+                <div className="h-auto max-h-[720vh] lg:max-h-[660vh] xl:max-h-[570vh]space-y-12 md:space-y-24 xl:space-y-10">
                     {timeline.map((item, idx) => {
                         return (
                             <div
@@ -55,6 +55,16 @@ const AnimatedOverlapCards = () => {
                                                     className={`text-xs shrink-0 lg:text-lg ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
                                                 />
                                                 <p>{item.para2}</p>
+                                            </div>
+                                        )}
+                                        {item.para3 && (
+                                            <div
+                                                className="text-xs flex items-start gap-x-3"
+                                            >
+                                                <GiFeather
+                                                    className={`text-xs shrink-0 lg:text-lg ${idx % 2 === 0 ? "text-[#603913]" : "text-[#00A651]"}`}
+                                                />
+                                                <p>{item.para3}</p>
                                             </div>
                                         )}
                                         {item.lists && (

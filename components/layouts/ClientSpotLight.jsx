@@ -62,7 +62,7 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                         data={bitsCrunchTags}
                         icon={"/client-5.svg"}
                         img={"/spot-2.svg"}
-                        title={"Blockchain Analytics Content Strategy"}
+                        title={"Blockchain Analytics Content Creation & Strategy"}
                         href="https://bitscrunch.com"
                         para="Our team collaborated closely with various internal departments to
                     understand bitsCrunch's operations. We developed a clear strategy,

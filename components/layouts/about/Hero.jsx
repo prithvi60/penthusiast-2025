@@ -15,7 +15,7 @@ const Hero = () => {
             </h2>
             <p className="text-base md:text-xl">
                 Great content isn't just about words—it's about impact. We craft
-                strategic, high-quality content that builds trust and drives results.
+                strategic, high-quality content that builds trust and drives traffic.
             </p>
             <div className="w-full flex justify-center items-center">
                 <GetStartButton />

@@ -12,7 +12,7 @@ const OurGuidingValues = () => {
                 {ourGuides.map((guide, index) => (
                     <div
                         key={index}
-                        className={`w-full h-60 lg:h-[290px] xl:h-64 flex flex-col justify-between items-start shadow-lg p-5 rounded-lg ${guide.bgColor}`}
+                        className={`w-full h-60 lg:h-[290px] flex flex-col justify-between items-start shadow-lg p-5 rounded-lg ${guide.bgColor}`}
                     >
                         <div className="flex gap-2">
                             <GiFeather className="text-base shrink-0 lg:text-lg mt-1" />

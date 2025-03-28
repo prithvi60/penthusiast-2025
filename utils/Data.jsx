@@ -153,7 +153,7 @@ export const SMContentHome = {
   lists: [
     "Personal Branding Services for Founders",
     "Linkedin Thought Leadership Content Creation",
-    "Instagram | Facebook | YouTube Content Creation & Management"
+    "Instagram | Facebook | YouTube Content Creation & Management",
   ],
   tag: [
     { number: "10K+", name: "Followers - LinkedIn" },
@@ -234,31 +234,45 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Diverse Sectors:</span>Successfully delivered <span className="font-bold px-1">1,000+</span>projects across <span className="font-bold px-1">25+</span> domains, spanning B2B and B2C industries.
+            <span className="font-bold px-1">Diverse Sectors:</span>Successfully
+            delivered <span className="font-bold px-1">1,000+</span>projects
+            across <span className="font-bold px-1">25+</span> domains, spanning
+            B2B and B2C industries.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Content at Scale:</span>Published<span className="font-bold px-1">5,000+</span>content pieces, reinforcing our expertise in digital storytelling and brand communication.
+            <span className="font-bold px-1">Content at Scale:</span>Published
+            <span className="font-bold px-1">5,000+</span>content pieces,
+            reinforcing our expertise in digital storytelling and brand
+            communication.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Overall Digital Influence: </span>Generated a total of<span className="font-bold px-1">2M+</span>impressions through website content and blogs, amplifying brand visibility for our clients
+            <span className="font-bold px-1">Overall Digital Influence: </span>
+            Generated a total of<span className="font-bold px-1">2M+</span>
+            impressions through website content and blogs, amplifying brand
+            visibility for our clients
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Sports & Apparel:</span>Created high-impact social media content for<span className="font-bold px-1">T10 Sports,</span>a leading sportswear brand, achieving <span className="font-bold px-1">100K+</span>impressions on LinkedIn.
+            <span className="font-bold px-1">Sports & Apparel:</span>Created
+            high-impact social media content for
+            <span className="font-bold px-1">T10 Sports,</span>a leading
+            sportswear brand, achieving{" "}
+            <span className="font-bold px-1">100K+</span>impressions on
+            LinkedIn.
           </li>
         ),
-      }
+      },
     ],
   },
   {
@@ -266,24 +280,38 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Blockchain & Web3:</span>Helped<span className="font-bold px-1">bitsCrunch,</span>a blockchain analytics company, achieve<span className="font-bold px-1">1M+</span>impressions on its website through insightful blog content in the Web3 space.
+            <span className="font-bold px-1">Blockchain & Web3:</span>Helped
+            <span className="font-bold px-1">bitsCrunch,</span>a blockchain
+            analytics company, achieve
+            <span className="font-bold px-1">1M+</span>impressions on its
+            website through insightful blog content in the Web3 space.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Beauty & Wellness:</span>Boosted<span className="font-bold px-1">Vurve Salon’s</span>online presence by generating<span className="font-bold px-1">9K+</span>organic visitors through strategic blog content for the beauty services sector.
+            <span className="font-bold px-1">Beauty & Wellness:</span>Boosted
+            <span className="font-bold px-1">Vurve Salon’s</span>online presence
+            by generating<span className="font-bold px-1">9K+</span>organic
+            visitors through strategic blog content for the beauty services
+            sector.
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">FinTech:</span> Led a content-driven LinkedIn strategy for<span className="font-bold px-1">Congruent Solutions,</span>a US-based retirement plan administration services and technology solutions provider, helping them gain<span className="font-bold px-1">10K+</span>followers in just two years.
+            <span className="font-bold px-1">FinTech:</span> Led a
+            content-driven LinkedIn strategy for
+            <span className="font-bold px-1">Congruent Solutions,</span>a
+            US-based retirement plan administration services and technology
+            solutions provider, helping them gain
+            <span className="font-bold px-1">10K+</span>followers in just two
+            years.
           </li>
         ),
-      }
+      },
     ],
   },
 ];
@@ -347,6 +375,34 @@ export const reviews = [
     name: "LYFnGO",
     position: "LYFnGo",
   },
+  {
+    avatar: "/client-4.png",
+    review:
+      "Penthusiasts has a dedicated and hardworking team. They are capable of learning any new technology and domain within a short period of time and produce quality content for the respective niche",
+    name: "Mani Parthasarathy",
+    position: "Director - Cloudbankin",
+  },
+  {
+    avatar: "/tripleDart.png",
+    review:
+      "Penthusiasts has been a reliable partner for Tripledart helping us scale content volumes and quality. Vaanathi's ace team of writers supported our content marketing for a SaaS company that offers a global employment solution. Within a few weeks, the team nailed our expectations around content quality and delivery. Thanks for your efforts",
+    name: "Tripledart",
+    position: "Tripledart",
+  },
+  {
+    avatar: "/client-5.png",
+    review:
+      "As a Founder of an NFT forensics firm, our collaboration with Penthusiasts team has been nothing short of transformative. Their prowess in sculpting compelling narratives for our digital platforms — from insightful blogs to dynamic social media content — has markedly bolstered our online stature. Their keen understanding of our specialized market, coupled with their flair for distilling intricate concepts into engaging discourse, is remarkable. Through their innovative approaches, we've not only expanded our digital footprint but also captivated our audience. Their dedication to excellence and agility in navigating the ever-evolving digital landscape is commendable. I unequivocally endorse Penthusiast for any enterprise aspiring to leave a lasting digital imprint.",
+    name: "Bitscrunch",
+    position: "Bitscrunch",
+  },
+  {
+    avatar: "/client-11.png",
+    review:
+      "It's a pleasure working with Penthusiasts! I remember reaching out to Poornima when I was looking for an expert to write blog posts for Vurve Salon. I wasn't sure if anyone I knew was familiar with the beauty industry. Poornima came on board to support me, and this journey has been a collaborative learning experience. She and her team always bring in new ideas, concepts, and keyword-related topics. Her consultative approach and drive to excel continue to inspire me. Excited to continue this successful collaboration and explore even more creative possibilities together!",
+    name: "Manoj Samuel",
+    position: "Vurve",
+  },
 ];
 
 export const timeline = [
@@ -357,8 +413,10 @@ export const timeline = [
     lists: [
       {
         listTitle: "The first steps included:",
-        points: ["Writing blogs and articles for B2C brands like Derby Menswear",]
-      }
+        points: [
+          "Writing blogs and articles for B2C brands like Derby Menswear",
+        ],
+      },
     ],
   },
   {
@@ -367,8 +425,11 @@ export const timeline = [
     lists: [
       {
         listTitle: "Penthusiasts expanded into the corporate world with:",
-        points: ["The first B2B fintech blog project for Cloudbankin", "Product description writing diving deeper into brand storytelling"]
-      }
+        points: [
+          "The first B2B fintech blog project for Cloudbankin",
+          "Product description writing diving deeper into brand storytelling",
+        ],
+      },
     ],
   },
   {
@@ -376,9 +437,13 @@ export const timeline = [
     title: "Building Brands, One Story at a Time",
     lists: [
       {
-        listTitle: "This year marked the entry into personal branding, working with:",
-        points: ["Vijay Kapoor & Rakhi Kapoor to shape their digital presence with Facebook Content Creation", "A new B2C win - Vurve Salon blog writing"]
-      }
+        listTitle:
+          "This year marked the entry into personal branding, working with:",
+        points: [
+          "Vijay Kapoor & Rakhi Kapoor to shape their digital presence with Facebook Content Creation",
+          "A new B2C win - Vurve Salon blog writing",
+        ],
+      },
     ],
   },
   {
@@ -387,41 +452,54 @@ export const timeline = [
     lists: [
       {
         listTitle: "A proud milestone:",
-        points: ["Penthusiasts secured its first government project with Tamil Nadu"]
+        points: [
+          "Penthusiasts secured its first government project with Tamil Nadu",
+        ],
       },
       {
         listTitle: "MTIPB (Trade & Investment Promotion Bureau):",
-        points: ["Website content writing to support public initiatives", "Facebook content creation to enhance outreach"]
-      }
+        points: [
+          "Website content writing to support public initiatives",
+          "Facebook content creation to enhance outreach",
+        ],
+      },
     ],
   },
   {
     year: "2021",
-    title: "Embracing the Future with Web3.0 & Tec",
+    title: "Embracing the Future with Web3.0 & Deep Tech",
     lists: [
       {
-        listTitle: "Venturing into the next-gen digital world, Penthusiasts collaborated with:",
-        points: ["bitsCrunch for Web3.0 website & blog content", "Xyma Analytics for LinkedIn & Instagram content strategies"]
-      }
+        listTitle:
+          "Venturing into the next-gen digital world, Penthusiasts collaborated with:",
+        points: [
+          "bitsCrunch for Web3.0 website, blog content, PR & thought leadership",
+          "Xyma Analytics for LinkedIn content creation & Instagram content strategies",
+        ],
+      },
     ],
   },
   {
     year: "2022-2024",
     title: "Growth, Balance & Milestones",
     para: "Penthusiasts transitioned from freelancers to a strong in-house team, focusing on both growth and well-being.",
-    para2: "Expanded as a 6 member team to take on bigger, more diverse projects Introduced wellness holidays to encourage work-life balance Launched employee wellness programs to foster a healthy work environment",
+    para2:
+      "Expanded as a 6 member team to take on bigger, more diverse projects. Introduced wellness holidays to encourage work-life balance.",
+    para3:
+      "Launched employee wellness programs to foster a healthy work environment",
     lists: [
       {
-        listTitle: "By 2024, Penthusiasts celebrated seven years of excellence with:",
-        points: ["1000+ projects delivered", "Expertise across 25+ domains"]
-      }
+        listTitle:
+          "By 2024, Penthusiasts celebrated seven years of excellence with:",
+        points: ["1000+ projects delivered", "Expertise across 25+ domains"],
+      },
     ],
   },
   {
     year: "2025",
     title: "The Next Chapter - Bigger, Bolder, and Better!",
-    para: "With fresh perspectives and unstoppable momentum, Penthusiasts steps into its 8th year, ready to redefine content marketing once again."
-  }
+    para: "With fresh perspectives and unstoppable momentum, Penthusiasts steps into its 8th year, ready to redefine content marketing once again.",
+  },
 ];
 
 // services page
@@ -536,9 +614,8 @@ export const WQCB2CContent = [
 ];
 
 export const contentSolutionsSM = [
-  { icon: "/icon-1.svg", desc: "Personal Branding Services" },
-  { icon: "/icon-2.svg", desc: "Linkedin, Instagram & Youtube for founders" },
-  { icon: "/icon-3.svg", desc: "Blog Writing" },
+  { icon: "/icon-1.svg", desc: "Personal Branding Consultation" },
+  { icon: "/icon-2.svg", desc: "Personal Branding across all social media" }
 ];
 
 export const HWEFounderContent = [
@@ -603,7 +680,7 @@ export const serviceB2BClients = [
     summary:
       "Our team collaborated closely with various internal departments to understand bitsCrunch's operations. We developed a clear strategy, combining subject knowledge with consistency and patience. Content creation spanned multiple formats, including informative blogs, PRs, C-suite interviews, and podcasts, contributing to the client's growth in the blockchain and NFT space.",
     col: false,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]"
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]",
   },
   {
     icon: "/client-1.svg",
@@ -620,7 +697,7 @@ export const serviceB2BClients = [
     summary:
       "Our team developed and executed a strategic content plan focused on thought leadership, leveraging Congruent Solutions' expertise in retirement technology. By creating insightful and engaging LinkedIn posts, the initiative successfully boosted organic traffic and positioned the company as a trusted voice in its industry.",
     col: true,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]"
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]",
   },
 ];
 
@@ -640,7 +717,7 @@ export const serviceB2CClients = [
     summary:
       "Our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
     col: true,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]"
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]",
   },
   {
     icon: "/client-14.png",
@@ -657,7 +734,7 @@ export const serviceB2CClients = [
     summary:
       "Over two years, we delivered well-researched, engaging content tailored to trends and sporting events. We collaborated closely with internal teams, developed a clear strategy, and maintained consistency in content delivery, resulting in improved brand awareness and positioning as an authority in the sports apparel sector.",
     col: false,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]"
+    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]",
   },
 ];
 

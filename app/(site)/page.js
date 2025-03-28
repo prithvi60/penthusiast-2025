@@ -52,7 +52,7 @@ export default function Home() {
       <Hero />
       <ExploreOurServices
         subTitle={"Explore our services"}
-        title={"From Websites to Social Media—We Write It All!"}
+        title={"From Website Copies to Social Media Content—We Do It All!"}
       />
       <WhoWeAre />
       <HomePageOurClients />
