@@ -10,11 +10,11 @@ const NavBar = () => {
   return (
     <header className="px-5 md:px-10 py-6 md:py-4 text-lg z-50 sticky inset-0 flex items-center backdrop-blur-md bg-white bg-opacity-30">
       <nav className="flex justify-between items-center w-full">
-        <div className="md:w-36 w-32 relative h-16">
+        <div className="md:w-40 w-32 relative h-20">
           <Link href="/" title="logo" >
             <Image
               title={"logo"}
-              src={"https://ik.imagekit.io/webibee/penthusiast_logo_full.png?updatedAt=1741588644745"}
+              src={"https://ik.imagekit.io/webibee/penthusiasts%20logo.svg?updatedAt=1743161885549"}
               alt="penthusiasts logo"
               fill
               className="object-contain object-center"

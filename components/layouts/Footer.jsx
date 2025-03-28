@@ -17,8 +17,8 @@ const Footer = () => {
                         className="flex items-center gap-2"
                     >
                         <Image title={"logo"}
-                            src={"https://ik.imagekit.io/webibee/penthusiast_logo_full.png?updatedAt=1741588644745"}
-                            alt="penthusiasts logo" width={150} height={150} className="object-contain object-center" />
+                            src={"https://ik.imagekit.io/webibee/penthusiasts%20logo.svg?updatedAt=1743161885549"}
+                            alt="penthusiasts logo" width={180} height={180} className="object-contain object-center" />
                     </Link>
                     <ul className="flex md:hidden items-center gap-2.5">
                         {socialLinks.map((list, idx) => (
