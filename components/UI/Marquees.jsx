@@ -40,12 +40,16 @@ export const OurClientsReviews = () => {
             <div className="w-full relative max-w-7xl mx-auto slider-container">
                 <Slider {...settings} className="explore-slider">
                     {reviews.map((item, idx) => (
-                        <div key={idx} className="!flex items-start gap-8 shadow-lg p-5 rounded-lg w-full h-fit md:h-96 xl:h-[410px] my-8 bg-white">
-                            <div className="size-20 sm:size-24 shrink-0 relative overflow-hidden w-[25%] md:w-1/5">
-                                <Image title="icon" src={item.avatar} alt="icon" fill className={`rounded-full object-contain border-2 border-green-lighter object-center p-1 ${item.name === "XYMA" && "bg-green-darker"}`} />
+                        <div key={idx} className="!flex items-start gap-8 shadow-lg p-5 rounded-lg w-full h-[300px] my-8 bg-white">
+                            <div className="w-[25%] md:w-1/5">
+                                <div className="size-20 sm:size-24 shrink-0 relative overflow-hidden">
+                                    <Image title="icon" src={item.avatar} alt="icon" fill className={`rounded-full object-contain border-2 border-green-lighter object-center p-1 ${item.name === "XYMA" && "bg-green-darker"}`} />
+                                </div>
                             </div>
                             <div className="space-y-3.5 flex flex-col justify-between h-full items-start w-[75%] md:w-4/5">
-                                <p className="text-sm">{item.review}</p>
+                                <div className="max-h-40 overflow-y-scroll no_scrollbar">
+                                    <p className="text-sm">{item.review}</p>
+                                </div>
                                 <div>
                                     <h4 className="text-base md:text-lg">{item.name}</h4>
                                     <p className="text-base md:text-lg text-[#848484]">{item.position}</p>

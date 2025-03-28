@@ -6,6 +6,7 @@ import Faq from "@/components/layouts/Faq";
 import Hero from "@/components/layouts/Hero";
 import WhoWeAre from "@/components/layouts/WhoWeAre";
 import { ClientSpotlight } from "@/components/layouts/ClientSpotLight";
+import { Pricing } from "@/components/layouts/Pricing";
 
 export default function Home() {
   const jsonLd = {
@@ -62,6 +63,7 @@ export default function Home() {
         title={"Showcasing our most impactful client collaborations"}
       />
       <Faq />
+      <Pricing />
       <BuildOurStory />
     </main>
   );
