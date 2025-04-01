@@ -31,8 +31,8 @@ const TitleB2B = () => (
 
 const HWEB2B = () => (
     <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
-        How we make an{" "}
-        <span className="font-extrabold text-text px-3">Impact on B2B?</span>{" "}
+        How do we make an{" "}
+        <span className="font-extrabold text-text px-3">impact on B2B?</span>{" "}
     </h2>
 );
 
@@ -45,8 +45,8 @@ const TitleB2C = () => (
 
 const HWEB2C = () => (
     <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
-        How we make an{" "}
-        <span className="font-extrabold text-text px-3">Impact on B2C?</span>{" "}
+        How do we make an{" "}
+        <span className="font-extrabold text-text px-3">impact on B2C?</span>{" "}
     </h2>
 );
 
@@ -122,7 +122,7 @@ const Page = async ({ params }) => {
                     service === "content-B2B"
                         ? HWEB2BContent
                         : service === "content-B2C"
-                            ? HWEB2CContent
+                            ? HWEB2BContent
                             : HWEFounderContent
                 }
             />
@@ -132,7 +132,7 @@ const Page = async ({ params }) => {
                     service === "content-B2B"
                         ? WQCB2BContent
                         : service === "content-B2C"
-                            ? WQCB2CContent
+                            ? WQCB2BContent
                             : WQCFounderContent
                 }
             />

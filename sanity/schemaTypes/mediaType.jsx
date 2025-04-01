@@ -5,12 +5,12 @@ export const mediaType = defineType({
     title: "Media",
     type: "document",
     fields: [
-        // defineField({
-        //     name: "title",
-        //     type: "string",
-        //     title: "Title",
-        //     validation: (rule) => rule.required(),
-        // }),
+        defineField({
+            name: "title",
+            type: "string",
+            title: "Title",
+            validation: (rule) => rule.required(),
+        }),
         defineField({
             name: "image",
             type: "image",

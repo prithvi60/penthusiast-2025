@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaFacebook,
   FaInstagram,
@@ -165,38 +166,58 @@ export const SMContentHome = {
 export const accordionItems = [
   {
     title:
-      "What sets your content marketing agency apart from others in the industry?",
+      "What sets Penthusiasts apart from others in the industry?",
     content:
-      "We stand out by offering tailored content solutions, from writing diverse content types to providing comprehensive content audits, all designed to meet your unique requirements.",
+      (<p className="p-4 bg-white rounded-b-lg text-gray-700">We stand out by offering tailored content solutions, from writing diverse content types to providing comprehensive content audits, all designed to meet your unique requirements.</p>),
   },
   {
     title:
-      "Can we customize your services & avail content requirements based on our need?",
+      "Can we customize your services and tailor content requirements based on our needs?",
     content:
-      "TWe are adaptable, and are always open to customizing our services to best suit your needs.",
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">Absolutely! Our content solutions are fully customizable to align with your unique brand voice, target audience, and specific marketing goals.</p>,
   },
   {
     title:
       "Do you specialize in a particular content niche, or can you handle a wide range of industries?",
     content:
-      "We are versatile and skilled in crafting content for various sectors and in different forms like blogs, social media, PR articles, and more, ensuring a personalized approach for your business.",
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">We excel in a wide range of industries, from technology and finance to lifestyle and healthcare, providing niche-specific, high-quality content that resonates with your audience.</p>,
   },
   {
     title:
-      "Can you help us assess our existing content's performance and quality?",
+      "Can you help us assess our existing content’s performance and quality?",
     content:
-      "Absolutely, we offer in-depth content audits as a standalone service, providing comprehensive reports to enhance your existing content strategies.",
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">Absolutely, we offer in-depth content audits as a standalone service, providing comprehensive reports to enhance your existing content strategies.</p>,
   },
   {
     title:
-      "How do you balance work commitments with work-life balance for your team?",
+      "What does your website writing service include?",
     content:
-      "Our stress-free work culture prioritizes team well-being, allowing writers to take on projects based on bandwidth to ensure a healthy work-life balance while delivering quality results for our clients.",
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">Our website writing service covers comprehensive copywriting from home pages and landing pages to service pages and blogs, optimized for SEO.</p>,
   },
   {
-    title: "What are your work timings & how can I get in touch?",
+    title: "How do you measure the effectiveness of your content writing services?",
     content:
-      "We work between 9am to 6pm everyday from Monday to Friday.You can contact us by filling out the form or reach out to us at Phone: +91-90032 85687 | Email: reachout@penthusiasts.com",
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">We track key performance indicators such as organic traffic, conversion rates, engagement metrics, and search rankings to continuously optimize and enhance content performance.</p>,
+  },
+  {
+    title: "Which industries do you serve for B2B content writing?",
+    content:
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">Our expertise spans a broad range of industries, including technology, finance, healthcare, and manufacturing, ensuring industry-specific insights and high-quality content for B2B markets.</p>,
+  },
+  {
+    title: "How do you create engaging B2C content that resonates with consumers?",
+    content:
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">We blend creative storytelling, crafting engaging, relatable content that builds emotional connections and drives brand loyalty among B2C audiences.</p>,
+  },
+  {
+    title: "What are your work timings and how can I get in touch with you?",
+    content:
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">We work between 9 am to 6 pm every day from Monday to Friday. You can contact us by filling out the form or reach out to us at Phone: +91-90032 85687 | Email: <Link href="mailto:reachout@penthusiasts.com" className="text-text font-medium tracking-wide underline underline-offset-4">reachout@penthusiasts.com</Link></p>,
+  },
+  {
+    title: "Can you provide samples or case studies of your previous work?",
+    content:
+      (<p className="p-4 bg-white rounded-b-lg text-gray-700">Yes, we can share a portfolio of content projects and case studies that highlight our expertise in creating high-performing, industry-specific content. You can request samples from this link: <Link href="/resources/works" className="text-text font-medium tracking-wide hover:underline">work samples</Link></p>)
   },
 ];
 
@@ -302,7 +323,7 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">FinTech:</span> Led a
+            <span className="font-bold px-1">SaaS:</span> Led a
             content-driven LinkedIn strategy for
             <span className="font-bold px-1">Congruent Solutions,</span>a
             US-based retirement plan administration services and technology
@@ -514,48 +535,48 @@ export const contentSolutions = [
 
 export const HWEB2BContent = [
   {
-    title: "Lead Generation Focus",
-    desc: "We create persuasive landing pages and blogs that drive conversions and attract high-quality leads.",
+    title: "Building a Strong Content Strategy",
+    desc: "We craft a data-driven content strategy that aligns with your business goals, ensuring consistent messaging and audience engagement.",
   },
   {
-    title: "Thought Leadership",
-    desc: "Our content positions your brand as an industry expert, building trust and credibility.",
+    title: "Establishing Thought Leadership",
+    desc: "Our content positions your brand as an industry leader, building trust and credibility through expert insights, research, and authoritative storytelling.",
   },
   {
-    title: "SEO-Driven Approach",
-    desc: "We optimize website and blog content to improve search rankings and organic traffic.",
+    title: "Creating High-Value Content Assets",
+    desc: "We develop compelling, high-value content like blogs, whitepapers, case studies, and social media posts that educate, engage, and drive conversions.",
   },
   {
-    title: "Tailored Messaging",
-    desc: "We craft content that speaks directly to decision-makers and stakeholders.",
+    title: "Optimizing Content for SEO",
+    desc: "By implementing SEO strategies, we ensure your content ranks higher and reaches the right target audience.",
   },
   {
-    title: "Data-Backed Strategies",
-    desc: "Our approach is informed by analytics and market insights to maximize engagement and ROI.",
+    title: "Lead Generation with Targeted Content",
+    desc: "We amplify your content across channels to maximize reach, engagement, and brand awareness to attract, nurture, and convert leads effectively.",
+  },
+  {
+    title: "Tracking & Optimizing Performance with Analytics",
+    desc: "We continuously measure, analyze, and optimize content performance, ensuring data-driven improvements for higher engagement and ROI.",
   },
 ];
 
 export const WQCB2BContent = [
   {
-    title: "Builds Brand Authority",
-    desc: "Well-researched content establishes your business as a trusted industry leader.",
-  },
-  {
     title: "Drives Organic Traffic",
-    desc: "SEO-optimized content improves visibility and attracts potential clients.",
+    desc: "SEO-optimized content improves rankings and attracts high-intent visitors.",
   },
   {
-    title: "Enhances Lead Conversion",
-    desc: "Compelling copy encourages visitors to take action.",
+    title: "Trust Wins Business",
+    desc: "Expert content builds credibility and makes your brand the go-to authority.",
   },
   {
-    title: "Strengthens B2B Relationships",
-    desc: "Thoughtful content fosters trust and long-term partnerships.",
+    title: "Words That Convert",
+    desc: "Persuasive content nurtures prospects and moves them toward action.",
   },
   {
-    title: "Supports Multi-Channel Marketing",
-    desc: "Consistent messaging across blogs, websites, and LinkedIn enhances brand recall.",
-  },
+    title: "More Reach, More Impact",
+    desc: "A unified content strategy builds brand authority and ensures consistency across all platforms.",
+  }
 ];
 
 export const contentSolutionsB2C = [

@@ -29,18 +29,18 @@ export const POST_QUERY = groq`
     }
   }
 }
-`
+`;
 
 // media queries
 
 export const MEDIA_QUERIES = groq`
 *[_type == "media"]|order(publishedAt desc) {
+  title,
   publishedAt,
   "imageUrl": image.asset->url,
   "imageAlt": image.alt,
   url
 }`;
-
 
 // work samples
 export const WCP_QUERY = groq`

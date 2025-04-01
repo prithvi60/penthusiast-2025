@@ -14,7 +14,7 @@ export const Accordion = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="mb-2">
                     <button role="button" aria-label="accordion"
-                        className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center px-4 md:px-6 py-4 md:py-9 bg-linear-to-r from-text via-[#006565] to-green-darker focus:outline-none transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"}`}
+                        className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center px-4 md:px-6 py-4 md:py-9 bg-linear-to-r from-text via-[#006565] to-green-darker focus:outline-none cursor-pointer transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"}`}
                         onClick={() => toggleAccordion(index)}
                     >
                         <span className="font-medium text-start text-white">
@@ -36,9 +36,8 @@ export const Accordion = ({ items }) => {
                         className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? "max-h-96 border-b border-x border-zinc-400 rounded-b-lg" : "max-h-0"
                             }`}
                     >
-                        <div className="p-4 bg-white rounded-b-lg text-gray-700">
-                            {item.content}
-                        </div>
+                        {item.content}
+                        {/* <div className="p-4 bg-white rounded-b-lg text-gray-700" dangerouslySetInnerHTML={{ __html: item.content }} /> */}
                     </div>
                 </div>
             ))}

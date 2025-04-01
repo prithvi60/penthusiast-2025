@@ -54,7 +54,7 @@ export const Card = ({ bgColor, data, img, title, href }) => {
 
     return (
         <div
-            className={`relative w-full h-auto min-h-[460px] sm:min-h-[490px] md:min-h-[580px] xl:min-h-[530px] shadow-lg rounded-lg overflow-hidden p-10 space-y-3 max-w-lg mx-auto pb-20 cursor-pointer ${bgColor} group lg:group-hover:active touch:hover-none`}
+            className={`relative w-full h-auto min-h-[460px] sm:min-h-[490px] md:min-h-[590px] xl:min-h-[570px] shadow-lg rounded-lg overflow-hidden p-10 space-y-3 max-w-lg mx-auto pb-20 cursor-pointer ${bgColor} group lg:group-hover:active touch:hover-none`}
             onTouchStart={handleInteraction}
             onTouchEnd={handleInteractionEnd}
             onMouseEnter={handleInteraction}
