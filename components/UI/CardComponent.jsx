@@ -73,7 +73,7 @@ export const Card = ({ bgColor, data, img, title, href }) => {
                     className="object-contain object-center"
                 />
             </div>
-            <p className="text-xl sm:text-2xl xl:text-3xl font-semibold text-black">
+            <p className="text-xl sm:text-2xl xl:text-3xl font-semibold text-white">
                 {title}
             </p>
             <div
@@ -86,8 +86,8 @@ export const Card = ({ bgColor, data, img, title, href }) => {
                             key={idx}
                             className="text-base xl:text-lg flex items-start gap-x-3"
                         >
-                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
-                            <h3 className="text-black">{list}</h3>
+                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2 text-green-light" />
+                            <h3 className="text-white">{list}</h3>
                         </li>
                     ))}
                 </ul>
@@ -96,29 +96,29 @@ export const Card = ({ bgColor, data, img, title, href }) => {
                 className={`absolute shadow-lg rounded-lg py-6 px-8 xl:px-10 top-52 sm:top-60 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-1.5
                     ${isActive ? "-left-5 lg:group-hover:-left-5" : "-left-full"}`}
             >
-                <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
+                <h4 className="text-xl md:text-2xl tracking-wider font-extrabold text-green-light">
                     {data.tag[0].number}
                 </h4>
-                <p className="text-sm font-bold tracking-wide">{data.tag[0].name}</p>
+                <p className="text-sm font-bold tracking-wide text-green-light">{data.tag[0].name}</p>
             </div>
             <div
                 className={`absolute shadow-lg rounded-lg py-6 pr-14 pl-2.5 top-52 sm:top-60 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-1.5
                     ${isActive ? "-right-5 lg:group-hover:-right-5" : "-right-full"}`}
             >
-                <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
+                <h4 className="text-xl md:text-2xl tracking-wider font-extrabold text-green-light">
                     {data.tag[1].number}
                 </h4>
-                <p className="text-sm font-bold tracking-wide">{data.tag[1].name}</p>
+                <p className="text-sm font-bold tracking-wide text-green-light">{data.tag[1].name}</p>
             </div>
             {title !== "Content for B2B" && (
                 <div
                     className={`absolute shadow-lg rounded-lg p-6 left-1/2 -translate-x-1/2 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-1.5
                     ${isActive ? "-bottom-5 lg:group-hover:-bottom-3" : "-bottom-full"}`}
                 >
-                    <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
+                    <h4 className="text-xl md:text-2xl tracking-wider font-extrabold text-green-light">
                         {data.tag[2].number}
                     </h4>
-                    <p className="text-base font-bold tracking-wide">
+                    <p className="text-base font-bold tracking-wide text-green-light">
                         {data.tag[2].name}
                     </p>
                 </div>
@@ -180,34 +180,6 @@ export const CardClient = ({
         return () => clearTimeout(timeoutId); // Cleanup timeout on unmount
     }, []);
     return (
-        // <Link
-        //     href={href}
-        //     target="_blank"
-        //     className={`relative w-full h-auto min-h-[150px] sm:min-h-[240px] xl:min-h-[240px] shadow-lg rounded-lg overflow-hidden space-y-3 max-w-lg mx-auto ${bgColor}
-        //         group lg:group-hover:active touch:hover-none`}
-        // >
-        //     <div className="size-36 overflow-hidden relative top-10 left-10">
-        //         <Image
-        //             title="icon"
-        //             src={icon}
-        //             alt="icon"
-        //             fill
-        //             className="object-contain object-center"
-        //         />
-        //     </div>
-        //     <p className="text-xl sm:text-2xl xl:text-3xl font-semibold px-10 py-5 text-black">
-        //         {title}
-        //     </p>
-        //     <div className="w-full h-60 overflow-hidden relative px-10 pt-10">
-        //         <Image
-        //             title="icon"
-        //             src={img}
-        //             alt="icon"
-        //             fill
-        //             className="object-contain object-center"
-        //         />
-        //     </div>
-        // </Link>
         <div
             className={`relative w-full h-auto min-h-[450px] sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 space-y-3 max-w-sm mx-auto pb-20 cursor-pointer ${bgColor} 
                 group lg:group-hover:active touch:hover-none`}
@@ -217,16 +189,11 @@ export const CardClient = ({
             onMouseLeave={handleInteractionEnd}
             onClick={handleClick}
         >
-            {/* <Link href={href}
-                className="w-full h-fit flex justify-end items-center"
-            >
-                <FaExternalLinkAlt className="text-xl md:text-lg" />
-            </Link> */}
             <div
-                className={`${col ? "block space-y-2 text-center" : "flex items-center gap-3 text-start"}`}
+                className={`${col ? "block space-y-2 text-center" : "flex gap-3 text-start"}`}
             >
                 <div
-                    className={`${col ? "w-full h-10" : "h-16 w-1/4 shrink-0"} overflow-hidden relative`}
+                    className={`${col ? "w-full h-10 bg-white p-3 rounded-md" : "h-16 w-1/4 shrink-0 bg-white p-3 rounded-md"} overflow-hidden relative`}
                 >
                     <Image
                         title="icon"
@@ -236,7 +203,7 @@ export const CardClient = ({
                         className="object-contain object-center w-3/4"
                     />
                 </div>
-                <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-black">
+                <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-white">
                     {title}
                 </p>
             </div>
@@ -259,10 +226,10 @@ export const CardClient = ({
                     className={`absolute shadow-lg rounded-lg py-3 pr-3 pl-6 top-56 sm:top-52 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out ${type ? "space-y-3.5" : ""}
                         ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                 >
-                    <h4 className="text-xl md:text-2xl tracking-wider font-extrabold">
+                    <h4 className="text-xl md:text-2xl tracking-wider font-extrabold text-green-light">
                         {data[0].number}
                     </h4>
-                    <p className="text-base md:text-lg tracking-wider font-semibold text-black">
+                    <p className="text-base md:text-lg tracking-wider font-semibold text-green-light">
                         {data[0].name}
                     </p>
                 </div>
@@ -272,11 +239,11 @@ export const CardClient = ({
                         ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                 >
                     <div className="flex justify-center gap-2 items-center py-3.5">
-                        <h4 className="text-lg md:text-xl tracking-wider font-semibold text-black">
+                        <h4 className="text-lg md:text-xl tracking-wider font-semibold text-green-light">
                             {data[0].number}
                         </h4>
-                        <FaArrowRight className="text-sm sm:text-base text-black" />
-                        <p className="text-xl md:text-2xl tracking-wider font-extrabold">
+                        <FaArrowRight className="text-sm sm:text-base text-green-light" />
+                        <p className="text-xl md:text-2xl tracking-wider font-extrabold text-green-light">
                             {data[0].name}
                         </p>
                     </div>
@@ -288,11 +255,11 @@ export const CardClient = ({
                         ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                 >
                     <h4
-                        className={`text-xl md:text-2xl lg:text-2xl tracking-wider font-extrabold `}
+                        className={`text-xl md:text-2xl lg:text-2xl tracking-wider font-extrabold text-green-light`}
                     >
                         {data[1].number}
                     </h4>
-                    <p className="text-base md:text-lg tracking-wider font-semibold text-black">
+                    <p className="text-base md:text-lg tracking-wider font-semibold text-green-light">
                         {data[1].name}
                     </p>
                 </div>
@@ -301,10 +268,10 @@ export const CardClient = ({
                     className={`absolute shadow-lg rounded-lg py-3.5 px-4.5 top-40 sm:top-36 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out
                     ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                 >
-                    <h4 className="text-base md:text-lg tracking-wider font-extrabold text-black">
+                    <h4 className="text-base md:text-lg tracking-wider font-extrabold text-green-light">
                         {data[1].number}
                     </h4>
-                    <p className="text-xl md:text-2xl tracking-wider font-semibold">
+                    <p className="text-xl md:text-2xl tracking-wider font-semibold text-green-light">
                         {data[1].name}
                     </p>
                 </div>
@@ -316,12 +283,12 @@ export const CardClient = ({
                     ${isActive ? "-left-1 lg:group-hover:-left-1" : "-left-full"}`}
                     >
                         <h4
-                            className={`tracking-wider font-extrabold  ${data[2].number === "100,000+" ? "text-xl md:text-2xl " : "text-base md:text-lg text-black"}`}
+                            className={`tracking-wider font-extrabold  ${data[2].number === "100,000+" ? "text-xl md:text-2xl text-green-light" : "text-base md:text-lg text-green-light"}`}
                         >
                             {data[2].number}
                         </h4>
                         <p
-                            className={`font-bold tracking-wide ${data[2].name === "Impression" ? "text-black text-base md:text-lg" : "text-xl md:text-2xl"}`}
+                            className={`font-bold tracking-wide ${data[2].name === "Impression" ? "text-green-light text-base md:text-lg" : "text-xl md:text-2xl text-green-light"}`}
                         >
                             {data[2].name}
                         </p>
@@ -330,10 +297,10 @@ export const CardClient = ({
                         className={`absolute shadow-lg rounded-lg p-3 top-64 sm:top-64 z-20 bg-white w-[45%] transition-all transform duration-500 ease-in-out
                     ${isActive ? "-right-1 lg:group-hover:-right-1" : "-right-full"}`}
                     >
-                        <h4 className="text-base md:text-lg tracking-wider font-extrabold text-black">
+                        <h4 className="text-base md:text-lg tracking-wider font-extrabold text-green-light">
                             {data[3].number}
                         </h4>
-                        <p className="text-xl md:text-2xl font-bold tracking-wide">
+                        <p className="text-xl md:text-2xl font-bold tracking-wide text-green-light">
                             {data[3].name}
                         </p>
                     </div>
@@ -366,7 +333,7 @@ export const ServiceCard = ({ subTitle, title, data }) => {
                             className={`pb-5 ${list.col ? "block space-y-2" : "flex items-center gap-3 text-start"}`}
                         >
                             <div
-                                className={`${list.col ? "w-full h-12 md:h-14" : "h-16 w-1/4 shrink-0"} overflow-hidden relative`}
+                                className={`${list.col ? "w-full h-12 md:h-14 p-2 rounded-md bg-white" : "h-16 w-1/4 shrink-0 p-2 rounded-md bg-white"} overflow-hidden relative`}
                             >
                                 <Image
                                     title="icon"
@@ -376,14 +343,14 @@ export const ServiceCard = ({ subTitle, title, data }) => {
                                     className="object-contain object-center w-3/4"
                                 />
                             </div>
-                            <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-[#484646]">
+                            <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-white">
                                 {list.title}
                             </p>
                         </div>
-                        <p className="text-base sm:text-lg text-justify text-semibold text-[#181726]">
+                        <p className="text-base sm:text-lg text-justify text-semibold text-white">
                             {list.summary}
                         </p>
-                        <div className="space-y-4 md:space-y-4 bg-white p-6 rounded-lg">
+                        <div className="space-y-4 md:space-y-4 bg-white text-[#181726] p-6 rounded-lg">
                             <div className="space-y-2 md:space-y-4">
                                 <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
                                     Results:

@@ -19,8 +19,8 @@ const ExploreOurServices = ({ subTitle, title }) => {
             </div>
             <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-16 place-content-center place-items-center max-w-7xl mx-auto">
                 <Card
-                    bgColor={
-                        "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F] text-[#732D15]"
+                    bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                        // "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F] text-[#732D15]"
                     }
                     data={B2BContentHome}
                     img={"/b2b-icon.svg"}
@@ -28,8 +28,8 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     href="/services/content-B2B"
                 />
                 <Card
-                    bgColor={
-                        "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99] text-[#129F49]"
+                    bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                        // "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99] text-[#129F49]"
                     }
                     data={B2CContentHome}
                     img={"/b2c-icon.svg"}
@@ -37,8 +37,8 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     href="/services/content-B2C"
                 />
                 <Card
-                    bgColor={
-                        "bg-gradient-to-b from-[#FFFFFF] via-[#DDF1F9] to-[#87CEEB] text-[#0D1967]"
+                    bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                        // "bg-gradient-to-b from-[#FFFFFF] via-[#DDF1F9] to-[#87CEEB] text-[#0D1967]"
                     }
                     data={SMContentHome}
                     img={"/SM-icon.svg"}

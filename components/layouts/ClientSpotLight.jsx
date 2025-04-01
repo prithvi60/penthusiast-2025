@@ -45,8 +45,8 @@ export const ClientSpotlight = ({ subTitle, title }) => {
             <div className="w-full relative max-w-7xl mx-auto slider-container">
                 <Slider {...settings} className="explore-slider">
                     <CardClient
-                        bgColor={
-                            "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999] text-[#BF1E2D]"
+                        bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                            // "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999] text-[#BF1E2D]"
                         }
                         data={t10SportTags}
                         icon={"/client-14.png"}
@@ -56,8 +56,8 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                         type
                     />
                     <CardClient
-                        bgColor={
-                            "bg-gradient-to-b from-[#FFFFFF] via-[#AAB6D8BA] to-[#21409A4D] text-[#006ACF]"
+                        bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                            // "bg-gradient-to-b from-[#FFFFFF] via-[#AAB6D8BA] to-[#21409A4D] text-[#006ACF]"
                         }
                         data={bitsCrunchTags}
                         icon={"/client-5.svg"}
@@ -72,8 +72,8 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                     in the blockchain and NFT space."
                     />
                     <CardClient
-                        bgColor={
-                            "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F] text-[#FFCB0F]"
+                        bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                            // "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F] text-[#FFCB0F]"
                         }
                         data={congruentTags}
                         icon={"/client-1.svg"}
@@ -84,8 +84,8 @@ export const ClientSpotlight = ({ subTitle, title }) => {
                         col
                     />
                     <CardClient
-                        bgColor={
-                            "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99] text-[#13B786]"
+                        bgColor={"bg-linear-to-b from-text to-green-darker text-white"
+                            // "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99] text-[#13B786]"
                         }
                         data={vurveTags}
                         icon={"/client-11.png"}

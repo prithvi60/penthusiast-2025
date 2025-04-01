@@ -701,7 +701,8 @@ export const serviceB2BClients = [
     summary:
       "Our team collaborated closely with various internal departments to understand bitsCrunch's operations. We developed a clear strategy, combining subject knowledge with consistency and patience. Content creation spanned multiple formats, including informative blogs, PRs, C-suite interviews, and podcasts, contributing to the client's growth in the blockchain and NFT space.",
     col: false,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]",
+    // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]",
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
   },
   {
     icon: "/client-1.svg",
@@ -718,7 +719,8 @@ export const serviceB2BClients = [
     summary:
       "Our team developed and executed a strategic content plan focused on thought leadership, leveraging Congruent Solutions' expertise in retirement technology. By creating insightful and engaging LinkedIn posts, the initiative successfully boosted organic traffic and positioned the company as a trusted voice in its industry.",
     col: true,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]",
+    // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]",
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
   },
 ];
 
@@ -738,7 +740,8 @@ export const serviceB2CClients = [
     summary:
       "Our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
     col: true,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]",
+    // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]",
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
   },
   {
     icon: "/client-14.png",
@@ -755,7 +758,8 @@ export const serviceB2CClients = [
     summary:
       "Over two years, we delivered well-researched, engaging content tailored to trends and sporting events. We collaborated closely with internal teams, developed a clear strategy, and maintained consistency in content delivery, resulting in improved brand awareness and positioning as an authority in the sports apparel sector.",
     col: false,
-    bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]",
+    // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]",
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
   },
 ];
 

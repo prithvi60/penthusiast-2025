@@ -9,7 +9,7 @@ const Founder = () => {
                 Management
             </h2>
             <div className="flex flex-col lg:gap-10 lg:flex-row items-start max-w-5xl mx-auto">
-                <div className="relative overflow-hidden w-full lg:w-2/5 h-80 shadow-xl rounded">
+                <div className="relative overflow-hidden w-full lg:w-2/5 h-80 shadow-xl rounded-md">
                     <Image
                         title="founder picture"
                         src={"/founder.png"}
@@ -18,9 +18,9 @@ const Founder = () => {
                         className="object-cover object-center"
                     />
                 </div>
-                <div className="space-y-4 shadow-xl flex flex-col w-full lg:w-3/5 justify-between items-start md:space-y-5 p-10 bg-gradient-to-br from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]">
+                <div className="space-y-4 shadow-xl flex flex-col w-full lg:w-3/5 justify-between items-start md:space-y-5 p-10 bg-linear-to-b from-text to-green-darker text-white rounded-md">
                     <div className="space-y-3 md:pb-8">
-                        <h4 className="text-xl md:text-2xl font-extrabold tracking-wider text-[#00A651]">
+                        <h4 className="text-xl md:text-2xl font-extrabold tracking-wider">
                             Poornima TM
                         </h4>
                         <p className="text-base lg:text-lg">
