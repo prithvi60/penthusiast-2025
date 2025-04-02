@@ -8,13 +8,13 @@ const OurGuidingValues = () => {
             <h2 className="text-3xl sm:text-5xl text-center lg:text-6xl font-bold">
                 Our Guiding Values
             </h2>
-            <div className="w-full gap-6 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="w-full gap-6 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr">
                 {ourGuides.map((guide, index) => (
                     <div
                         key={index}
-                        className={`w-full h-60 lg:h-[290px] flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-b from-text to-green-darker text-white`}
+                        className={`w-full h-full flex flex-col justify-between items-start shadow-lg p-5 rounded-lg bg-linear-to-b from-text to-green-darker text-white space-y-4`}
                     >
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-grow">
                             <GiFeather className="text-base shrink-0 lg:text-lg mt-1 text-green-light" />
                             <p className="">{guide.desc}</p>
                         </div>

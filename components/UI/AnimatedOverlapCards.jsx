@@ -15,15 +15,15 @@ const AnimatedOverlapCards = () => {
 
             {/* Timeline Cards */}
             <div className="w-full lg:w-1/2">
-                <div className="h-auto max-h-[720vh] lg:max-h-[660vh] xl:max-h-[570vh]space-y-20 md:space-y-24 xl:space-y-10">
+                <div className="space-y-20 md:space-y-24 xl:space-y-10">
                     {timeline.map((item, idx) => {
                         return (
                             <div
                                 key={idx}
-                                className="sticky w-full max-w-xl mx-auto p-1 bg-white rounded-lg shadow-lg h-[420px] sm:h-[350px] lg:h-[410px] z-0 top-32 xl:top-40"
+                                className="sticky w-full max-w-xl mx-auto p-1 bg-linear-to-b from-text to-green-darker text-white rounded-lg shadow-lg min-h-[420px] z-0 top-32 xl:top-40"
                             >
                                 <div
-                                    className={`p-6 xl:p-10 flex flex-col items-start gap-6 h-full bg-linear-to-b from-text to-green-darker text-white`}
+                                    className={`p-6 xl:p-10 flex flex-col items-start gap-6 h-full `}
                                 // ${idx % 2 === 0
                                 //     ? "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]"
                                 //     : "bg-gradient-to-br from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]"
@@ -35,7 +35,7 @@ const AnimatedOverlapCards = () => {
                                     >
                                         {item.year}
                                     </h4>
-                                    <div className="space-y-3">
+                                    <div className="flex-grow space-y-3 mt-4">
                                         <h5 className="text-xl tracking-wide font-semibold sm:text-2xl xl:text-3xl">
                                             {item.title}
                                         </h5>

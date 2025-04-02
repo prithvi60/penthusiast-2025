@@ -321,61 +321,65 @@ export const ServiceCard = ({ subTitle, title, data }) => {
                 </h2>
                 <CalendlyLink type />
             </div>
-            <div className="w-full relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-6 lg:gap-8 xl:gap-20">
+            <div className="w-full relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-6 lg:gap-8 xl:gap-20 auto-rows-fr">
                 {data.map((list, idx) => (
                     <div
                         key={idx}
-                        className={`relative w-full h-auto min-h-fit sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 md:p-10 space-y-5 md:space-y-8 max-w-xl mx-auto
+                        className={`relative w-full h-full min-h-fit sm:min-h-[540px] md:min-h-[500px] xl:min-h-[480px] shadow-lg rounded-lg overflow-hidden p-6 md:p-10 space-y-5 md:space-y-8 max-w-xl mx-auto
                 group lg:group-hover:active touch:hover-none ${list.bgColor}`}
                     // onClick={handleClick}
                     >
-                        <div
-                            className={`pb-5 ${list.col ? "block space-y-2" : "flex items-center gap-3 text-start"}`}
-                        >
+                        <div className="flex flex-col h-full space-y-6">
                             <div
-                                className={`${list.col ? "w-full h-12 md:h-14 p-2 rounded-md bg-white" : "h-16 w-1/4 shrink-0 p-2 rounded-md bg-white"} overflow-hidden relative`}
+                                className={`pb-5 ${list.col ? "block space-y-2" : "flex items-center gap-3 text-start"}`}
                             >
-                                <Image
-                                    title="icon"
-                                    src={list.icon}
-                                    alt="icon"
-                                    fill
-                                    className="object-contain object-center w-3/4"
-                                />
+                                <div
+                                    className={`${list.col ? "w-full h-12 md:h-14 p-2 rounded-md bg-white" : "h-16 w-1/4 shrink-0 p-2 rounded-md bg-white"} overflow-hidden relative`}
+                                >
+                                    <Image
+                                        title="icon"
+                                        src={list.icon}
+                                        alt="icon"
+                                        fill
+                                        className="object-contain object-center w-3/4"
+                                    />
+                                </div>
+                                <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-white">
+                                    {list.title}
+                                </p>
                             </div>
-                            <p className="text-lg sm:text-xl xl:text-2xl mt-1.5 sm:mt-0 font-extrabold text-white">
-                                {list.title}
+                            <p className="text-base sm:text-lg text-justify text-semibold text-white">
+                                {list.summary}
                             </p>
-                        </div>
-                        <p className="text-base sm:text-lg text-justify text-semibold text-white">
-                            {list.summary}
-                        </p>
-                        <div className="space-y-4 md:space-y-4 bg-white text-[#181726] p-6 rounded-lg">
-                            <div className="space-y-2 md:space-y-4">
-                                <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
-                                    Results:
-                                </h4>
-                                <ul className="text-base sm:text-lg text-justify">
-                                    {list.achievements.map((item, id) => (
-                                        <li key={id} className="flex items-start gap-x-3">
-                                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
-                                            <p>{item}</p>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="space-y-2 md:space-y-4">
-                                <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
-                                    ROI:
-                                </h4>
-                                <ul className="text-base sm:text-lg text-justify">
-                                    {list.importantMetrics.map((item, id) => (
-                                        <li key={id} className="flex items-start gap-x-3">
-                                            <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
-                                            <p>{item}</p>
-                                        </li>
-                                    ))}
-                                </ul>
+                            <div className="flex-grow flex flex-col">
+                                <div className="space-y-4 md:space-y-4 bg-white text-[#181726] p-6 rounded-lg">
+                                    <div className="space-y-2 md:space-y-4">
+                                        <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
+                                            Results:
+                                        </h4>
+                                        <ul className="text-base sm:text-lg text-justify">
+                                            {list.achievements.map((item, id) => (
+                                                <li key={id} className="flex items-start gap-x-3">
+                                                    <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                                    <p>{item}</p>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="space-y-2 md:space-y-4">
+                                        <h4 className="text-base sm:text-lg lg:text-xl font-semibold tracking-wider">
+                                            ROI:
+                                        </h4>
+                                        <ul className="text-base sm:text-lg text-justify">
+                                            {list.importantMetrics.map((item, id) => (
+                                                <li key={id} className="flex items-start gap-x-3">
+                                                    <GiFeather className="text-base shrink-0 lg:text-lg mt-2" />
+                                                    <p>{item}</p>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
