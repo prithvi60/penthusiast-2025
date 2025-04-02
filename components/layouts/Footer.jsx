@@ -20,7 +20,7 @@ const Footer = () => {
                             src={"https://ik.imagekit.io/webibee/penthusiasts%20logo.svg?updatedAt=1743161885549"}
                             alt="penthusiasts logo" width={180} height={180} className="object-contain object-center" />
                     </Link>
-                    <div className="flex flex-col gap-y-6 md:flex-row md:gap-6 lg:flex-col lg:gap-y-6">
+                    {/* <div className="flex flex-col gap-y-6 md:flex-row md:gap-6 lg:flex-col lg:gap-y-6">
                         <div className="block lg:hidden">
                             <h4 className="text-sm font-semibold tracking-wider text-text">Reg Address:</h4>
                             <p className="text-xs">
@@ -37,25 +37,25 @@ const Footer = () => {
                                 Nungambakkam, Chennai, Tamil Nadu 600034
                             </p>
                         </div>
-                    </div>
-                    <div className="hidden lg:block mt-6">
+                    </div> */}
+                    {/* <div className="hidden lg:block mt-6">
                         <h4 className="text-sm font-semibold tracking-wider text-text">Reg Address:</h4>
                         <p className="text-xs">
                             Penthusiasts,<br />
                             #12, Bharathi Nagar 1st Street,<br />
                             Thirumullaivoyal, Chennai-62
                         </p>
-                    </div>
-                    <ul className="flex justify-center md:hidden items-center gap-2.5">
+                    </div> */}
+                    {/* <ul className="flex justify-center md:hidden items-center gap-2.5">
                         {socialLinks.map((list, idx) => (
                             <li key={idx} className="flex-shrink-0">
                                 <Link title="footer social icons" href={list.href}>{list.icon}</Link>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </div>
-                <div className="block space-y-5">
-                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12">
+                <div className="block space-y-6 md:space-y-8">
+                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-6 md:gap-12">
                         <div className="block space-y-3">
                             {/* <h4 className="text-lg font-medium capitalize tracking-wider md:text-xl">
                             Helpful Links
@@ -117,18 +117,36 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="hidden lg:block">
+                    <div className="flex flex-col gap-y-6 md:flex-row justify-between md:gap-6 lg:gap-y-6">
+                        <div className="block">
+                            <h4 className="text-sm font-semibold tracking-wider text-text">Reg Address:</h4>
+                            <p className="text-xs">
+                                Penthusiasts,<br />
+                                #12, Bharathi Nagar 1st Street,<br />
+                                Thirumullaivoyal, Chennai-62
+                            </p>
+                        </div>
+                        <div className="block ">
+                            <h4 className="text-sm font-semibold tracking-wider text-text">Work Location:</h4>
+                            <p className="text-xs">
+                                Penthusiasts,<br />
+                                4th Floor, Woco Spaces, No 11/38, Status Quo Building,<br /> Sterling Rd, Seetha Nagar,<br />
+                                Nungambakkam, Chennai, Tamil Nadu 600034
+                            </p>
+                        </div>
+                    </div>
+                    {/* <div className="hidden lg:block">
                         <h4 className="text-sm font-semibold tracking-wider text-text">Work Location:</h4>
                         <p className="text-xs">
                             Penthusiasts,<br />
                             4th Floor, Woco Spaces, No 11/38, Status Quo Building,<br /> Sterling Rd, Seetha Nagar,<br />
                             Nungambakkam, Chennai, Tamil Nadu 600034
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8 font-medium`}>
-                <ul className="hidden md:flex items-center gap-2.5">
+            <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-6 lg:gap-8 font-medium`}>
+                <ul className="flex items-center gap-2.5">
                     {socialLinks.map((list, idx) => (
                         <li key={idx} className="flex-shrink-0">
                             <Link title="icons" href={list.href}>{list.icon}</Link>

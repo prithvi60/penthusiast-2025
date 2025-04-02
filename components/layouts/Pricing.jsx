@@ -19,111 +19,95 @@ export const Pricing = () => {
             <section className="mx-auto max-w-7xl">
                 <div className="mt-6 lg:mt-12 flex justify-center flex-wrap gap-6">
                     <PriceColumn
-                        title="Intro"
-                        price="20"
-                        statement="For most businesses that want to optimize web queries"
+                        title="Web"
+                        price="4000"
+                        per={"per page"}
+                        statement="Website Content Creation"
                         items={[
                             {
-                                children: "All limited links",
+                                children: "Crisper and actionable",
                                 checked: true,
                             },
                             {
-                                children: "Own analytics platform",
+                                children: "Human-AI Research",
                                 checked: true,
                             },
                             {
-                                children: "Chat support",
-                                checked: false,
+                                children: "SEO optimized content",
+                                checked: true,
                             },
                             {
-                                children: "Optimize hashtags",
-                                checked: false,
+                                children: "Tailored Brand Content",
+                                checked: true,
                             },
                             {
-                                children: "Unlimited users",
-                                checked: false,
+                                children: "7-Day Delivery (10 pgs)",
+                                checked: true,
                             },
                         ]}
                     />
                     <PriceColumn
-                        title="Base"
-                        price={"50"}
-                        statement="For most businesses that want to optimize web queries"
+                        title="Blogs"
+                        price={"10850"}
+                        per={"per blog"}
+                        statement="B2B / B2B SaaS Blogs"
                         items={[
                             {
-                                children: "All limited links",
+                                children: "SEO-Aligned Outline",
                                 checked: true,
                             },
                             {
-                                children: "Own analytics platform",
+                                children: "Human-AI Research",
                                 checked: true,
                             },
                             {
-                                children: "Chat support",
+                                children: "Keyword Optimized",
                                 checked: true,
                             },
                             {
-                                children: "Optimize hashtags",
-                                checked: false,
+                                children: "Proofread & Polished",
+                                checked: true,
                             },
                             {
-                                children: "Unlimited users",
-                                checked: false,
+                                children: "SEO Organic Traffic",
+                                checked: true,
                             },
                         ]}
                     />
                     <PriceColumn
-                        title="Pro"
+                        title="Social Media"
+                        per={"(Meta - FB & IG, LinkedIn, YouTube)"}
                         highlight
-                        price={"100"}
-                        statement="For most businesses that want to optimize web queries"
+                        price={"75000"}
+                        statement="Social Media Content Creation"
                         items={[
                             {
-                                children: "All limited links",
+                                children: "Ideation with client",
                                 checked: true,
                             },
                             {
-                                children: "Own analytics platform",
+                                children: "Strategy and Buckets",
                                 checked: true,
                             },
                             {
-                                children: "Chat support",
+                                children: "Content Calendar",
                                 checked: true,
                             },
                             {
-                                children: "Optimize hashtags",
+                                children: "Content Creation",
                                 checked: true,
                             },
                             {
-                                children: "Unlimited users",
-                                checked: true,
-                            },
-                        ]}
-                    />
-                    <PriceColumn
-                        title="Base"
-                        price={"50"}
-                        statement="For most businesses that want to optimize web queries"
-                        items={[
-                            {
-                                children: "All limited links",
+                                children: "Content Design / Editing",
                                 checked: true,
                             },
                             {
-                                children: "Own analytics platform",
+                                children: "Publishing & Promotion",
                                 checked: true,
                             },
                             {
-                                children: "Chat support",
+                                children: "Performance Analytics",
                                 checked: true,
-                            },
-                            {
-                                children: "Optimize hashtags",
-                                checked: true,
-                            },
-                            {
-                                children: "Unlimited users",
-                                checked: false,
                             },
                         ]}
                     />
@@ -133,16 +117,13 @@ export const Pricing = () => {
     );
 };
 
-const PriceColumn = ({ highlight, title, price, statement, items }) => {
+const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
     return (
         <div
-            // style={{
-            //     boxShadow: highlight ? "0px 6px 0px rgb(24, 24, 27)" : "",
-            // }}
-            className={`relative w-full max-w-72 sm:max-w-96 xl:max-w-72 rounded-lg p-6 md:p-8 ${highlight ? "bg-linear-to-b from-text to-green-darker shadow-xl shadow-green-darker/40 text-white scale-110" : "text-[#848199]"}`}
+            className={`relative w-full max-w-80 sm:max-w-96 xl:max-w-80 rounded-lg px-6 py-8 md:px-8 md:py-10 ${highlight ? "bg-linear-to-b from-text to-green-darker shadow-xl shadow-green-darker/40 text-white scale-110" : "bg-white text-[#848199]"}`}
         >
             {highlight && (
-                <span className="absolute right-4 top-7 -translate-y-1/2 rounded-md bg-green-darker px-3 py-1 text-[10px] text-[#0BE6E6BF] font-semibold uppercase">
+                <span className="absolute right-4 top-5 animate-pulse -translate-y-1/2 rounded-md bg-green-darker px-3 py-1 text-[9px] md:text-[10px] text-[#0BE6E6BF] font-semibold uppercase">
                     Most Popular
                 </span>
             )}
@@ -169,11 +150,12 @@ const PriceColumn = ({ highlight, title, price, statement, items }) => {
                         }}
                         className={`block text-4xl ${highlight ? "text-white" : "text-green-darker"} font-bold`}
                     >
-                        ${price}
+                        ₹{price}
                     </motion.span>
                 </AnimatePresence>
-                <motion.div layout className={`font-medium text-base`}>
-                    <span className="block">/month</span>
+                <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-[10px]" : "text-sm"}`}>
+                    <span className="block">{per}</span>
+                    {title === "Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
                 </motion.div>
             </div>
             <p
