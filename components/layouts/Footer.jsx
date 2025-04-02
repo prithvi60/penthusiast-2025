@@ -135,14 +135,6 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    {/* <div className="hidden lg:block">
-                        <h4 className="text-sm font-semibold tracking-wider text-text">Work Location:</h4>
-                        <p className="text-xs">
-                            Penthusiasts,<br />
-                            4th Floor, Woco Spaces, No 11/38, Status Quo Building,<br /> Sterling Rd, Seetha Nagar,<br />
-                            Nungambakkam, Chennai, Tamil Nadu 600034
-                        </p>
-                    </div> */}
                 </div>
             </div>
             <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-6 lg:gap-8 font-medium`}>

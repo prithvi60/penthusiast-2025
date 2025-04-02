@@ -17,7 +17,7 @@ export const Pricing = () => {
                 </h2>
             </div>
             <section className="mx-auto max-w-7xl">
-                <div className="mt-6 lg:mt-12 flex justify-center flex-wrap gap-6">
+                <div className="mt-6 lg:mt-12 flex justify-center flex-wrap gap-6 h-full">
                     <PriceColumn
                         title="Web"
                         price="4000"
@@ -77,7 +77,7 @@ export const Pricing = () => {
                     <PriceColumn
                         title="Social Media"
                         per={"(Meta - FB & IG, LinkedIn, YouTube)"}
-                        highlight
+                        // highlight
                         price={"75000"}
                         statement="Social Media Content Creation"
                         items={[
@@ -120,66 +120,67 @@ export const Pricing = () => {
 const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
     return (
         <div
-            className={`relative w-full max-w-80 sm:max-w-96 xl:max-w-80 rounded-lg px-6 py-8 md:px-8 md:py-10 ${highlight ? "bg-linear-to-b from-text to-green-darker shadow-xl shadow-green-darker/40 text-white scale-110" : "bg-white text-[#848199]"}`}
+            className={`relative flex flex-col justify-between w-full min-h-[450px] max-w-80 sm:max-w-96 xl:max-w-80 rounded-lg px-6 py-8 md:px-8 md:py-10 shadow-lg ${highlight ? "bg-linear-to-b from-text to-green-darker shadow-xl shadow-green-darker/40 text-white scale-110" : "bg-white text-[#848199]"}`}
         >
-            {highlight && (
+            {/* {highlight && (
                 <span className="absolute right-4 top-5 animate-pulse -translate-y-1/2 rounded-md bg-green-darker px-3 py-1 text-[9px] md:text-[10px] text-[#0BE6E6BF] font-semibold uppercase">
                     Most Popular
                 </span>
-            )}
-
-            <div className="mb-6 flex items-center gap-3">
-                <AnimatePresence mode="popLayout">
-                    <motion.span
-                        initial={{
-                            y: 24,
-                            opacity: 0,
-                        }}
-                        animate={{
-                            y: 0,
-                            opacity: 1,
-                        }}
-                        exit={{
-                            y: -24,
-                            opacity: 0,
-                        }}
-                        key={price}
-                        transition={{
-                            duration: 0.25,
-                            ease: "easeInOut",
-                        }}
-                        className={`block text-4xl ${highlight ? "text-white" : "text-green-darker"} font-bold`}
-                    >
-                        ₹{price}
-                    </motion.span>
-                </AnimatePresence>
-                <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-[10px]" : "text-sm"}`}>
-                    <span className="block">{per}</span>
-                    {title === "Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
-                </motion.div>
+            )} */}
+            <div>
+                <div className="mb-6 flex items-center gap-3">
+                    <AnimatePresence mode="popLayout">
+                        <motion.span
+                            initial={{
+                                y: 24,
+                                opacity: 0,
+                            }}
+                            animate={{
+                                y: 0,
+                                opacity: 1,
+                            }}
+                            exit={{
+                                y: -24,
+                                opacity: 0,
+                            }}
+                            key={price}
+                            transition={{
+                                duration: 0.25,
+                                ease: "easeInOut",
+                            }}
+                            className={`block text-4xl ${highlight ? "text-white" : "text-green-darker"} font-bold`}
+                        >
+                            ₹{price}
+                        </motion.span>
+                    </AnimatePresence>
+                    <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-[10px]" : "text-sm"}`}>
+                        <span className="block">{per}</span>
+                        {title === "Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
+                    </motion.div>
+                </div>
+                <p
+                    className={`mb-6 text-xl md:text-2xl font-semibold ${highlight ? "text-white" : "text-green-darker"}`}
+                >
+                    {title}
+                </p>
+                <p className="mb-8 text-sm -mt-2.5">{statement}</p>
             </div>
-            <p
-                className={`mb-6 text-xl md:text-2xl font-semibold ${highlight ? "text-white" : "text-green-darker"}`}
-            >
-                {title}
-            </p>
-            <p className="mb-8 text-sm -mt-2.5">{statement}</p>
-
-            <div className="mb-8 space-y-2">
-                {items.map((i) => (
-                    <CheckListItem key={i.children} checked={i.checked}>
-                        {i.children}
-                    </CheckListItem>
-                ))}
+            <div className="">
+                <div className="mb-8 space-y-2 flex flex-col flex-grow">
+                    {items.map((i) => (
+                        <CheckListItem key={i.children} checked={i.checked}>
+                            {i.children}
+                        </CheckListItem>
+                    ))}
+                </div>
+                <button
+                    aria-label="Choose plan"
+                    title="Choose plan"
+                    className={` ${highlight ? "bg-text hover:shadow-[4px_4px_0px_#00FFE7]" : "bg-[#008080]/30 text-text hover:shadow-[4px_4px_0px_#4db6ac]"} w-full cursor-pointer  px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none rounded-lg`}
+                >
+                    Choose plan
+                </button>
             </div>
-
-            <button
-                aria-label="Choose plan"
-                title="Choose plan"
-                className={` ${highlight ? "bg-text hover:shadow-[4px_4px_0px_#00FFE7]" : "bg-[#008080]/30 text-text hover:shadow-[4px_4px_0px_#4db6ac]"} w-full cursor-pointer  px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none rounded-lg`}
-            >
-                Choose plan
-            </button>
         </div>
     );
 };
