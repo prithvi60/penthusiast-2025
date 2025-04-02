@@ -165,59 +165,123 @@ export const SMContentHome = {
 
 export const accordionItems = [
   {
-    title:
-      "What sets Penthusiasts apart from others in the industry?",
-    content:
-      (<p className="p-4 bg-white rounded-b-lg text-gray-700">We stand out by offering tailored content solutions, from writing diverse content types to providing comprehensive content audits, all designed to meet your unique requirements.</p>),
+    title: "What sets Penthusiasts apart from others in the industry?",
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        <strong>
+          We solve content problems of businesses with the client and not for
+          the client.
+        </strong>
+        We stand out by offering tailored content solutions, from providing
+        comprehensive content audits to writing/creating diverse content types,
+        all designed to meet your unique requirements.
+      </p>
+    ),
   },
   {
     title:
       "Can we customize your services and tailor content requirements based on our needs?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">Absolutely! Our content solutions are fully customizable to align with your unique brand voice, target audience, and specific marketing goals.</p>,
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        Absolutely! Our content solutions are fully customizable to align with
+        your unique brand voice, target audience, and specific marketing goals.
+      </p>
+    ),
   },
   {
     title:
       "Do you specialize in a particular content niche, or can you handle a wide range of industries?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">We excel in a wide range of industries, from technology and finance to lifestyle and healthcare, providing niche-specific, high-quality content that resonates with your audience.</p>,
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        We excel in a wide range of industries, from technology and finance to
+        lifestyle and healthcare, providing niche-specific, high-quality content
+        that resonates with your audience.
+      </p>
+    ),
   },
   {
     title:
-      "Can you help us assess our existing content’s performance and quality?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">Absolutely, we offer in-depth content audits as a standalone service, providing comprehensive reports to enhance your existing content strategies.</p>,
+      "Can you help us assess our existing content's performance and quality?",
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        Absolutely, we offer in-depth content audits as a standalone service,
+        providing comprehensive reports to enhance your existing content
+        strategies.
+      </p>
+    ),
+  },
+  {
+    title: "What does your website writing service include?",
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        Our website writing service covers comprehensive copywriting from home
+        pages and landing pages to service pages and blogs, optimized for SEO.
+      </p>
+    ),
   },
   {
     title:
-      "What does your website writing service include?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">Our website writing service covers comprehensive copywriting from home pages and landing pages to service pages and blogs, optimized for SEO.</p>,
-  },
-  {
-    title: "How do you measure the effectiveness of your content writing services?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">We track key performance indicators such as organic traffic, conversion rates, engagement metrics, and search rankings to continuously optimize and enhance content performance.</p>,
+      "How do you measure the effectiveness of your content writing services?",
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        We track key performance indicators such as organic traffic, conversion
+        rates, engagement metrics, and search rankings to continuously optimize
+        and enhance content performance.
+      </p>
+    ),
   },
   {
     title: "Which industries do you serve for B2B content writing?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">Our expertise spans a broad range of industries, including technology, finance, healthcare, and manufacturing, ensuring industry-specific insights and high-quality content for B2B markets.</p>,
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        Our expertise spans a broad range of industries, including technology,
+        finance, healthcare, and manufacturing, ensuring industry-specific
+        insights and high-quality content for B2B markets.
+      </p>
+    ),
   },
   {
-    title: "How do you create engaging B2C content that resonates with consumers?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">We blend creative storytelling, crafting engaging, relatable content that builds emotional connections and drives brand loyalty among B2C audiences.</p>,
+    title:
+      "How do you create engaging B2C content that resonates with consumers?",
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        We blend creative storytelling, crafting engaging, relatable content
+        that builds emotional connections and drives brand loyalty among B2C
+        audiences.
+      </p>
+    ),
   },
   {
     title: "What are your work timings and how can I get in touch with you?",
-    content:
-      <p className="p-4 bg-white rounded-b-lg text-gray-700">We work between 9 am to 6 pm every day from Monday to Friday. You can contact us by filling out the form or reach out to us at Phone: +91-90032 85687 | Email: <Link href="mailto:reachout@penthusiasts.com" className="text-text font-medium tracking-wide underline underline-offset-4">reachout@penthusiasts.com</Link></p>,
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        We work between 9 am to 6 pm every day from Monday to Friday. You can
+        contact us by filling out the form or reach out to us at Phone:
+        +91-90032 85687 | Email:{" "}
+        <Link
+          href="mailto:reachout@penthusiasts.com"
+          className="text-text font-medium tracking-wide underline underline-offset-4"
+        >
+          reachout@penthusiasts.com
+        </Link>
+      </p>
+    ),
   },
   {
     title: "Can you provide samples or case studies of your previous work?",
-    content:
-      (<p className="p-4 bg-white rounded-b-lg text-gray-700">Yes, we can share a portfolio of content projects and case studies that highlight our expertise in creating high-performing, industry-specific content. You can request samples from this link: <Link href="/resources/works" className="text-text font-medium tracking-wide hover:underline">work samples</Link></p>)
+    content: (
+      <p className="p-4 bg-white rounded-b-lg text-gray-700">
+        Yes, we can share a portfolio of content projects and case studies that
+        highlight our expertise in creating high-performing, industry-specific
+        content. You can request samples from this link:{" "}
+        <Link
+          href="/resources/works"
+          className="text-text font-medium tracking-wide hover:underline"
+        >
+          work samples
+        </Link>
+      </p>
+    ),
   },
 ];
 
@@ -312,19 +376,15 @@ export const achievements = [
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">Beauty & Wellness:</span>Boosted
-            <span className="font-bold px-1">Vurve Salon’s</span>online presence
-            by generating<span className="font-bold px-1">9K+</span>organic
-            visitors through strategic blog content for the beauty services
-            sector.
+            <span className="font-bold px-1">Beauty:</span>Contributed to increasing traffic for the <span className="font-bold px-1">Vurve Salon's</span>website through strategic content creation for blogs and web pages
           </li>
         ),
       },
       {
         para: (
           <li className="text-base md:text-lg">
-            <span className="font-bold px-1">SaaS:</span> Led a
-            content-driven LinkedIn strategy for
+            <span className="font-bold px-1">SaaS:</span> Led a content-driven
+            LinkedIn strategy for
             <span className="font-bold px-1">Congruent Solutions,</span>a
             US-based retirement plan administration services and technology
             solutions provider, helping them gain
@@ -562,12 +622,18 @@ export const HWEB2BContent = [
 
 export const WQCB2BContent = [
   {
-    title: "Drives Organic Traffic",
-    desc: "SEO-optimized content improves rankings and attracts high-intent visitors.",
+    title: "Trust Wins Business",
+    desc: (
+      <p className="text-sm md:text-base">
+        Expert content <strong className="px-0.5">connects</strong> and builds credibility with
+        your target customers. It makes your brand the go-to authority in your
+        space.
+      </p>
+    ),
   },
   {
-    title: "Trust Wins Business",
-    desc: "Expert content builds credibility and makes your brand the go-to authority.",
+    title: "Drives Organic Traffic",
+    desc: "SEO-optimized content improves rankings and attracts high-intent visitors.",
   },
   {
     title: "Words That Convert",
@@ -576,7 +642,7 @@ export const WQCB2BContent = [
   {
     title: "More Reach, More Impact",
     desc: "A unified content strategy builds brand authority and ensures consistency across all platforms.",
-  }
+  },
 ];
 
 export const contentSolutionsB2C = [
@@ -636,7 +702,7 @@ export const WQCB2CContent = [
 
 export const contentSolutionsSM = [
   { icon: "/icon-1.svg", desc: "Personal Branding Consultation" },
-  { icon: "/icon-2.svg", desc: "Personal Branding across all social media" }
+  { icon: "/icon-2.svg", desc: "Personal Branding across all social media" },
 ];
 
 export const HWEFounderContent = [
@@ -702,7 +768,7 @@ export const serviceB2BClients = [
       "Our team collaborated closely with various internal departments to understand bitsCrunch's operations. We developed a clear strategy, combining subject knowledge with consistency and patience. Content creation spanned multiple formats, including informative blogs, PRs, C-suite interviews, and podcasts, contributing to the client's growth in the blockchain and NFT space.",
     col: false,
     // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#DBF7F7E6] to-[#94E6E7B5]",
-    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white",
   },
   {
     icon: "/client-1.svg",
@@ -720,7 +786,7 @@ export const serviceB2BClients = [
       "Our team developed and executed a strategic content plan focused on thought leadership, leveraging Congruent Solutions' expertise in retirement technology. By creating insightful and engaging LinkedIn posts, the initiative successfully boosted organic traffic and positioned the company as a trusted voice in its industry.",
     col: true,
     // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#FEF0B7] to-[#FDDA4F]",
-    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white",
   },
 ];
 
@@ -741,7 +807,7 @@ export const serviceB2CClients = [
       "Our  team created engaging website blogs for Vurve Salon, focusing on relevant beauty and wellness topics. This strategic content initiative significantly boosted the salon's online visibility, attracting a substantial organic reach and positioning Vurve as a knowledgeable and appealing destination in the beauty sector.",
     col: true,
     // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#C6E3C0E0] to-[#39B54A99]",
-    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white",
   },
   {
     icon: "/client-14.png",
@@ -759,7 +825,7 @@ export const serviceB2CClients = [
       "Over two years, we delivered well-researched, engaging content tailored to trends and sporting events. We collaborated closely with internal teams, developed a clear strategy, and maintained consistency in content delivery, resulting in improved brand awareness and positioning as an authority in the sports apparel sector.",
     col: false,
     // bgColor: "bg-gradient-to-b from-[#FFFFFF] via-[#EFDBD5E9] to-[#B5543999]",
-    bgColor: "bg-linear-to-b from-text to-green-darker text-white"
+    bgColor: "bg-linear-to-b from-text to-green-darker text-white",
   },
 ];
 
