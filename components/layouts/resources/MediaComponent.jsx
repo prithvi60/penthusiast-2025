@@ -26,7 +26,8 @@ const MediaComponent = ({ media }) => {
                             alt={list.imageAlt}
                             width={380}
                             height={450}
-                            className="object-contain object-center mx-auto overflow-hidden"
+                            quality={100}
+                            className="object-contain object-center max-h-64 rounded-t-lg w-full overflow-hidden"
                             sizes="(min-width: 780px) 144px, (min-width: 380px) 128px, calc(100vw - 244px)"
                         />
                         <h3 className="font-medium text-base md:text-lg p-4">{list.title}</h3>
