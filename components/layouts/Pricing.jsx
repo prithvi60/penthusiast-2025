@@ -148,7 +148,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
                                 duration: 0.25,
                                 ease: "easeInOut",
                             }}
-                            className={`block text-4xl ${highlight ? "text-white" : "text-green-darker"} font-bold`}
+                            className={`block text-4xl ${highlight ? "text-white" : "text-text"} font-bold`}
                         >
                             ₹{price}
                         </motion.span>
@@ -176,7 +176,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
                 <button
                     aria-label="Choose plan"
                     title="Choose plan"
-                    className={` ${highlight ? "bg-text hover:shadow-[4px_4px_0px_#00FFE7]" : "bg-[#008080]/30 text-text hover:shadow-[4px_4px_0px_#4db6ac]"} w-full cursor-pointer  px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none rounded-lg`}
+                    className={` ${highlight ? "bg-text hover:shadow-[4px_4px_0px_#00FFE7]" : "bg-linear-to-bl from-green-light to-green-darker text-white hover:shadow-[4px_4px_0px_#4db6ac]"} w-full cursor-pointer  px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-sm transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none rounded-lg`}
                 >
                     Choose plan
                 </button>
@@ -189,9 +189,9 @@ const CheckListItem = ({ children, checked }) => {
     return (
         <div className="flex items-center gap-2 text-sm">
             {checked ? (
-                <GoCheckCircleFill className="text-lg text-green-light" />
+                <GoCheckCircleFill className="text-lg text-text" />
             ) : (
-                <GiCancel className="text-lg text-green-light" />
+                <GiCancel className="text-lg text-text" />
             )}
             {children}
         </div>

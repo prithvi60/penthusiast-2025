@@ -10,12 +10,14 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className={`px-5 py-[40px] md:px-10 lg:px-[80px] md:py-[70px] relative space-y-6 md:space-y-10 w-full`}>
+        <footer
+            className={`px-5 py-[40px] md:px-10 lg:px-[80px] md:py-[70px] relative space-y-6 md:space-y-10 w-full`}
+        >
             <div
                 className={`absolute -z-10 h-full inset-0 bg-radial from-gradient-1 to-gradient-2 sm:h-64 blur-3xl opacity-20 rounded-full rotate-[4deg] w-[90%] sm:m-auto`}
             />
             <div className="flex flex-col gap-6 lg:gap-8 w-full">
-                <div className="flex flex-col gap-y-6">
+                <div className="flex flex-col justify-center items-center sm:justify-start sm:items-start gap-y-6">
                     <Link title="logo" href={"/"} className="flex items-center gap-2">
                         <Image
                             title={"logo"}
@@ -29,9 +31,9 @@ const Footer = () => {
                         />
                     </Link>
                 </div>
-                <div className="flex flex-col md:flex-row md:justify-between gap-x-3 gap-y-6 md:gap-y-8">
+                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between gap-x-3 gap-y-6 md:gap-y-8">
                     <div className="flex flex-col gap-y-6 sm:flex-row justify-between md:gap-6 lg:gap-y-6">
-                        <div className="block space-y-2">
+                        <div className="block space-y-2 w-max mx-auto sm:w-full sm:mx-0">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.75584567840235!2d80.18601152946367!3d13.096222760995541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52632c8fa760a7%3A0xa89c2fd5d4ccbeab!2sPenthusiasts!5e0!3m2!1sen!2sin!4v1743595995818!5m2!1sen!2sin"
                                 title="our office location"
@@ -40,10 +42,10 @@ const Footer = () => {
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                className="h-28 w-52 sm:w-40 xl:w-56 xl:h-32"
+                                className="h-28 w-64 sm:w-40 xl:w-56 xl:h-32"
                             ></iframe>
                             <h4 className="text-sm md:text-base font-semibold tracking-wider text-text">
-                                Reg Address:
+                                Registered Address:
                             </h4>
                             <p className="text-xs md:text-sm">
                                 Penthusiasts,
@@ -53,7 +55,7 @@ const Footer = () => {
                                 Thirumullaivoyal, Chennai-62
                             </p>
                         </div>
-                        <div className="block space-y-2">
+                        <div lassName="block space-y-2 w-max mx-auto sm:w-full sm:mx-0">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.534788119043!2d80.23897797436692!3d13.065257187258814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ce08031391%3A0x1e8e6ee23500142c!2sWOCO%20SPACES!5e0!3m2!1sen!2sin!4v1743596147817!5m2!1sen!2sin"
                                 width="100%"
@@ -61,7 +63,7 @@ const Footer = () => {
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                className="h-28 w-52 sm:w-40 xl:w-56 xl:h-32"
+                                className="h-28 w-64 sm:w-40 xl:w-56 xl:h-32"
                             ></iframe>
                             <h4 className="text-sm md:text-base font-semibold tracking-wider text-text">
                                 Work Location:
@@ -69,14 +71,14 @@ const Footer = () => {
                             <p className="text-xs md:text-sm">
                                 Penthusiasts,
                                 <br />
-                                4th Floor, Woco Spaces, No 11/38, Status Quo Building,
-                                <br /> Sterling Rd, Seetha Nagar,
+                                4th Floor, Woco Spaces, No 11/38,
+                                <br /> Status Quo Building,Sterling Rd,<br /> Seetha Nagar,Nungambakkam,
                                 <br />
-                                Nungambakkam, Chennai, Tamil Nadu 600034
+                                Chennai, Tamil Nadu 600034
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-4 md:gap-3.5 lg:gap-6 xl:gap-12">
+                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-4 gap-y-4 md:gap-3.5 lg:gap-6 xl:gap-12">
                         <div className="block space-y-3">
                             {/* <h4 className="text-lg font-medium capitalize tracking-wider md:text-xl">
                             Helpful Links
