@@ -1,7 +1,7 @@
 import { Gradient } from '@/components/UI/Gradient'
 import { WorksModal } from '@/components/UI/Modal'
 import { client } from '@/sanity/lib/client';
-import { B2B_QUERY, B2C_QUERY, WCP_QUERY } from '@/sanity/Queries';
+import { B2B_QUERY, B2C_QUERY, BC_QUERY, MC_QUERY, WCP_QUERY } from '@/sanity/Queries';
 import { B2BContent, B2CContent, WCP } from '@/utils/Data'
 
 const Works = async () => {
@@ -11,7 +11,7 @@ const Works = async () => {
     {
       cache: "no-cache",
       next: {
-        tags: ["post", "media", "wcp", "b2b", "b2c"],
+        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
       },
     }
   );
@@ -21,7 +21,7 @@ const Works = async () => {
     {
       cache: "no-cache",
       next: {
-        tags: ["post", "media", "wcp", "b2b", "b2c"],
+        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
       },
     }
   );
@@ -31,7 +31,27 @@ const Works = async () => {
     {
       cache: "no-cache",
       next: {
-        tags: ["post", "media", "wcp", "b2b", "b2c"],
+        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
+      },
+    }
+  );
+  const MCPosts = await client.fetch(
+    MC_QUERY,
+    {},
+    {
+      cache: "no-cache",
+      next: {
+        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
+      },
+    }
+  );
+  const BCPosts = await client.fetch(
+    BC_QUERY,
+    {},
+    {
+      cache: "no-cache",
+      next: {
+        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
       },
     }
   );
@@ -46,6 +66,8 @@ const Works = async () => {
       <div className='space-y-16 md:space-y-32'>
         <WorksModal data={b2cPosts} title={"B2C Work Samples"} />
         <WorksModal data={b2bPosts} title={"B2B Work Samples"} />
+        <WorksModal data={MCPosts} title={"Marketing Content"} />
+        <WorksModal data={BCPosts} title={"Blog Content"} />
         <WorksModal data={wcpPosts} title={"PDF of Website Content Portfolio"} />
       </div>
     </section>

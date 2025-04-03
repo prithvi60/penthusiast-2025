@@ -72,3 +72,24 @@ export const B2C_QUERY = groq`
   "pdfUrl": pdfFile.asset->url,
   publishedAt
 }`;
+
+// CONTENT QUERIES
+export const MC_QUERY = groq`
+*[_type == "marketing_content"]|order(publishedAt desc) {
+  field,
+  type,
+  "imageUrl": image.asset->url,
+  "altText": image.alt,
+  "pdfUrl": pdfFile.asset->url,
+  publishedAt
+}`;
+
+export const BC_QUERY = groq`
+*[_type == "blog_content"]|order(publishedAt desc) {
+  field,
+  type,
+  "imageUrl": image.asset->url,
+  "altText": image.alt,
+  "pdfUrl": pdfFile.asset->url,
+  publishedAt
+}`;

@@ -46,7 +46,7 @@ const Contact = () => {
                     <div className="flex gap-2 text-sm">
                         <IoLocation className="text-xl shrink-0 text-text" />
                         <p className="text-sm">
-                            Reg Address:<br />
+                            Registered Address:<br />
                             Penthusiasts,<br />
                             #12, Bharathi Nagar 1st Street,<br />
                             Thirumullaivoyal, Chennai-62
