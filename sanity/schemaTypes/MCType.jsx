@@ -2,7 +2,7 @@ import { defineField, defineType } from "sanity";
 
 export const MCType = defineType({
     name: "marketing_content",
-    title: "Marketing Content",
+    title: "Marketing Collateral",
     type: "document",
     fields: [
         defineField({

@@ -12,7 +12,7 @@ export const navLinks = [
   {
     menu: "services",
     subMenus: [
-      { menu: "Content - B2B", link: "/services/content-B2B" },
+      { menu: "Content - B2B / SaaS", link: "/services/content-B2B" },
       { menu: "Content - B2C", link: "/services/content-B2C" },
       { menu: "For Founders", link: "/services/founders" },
     ],
@@ -40,7 +40,7 @@ export const footerLinks1 = [
 
 export const footerLinks2 = [
   // { menu: "Topics & Types", href: "/topics-types },
-  { menu: "Content - B2B", href: "/services/content-B2B" },
+  { menu: "Content - B2B / SaaS", href: "/services/content-B2B" },
   { menu: "Content - B2C", href: "/services/content-B2C" },
   { menu: "For Founders", href: "/services/founders" },
 ];
@@ -231,12 +231,12 @@ export const accordionItems = [
     ),
   },
   {
-    title: "Which industries do you serve for B2B content writing?",
+    title: "Which industries do you serve for B2B / SaaS content writing?",
     content: (
       <p className="p-4 bg-white rounded-b-lg text-gray-700">
         Our expertise spans a broad range of industries, including technology,
         finance, healthcare, and manufacturing, ensuring industry-specific
-        insights and high-quality content for B2B markets.
+        insights and high-quality content for B2B / SaaS markets.
       </p>
     ),
   },
@@ -322,7 +322,7 @@ export const achievements = [
             <span className="font-bold px-1">Diverse Sectors:</span>Successfully
             delivered <span className="font-bold px-1">1,000+</span>projects
             across <span className="font-bold px-1">25+</span> domains, spanning
-            B2B and B2C industries.
+            B2B / SaaS and B2C industries.
           </li>
         ),
       },
@@ -502,12 +502,12 @@ export const timeline = [
   },
   {
     year: "2018",
-    title: "The Leap into B2B",
+    title: "The Leap into B2B / SaaS",
     lists: [
       {
         listTitle: "Penthusiasts expanded into the corporate world with:",
         points: [
-          "The first B2B fintech blog project for Cloudbankin",
+          "The first B2B / SaaS fintech blog project for Cloudbankin",
           "Product description writing diving deeper into brand storytelling",
         ],
       },
@@ -590,7 +590,7 @@ export const contentSolutions = [
   { icon: "/icon-2.svg", desc: "Landing Page Copywriting" },
   { icon: "/icon-3.svg", desc: "Blog Writing" },
   { icon: "/icon-3.svg", desc: "SEO Blogs" },
-  { icon: "/icon-4.svg", desc: "LinkedIn Content Creation for B2B Businesses" },
+  { icon: "/icon-4.svg", desc: "LinkedIn Content Creation for B2B / SaaS Businesses" },
 ];
 
 export const HWEB2BContent = [

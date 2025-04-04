@@ -24,7 +24,7 @@ const TitleB2B = () => (
     <h2 className="text-3xl sm:text-5xl lg:text-[70px] md:!leading-20 tracking-wider font-bold">
         Strategic Content for{" "}
         <span className="font-extrabold text-text px-3">
-            Growing B2B / Sass
+            Growing B2B / SaaS
         </span>{" "}
     </h2>
 );
@@ -32,7 +32,7 @@ const TitleB2B = () => (
 const HWEB2B = () => (
     <h2 className="text-4xl md:text-5xl lg:text-[60px] md:!leading-20 tracking-wider font-bold text-center">
         How do we make an{" "}
-        <span className="font-extrabold text-text px-3">impact on B2B?</span>{" "}
+        <span className="font-extrabold text-text px-3">impact on B2B / SaaS?</span>{" "}
     </h2>
 );
 
@@ -88,7 +88,7 @@ const Page = async ({ params }) => {
                 }
                 desc={
                     service === "content-B2B"
-                        ? "We craft compelling B2B content that builds trust, engages decision-makers, and drives traffic. From blogs to website copy, we help businesses communicate effectively."
+                        ? "We craft compelling B2B / SaaS content that builds trust, engages decision-makers, and drives traffic. From blogs to website copy, we help businesses communicate effectively."
                         : service === "content-B2C"
                             ? "We create compelling B2C content that captures attention, builds brand loyalty, and drives engagement. From social media to blogs, we help brands connect with their audience effectively."
                             : "We empower founders to build credibility, expand their reach, and create meaningful connections. From LinkedIn to YouTube, we craft content that positions you as a leader in your industry."
@@ -97,7 +97,7 @@ const Page = async ({ params }) => {
             <ContentSolutions
                 title={
                     service === "content-B2B"
-                        ? "Content Solutions for Impactful B2B Communication"
+                        ? "Content Solutions for Impactful B2B / SaaS Communication"
                         : service === "content-B2C"
                             ? "Engaging Content Solutions for B2C Brands"
                             : "Social Media Solutions for Founders"
@@ -139,7 +139,7 @@ const Page = async ({ params }) => {
             {service !== "founders" && (
                 <ServiceCard subTitle={"Client Spotlights"}
                     title={service === "content-B2B"
-                        ? "Showcasing our B2B impactful client collaborations"
+                        ? "Showcasing our B2B / SaaS impactful client collaborations"
                         : service === "content-B2C"
                             ? "Showcasing our B2C impactful client collaborations"
                             : "Showcasing our Founder's impactful client collaborations"} data={

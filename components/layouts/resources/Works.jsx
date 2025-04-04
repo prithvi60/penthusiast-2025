@@ -65,10 +65,10 @@ const Works = async () => {
       <Gradient rotate />
       <div className='space-y-16 md:space-y-32'>
         <WorksModal data={b2cPosts} title={"B2C Work Samples"} />
-        <WorksModal data={b2bPosts} title={"B2B Work Samples"} />
-        <WorksModal data={MCPosts} title={"Marketing Content"} />
-        {/* <WorksModal data={BCPosts} title={"Blog Content"} /> */}
+        <WorksModal data={b2bPosts} title={"B2B / SaaS Work Samples"} />
+        <WorksModal data={MCPosts} title={"Marketing Collateral"} />
         <WorksModal data={wcpPosts} title={"Website Content Portfolio"} />
+        {/* <WorksModal data={BCPosts} title={"Blog Content"} /> */}
       </div>
     </section>
   )

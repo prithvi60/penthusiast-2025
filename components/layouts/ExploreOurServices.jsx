@@ -24,7 +24,7 @@ const ExploreOurServices = ({ subTitle, title }) => {
                     }
                     data={B2BContentHome}
                     img={"/b2b-icon.svg"}
-                    title="Content for B2B"
+                    title="Content for B2B / SaaS"
                     href="/services/content-B2B"
                 />
                 <Card

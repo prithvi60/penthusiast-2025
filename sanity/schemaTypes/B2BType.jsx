@@ -2,7 +2,7 @@ import { defineField, defineType } from "sanity";
 
 export const B2BType = defineType({
     name: "b2b",
-    title: "B2B Work Samples",
+    title: "B2B / SaaS Work Samples",
     type: "document",
     fields: [
         defineField({

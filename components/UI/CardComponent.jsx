@@ -110,7 +110,7 @@ export const Card = ({ bgColor, data, img, title, href }) => {
                 </h4>
                 <p className="text-sm font-bold tracking-wide text-green-light">{data.tag[1].name}</p>
             </div>
-            {title !== "Content for B2B" && (
+            {title !== "Content for B2B / SaaS" && (
                 <div
                     className={`absolute shadow-lg rounded-lg p-6 left-1/2 -translate-x-1/2 z-20 bg-white w-1/2 transition-all transform duration-500 ease-in-out space-y-1.5
                     ${isActive ? "-bottom-5 lg:group-hover:-bottom-3" : "-bottom-full"}`}
