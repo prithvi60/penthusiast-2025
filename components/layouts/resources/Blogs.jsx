@@ -51,7 +51,7 @@ const Blogs = ({ posts }) => {
                         <Link title="blog post page"
                             href={`/resources/blog/${item.slug.current}`}
                             key={idx}
-                            className="rounded-lg shadow-lg overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer w-full max-w-[450px]"
+                            className="rounded-lg shadow-lg overflow-hidden hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer w-full max-w-[450px] bg-white"
                         >
                             <div className="w-full h-60 overflow-hidden relative">
                                 <Image

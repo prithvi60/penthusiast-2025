@@ -45,17 +45,17 @@ const Works = async () => {
       },
     }
   );
-  const BCPosts = await client.fetch(
-    BC_QUERY,
-    {},
-    {
-      cache: "no-cache",
-      next: {
-        tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
-      },
-    }
-  );
-  // console.log(wcpPosts);
+  // const BCPosts = await client.fetch(
+  //   BC_QUERY,
+  //   {},
+  //   {
+  //     cache: "no-cache",
+  //     next: {
+  //       tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
+  //     },
+  //   }
+  // );
+
 
   return (
     <section className='padding w-full space-y-14'>
@@ -67,8 +67,8 @@ const Works = async () => {
         <WorksModal data={b2cPosts} title={"B2C Work Samples"} />
         <WorksModal data={b2bPosts} title={"B2B Work Samples"} />
         <WorksModal data={MCPosts} title={"Marketing Content"} />
-        <WorksModal data={BCPosts} title={"Blog Content"} />
-        <WorksModal data={wcpPosts} title={"PDF of Website Content Portfolio"} />
+        {/* <WorksModal data={BCPosts} title={"Blog Content"} /> */}
+        <WorksModal data={wcpPosts} title={"Website Content Portfolio"} />
       </div>
     </section>
   )

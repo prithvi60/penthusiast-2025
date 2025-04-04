@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Contact = () => {
     return (
-        <section className="relative flex flex-col items-start justify-between w-full max-w-5xl gap-20 mx-auto padding md:gap-0 md:flex-row">
+        <section className="relative flex flex-col items-start justify-between w-full max-w-7xl gap-20 mx-auto padding md:gap-0 md:flex-row">
             <Gradient rotate />
             <div className="w-full space-y-5 md:w-3/5 md:sticky md:top-32">
                 <div className="space-y-3">

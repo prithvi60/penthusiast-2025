@@ -7,5 +7,5 @@ import { postType } from "./postType";
 import { WCPType } from "./WCPType";
 
 export const schema = {
-  types: [postType, mediaType, WCPType, B2BType, B2CType, MCType, BCType],
+  types: [postType, mediaType, WCPType, B2BType, B2CType, MCType],
 };

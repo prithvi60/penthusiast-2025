@@ -8,7 +8,7 @@ const OurGuidingValues = () => {
             <h2 className="text-3xl sm:text-5xl text-center lg:text-6xl font-bold">
                 Our Guiding Values
             </h2>
-            <div className="w-full gap-6 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr">
+            <div className="w-full gap-6 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr max-w-[1520px] mx-auto">
                 {ourGuides.map((guide, index) => (
                     <div
                         key={index}

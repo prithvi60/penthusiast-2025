@@ -10,7 +10,7 @@ const MediaComponent = ({ media }) => {
             <h2 className="text-3xl text-center uppercase sm:text-5xl lg:text-6xl font-bold">
                 MEDIA
             </h2>
-            <div className="w-full grid grid-cols-1 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-y-10">
+            <div className="w-full grid grid-cols-1 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-y-10 max-w-7xl mx-auto">
                 <Gradient rotate />
                 {media.map((list, idx) => (
                     <Link

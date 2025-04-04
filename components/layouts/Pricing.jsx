@@ -29,7 +29,7 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Human-AI Research",
+                                children: "AI-Assisted Research; Human Written",
                                 checked: true,
                             },
                             {
@@ -57,7 +57,7 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Human-AI Research",
+                                children: "AI-Assisted Research; Human Written",
                                 checked: true,
                             },
                             {
@@ -153,7 +153,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
                             ₹{price}
                         </motion.span>
                     </AnimatePresence>
-                    <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-[10px]" : "text-sm"}`}>
+                    <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-xs" : "text-sm"}`}>
                         <span className="block">{per}</span>
                         {title === "Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
                     </motion.div>
@@ -187,7 +187,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per }) => {
 
 const CheckListItem = ({ children, checked }) => {
     return (
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex gap-2 text-sm">
             {checked ? (
                 <GoCheckCircleFill className="text-lg text-text" />
             ) : (
