@@ -14,7 +14,7 @@ const SPRING_OPTIONS = {
     damping: 100,
 };
 
-const NeuFollowButton = ({ type, handleClick }) => {
+const NeuFollowButton = ({ type, handleClick, price }) => {
     const ref = useRef(null);
 
     const x = useMotionValue(0);
@@ -27,7 +27,7 @@ const NeuFollowButton = ({ type, handleClick }) => {
 
 
     return (
-        <div className="mx-auto w-max bg-green-light rounded-lg cursor-pointer" onClick={handleClick}>
+        <div className={`${!price && "mx-auto"} w-max bg-green-light rounded-lg cursor-pointer`} onClick={handleClick}>
             <motion.button
                 ref={ref}
                 style={{
@@ -36,7 +36,7 @@ const NeuFollowButton = ({ type, handleClick }) => {
                 className={`bg-linear-to-bl group from-green-light gap-5 font-extrabold to-green-darker flex h-full w-full items-center text-white justify-between transition-all duration-300 rounded-lg border-2 border-solid border-white cursor-pointer text-sm md:text-base hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#00FFE7] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl ${type ? "px-3.5 py-2 md:py-3" : "px-3 py-2 md:py-3.5 md:px-5"
                     }`}
             >
-                <Copy>Book a meeting</Copy>
+                <Copy>{price ? "Book a consultation" : "Book a meeting"}</Copy>
                 <Arrow />
             </motion.button>
         </div>

@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { name, email, message, title, pdf } = await req.json();
+  const { name, email, message, title, pdf, priceTag } = await req.json();
 
   const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
 
@@ -90,7 +90,7 @@ export async function POST(req) {
     from: `Penthusiasts - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
-    html: generateEmailTemplateForUser(messageForUser, title),
+    html: generateEmailTemplateForUser(messageForUser, title, priceTag),
     attachments: await getPdfAttachment(),
   };
 

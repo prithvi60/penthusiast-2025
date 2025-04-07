@@ -1,4 +1,4 @@
-export function generateEmailTemplateForUser(mainContent, title) {
+export function generateEmailTemplateForUser(mainContent, title, priceTag) {
     const imageUrl = "https://ik.imagekit.io/webibee/penthusiast_logo_full.png";
     return `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
@@ -7,9 +7,9 @@ export function generateEmailTemplateForUser(mainContent, title) {
               </div>
           ${mainContent}
            <p style="font-size: 16px; color: #555;">Greetings from Penthusiasts Team!</p>
-           ${title !== "contact" ?
+           ${(title !== "contact" && priceTag === "") ?
             `<p style="font-size: 16px; color: #555;">
-                Thank you for your interest with Penthusiasts. Please check the attached work sample requested.
+                Thank you for your interest with Penthusiasts. Please check the attached work sample requested.
             </p>`
             :
             `<p style="font-size: 16px; color: #555;">

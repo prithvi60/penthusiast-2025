@@ -12,7 +12,7 @@ const Founder = () => {
                 <div className="relative overflow-hidden w-full lg:w-2/5 h-80 shadow-xl rounded-md">
                     <Image
                         title="founder picture"
-                        src={"/founder.png"}
+                        src={"/founder.jpg"}
                         alt="founder image"
                         fill
                         className="object-cover object-center"

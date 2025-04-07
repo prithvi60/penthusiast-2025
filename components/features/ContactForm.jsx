@@ -35,7 +35,8 @@ export const ContactForm = () => {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
-                    title: "contact"
+                    title: "contact",
+                    priceTag: "",
                 }),
             });
 

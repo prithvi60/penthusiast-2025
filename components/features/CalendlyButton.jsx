@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import NeuFollowButton from "../UI/NeuFollowButton";
 
-const CalendlyLink = ({ type }) => {
+const CalendlyLink = ({ type, price }) => {
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
     const url = process.env.NEXT_PUBLIC_CALENDLY_ID
 
@@ -58,7 +58,7 @@ const CalendlyLink = ({ type }) => {
     };
 
     return (
-        <NeuFollowButton handleClick={handleCalendlyClick} type={type} />
+        <NeuFollowButton handleClick={handleCalendlyClick} type={type} price={price} />
         // <button
         //     style={{
         //         transform,

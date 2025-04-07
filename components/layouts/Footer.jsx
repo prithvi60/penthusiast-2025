@@ -31,7 +31,7 @@ const Footer = () => {
                         />
                     </Link>
                 </div>
-                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between gap-x-3 gap-y-6 md:gap-y-8">
+                <div className="flex flex-col justify-center items-center md:items-start md:flex-row md:justify-between gap-x-3 gap-y-6 md:gap-y-8">
                     <div className="flex flex-col gap-y-6 sm:flex-row justify-between md:gap-6 lg:gap-y-6">
                         <div className="block space-y-2 w-max mx-auto sm:w-full sm:mx-0">
                             <iframe
@@ -78,7 +78,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-4 gap-y-4 md:gap-3.5 lg:gap-6 xl:gap-12">
+                    <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-4 gap-y-4 md:gap-2 lg:gap-3 xl:gap-10">
                         <div className="block space-y-3">
                             {/* <h4 className="text-lg font-medium capitalize tracking-wider md:text-xl">
                             Helpful Links
