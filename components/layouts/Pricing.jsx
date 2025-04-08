@@ -24,8 +24,8 @@ export const Pricing = () => {
                     <PriceColumn
                         title="Website Content Creation"
                         price="4000"
-                        per={"per page"}
-                        statement="per month"
+                        per={"per page / month"}
+                        statement=""
                         items={[
                             {
                                 children: "Crisper and actionable copies",
@@ -55,8 +55,8 @@ export const Pricing = () => {
                     <PriceColumn
                         title="B2B / B2B SaaS Blogs"
                         price={"10850"}
-                        per={"per blog"}
-                        statement="(Monthly Charges. Additional charges for blog banners / infographics / in-blog images)"
+                        per={"per blog / month"}
+                        statement="Additional charges for blog banners / infographics / in-blog images"
                         items={[
                             {
                                 children: "Topic generation",
@@ -90,8 +90,8 @@ export const Pricing = () => {
                     <PriceColumn
                         title="B2C Services / D2C / eCommerce Blogs"
                         price={"4000"}
-                        per={"per blog"}
-                        statement="(Monthly Charges. Additional charges for blog banners / infographics / in-blog images)"
+                        per={"per blog / month"}
+                        statement="Additional charges for blog banners / infographics / in-blog images"
                         items={[
                             {
                                 children: "Topic generation",
@@ -124,10 +124,10 @@ export const Pricing = () => {
                     />
                     <PriceColumn
                         title="Social Media Content Creation"
-                        per={"(Meta - FB & IG, LinkedIn, YouTube)"}
+                        per={"per month"}
                         // highlight
                         price={"75000"}
-                        statement="per month"
+                        statement=""
                         items={[
                             {
                                 children: "Ideation & Brainstorming with Client",
@@ -181,7 +181,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per, setIsOpen
                 </span>
             )} */}
             <div>
-                <div className="mb-12 flex items-center gap-3 relative">
+                <div className={` ${price === "75000" ? "mb-8 lg:mb-10 xl:mb-8" : "mb-12"} flex items-center gap-3 relative`}>
                     <AnimatePresence mode="popLayout">
                         <motion.span
                             initial={{
@@ -210,8 +210,9 @@ const PriceColumn = ({ highlight, title, price, statement, items, per, setIsOpen
                         <span className="block">{per}</span>
                         {title === "B2B / B2B SaaS Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
                         {title === "B2C Services / D2C / eCommerce Blogs" && (<span className="block">{"(500-800 Words)"}</span>)}
+                        {price === "75000" && (<span className="block text-xs">{"(Meta - FB & IG, LinkedIn, YouTube)"}</span>)}
                     </motion.div>
-                    <span className={`absolute ${statement === "per month" || statement === "per page" ? "-bottom-6 md:-bottom-7" : "-bottom-10"} left-0 text-[11px] font-medium`}>{statement}</span>
+                    {statement !== "" && (<span className={`absolute -bottom-10 left-0 text-[11px] font-medium`}>{statement}</span>)}
                 </div>
                 <p
                     className={`mb-6 text-lg md:text-xl pt-6 font-bold ${highlight ? "text-white" : "text-green-darker"}`}

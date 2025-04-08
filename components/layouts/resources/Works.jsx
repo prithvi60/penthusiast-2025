@@ -45,16 +45,6 @@ const Works = async () => {
       },
     }
   );
-  // const BCPosts = await client.fetch(
-  //   BC_QUERY,
-  //   {},
-  //   {
-  //     cache: "no-cache",
-  //     next: {
-  //       tags: ["post", "media", "wcp", "b2b", "b2c", "marketing content", "blog content"],
-  //     },
-  //   }
-  // );
 
   const totalPosts = [
     ...b2cPosts,
@@ -62,7 +52,6 @@ const Works = async () => {
     ...MCPosts,
     ...wcpPosts,
   ];
-  // console.log(totalPosts);
 
   return (
     <section className='padding w-full space-y-14'>
