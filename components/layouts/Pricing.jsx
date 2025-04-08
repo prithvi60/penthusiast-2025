@@ -22,17 +22,17 @@ export const Pricing = () => {
             <section className="mx-auto max-w-[1520px]">
                 <div className="mt-6 lg:mt-12 flex justify-center flex-wrap gap-6 h-full">
                     <PriceColumn
-                        title="Web"
+                        title="Website Content Creation"
                         price="4000"
                         per={"per page"}
-                        statement="Website Content Creation"
+                        statement="per month"
                         items={[
                             {
-                                children: "Crisper and actionable",
+                                children: "Crisper and actionable copies",
                                 checked: true,
                             },
                             {
-                                children: "AI-Assisted Research; Human Written",
+                                children: "AI-assisted research; Human written",
                                 checked: true,
                             },
                             {
@@ -40,11 +40,11 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Tailored Brand Content",
+                                children: "In line with brand voice and requisites",
                                 checked: true,
                             },
                             {
-                                children: "7-Day Delivery (10 pgs)",
+                                children: "Delivery in 7 working days (up to 10 pages)",
                                 checked: true,
                             },
                         ]}
@@ -53,10 +53,10 @@ export const Pricing = () => {
                         setPriceCard={setPriceCard}
                     />
                     <PriceColumn
-                        title="Blogs"
+                        title="B2B / B2B SaaS Blogs"
                         price={"10850"}
                         per={"per blog"}
-                        statement="B2B / B2B SaaS Blogs"
+                        statement="(Monthly Charges. Additional charges for blog banners / infographics / in-blog images)"
                         items={[
                             {
                                 children: "Topic generation",
@@ -75,7 +75,7 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Proofread & Polished",
+                                children: "Final drafts after 2 levels of proof reading",
                                 checked: true,
                             },
                             {
@@ -88,10 +88,10 @@ export const Pricing = () => {
                         setPriceCard={setPriceCard}
                     />
                     <PriceColumn
-                        title="E-Commerce Blogs"
+                        title="B2C Services / D2C / eCommerce Blogs"
                         price={"4000"}
                         per={"per blog"}
-                        statement="B2C Services / D2C / eCommerce Blogs"
+                        statement="(Monthly Charges. Additional charges for blog banners / infographics / in-blog images)"
                         items={[
                             {
                                 children: "Topic generation",
@@ -110,7 +110,7 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Proofread & Polished",
+                                children: "Final drafts after 2 levels of proof reading",
                                 checked: true,
                             },
                             {
@@ -123,18 +123,18 @@ export const Pricing = () => {
                         setPriceCard={setPriceCard}
                     />
                     <PriceColumn
-                        title="Social Media"
+                        title="Social Media Content Creation"
                         per={"(Meta - FB & IG, LinkedIn, YouTube)"}
                         // highlight
                         price={"75000"}
-                        statement="Social Media Content Creation"
+                        statement="per month"
                         items={[
                             {
-                                children: "Ideation with client",
+                                children: "Ideation & Brainstorming with Client",
                                 checked: true,
                             },
                             {
-                                children: "Strategy and Buckets",
+                                children: "Content Buckets & Strategy Creation",
                                 checked: true,
                             },
                             {
@@ -150,11 +150,11 @@ export const Pricing = () => {
                                 checked: true,
                             },
                             {
-                                children: "Publishing & Promotion",
+                                children: "Content Publishing / Promotion & Distribution",
                                 checked: true,
                             },
                             {
-                                children: "Performance Analytics",
+                                children: "Content Performance & Analytics",
                                 checked: true,
                             },
                         ]}
@@ -181,7 +181,7 @@ const PriceColumn = ({ highlight, title, price, statement, items, per, setIsOpen
                 </span>
             )} */}
             <div>
-                <div className="mb-6 flex items-center gap-3 relative">
+                <div className="mb-12 flex items-center gap-3 relative">
                     <AnimatePresence mode="popLayout">
                         <motion.span
                             initial={{
@@ -206,26 +206,22 @@ const PriceColumn = ({ highlight, title, price, statement, items, per, setIsOpen
                             ₹{price}
                         </motion.span>
                     </AnimatePresence>
-                    <motion.div layout className={`font-medium space-y-1 ${title === "Social Media" ? "text-xs" : "text-sm"}`}>
+                    <motion.div layout className={`font-medium space-y-1 ${title === "Social Media Content Creation" ? "text-xs" : "text-sm"}`}>
                         <span className="block">{per}</span>
-                        {title === "Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
-                        {title === "E-Commerce Blogs" && (<span className="block">{"(500-800 Words)"}</span>)}
+                        {title === "B2B / B2B SaaS Blogs" && (<span className="block">{"(2k-2.5k Words)"}</span>)}
+                        {title === "B2C Services / D2C / eCommerce Blogs" && (<span className="block">{"(500-800 Words)"}</span>)}
                     </motion.div>
-                    {
-                        (title === "Blogs" || title === "E-Commerce Blogs") && (
-                            <span className="absolute -bottom-10 left-0 text-[11px] font-medium">{"(Additional charges for blog banners / infographics / in-blog images)"}</span>
-                        )
-                    }
+                    <span className={`absolute ${statement === "per month" || statement === "per page" ? "-bottom-6 md:-bottom-7" : "-bottom-10"} left-0 text-[11px] font-medium`}>{statement}</span>
                 </div>
                 <p
-                    className={`mb-6 text-xl md:text-2xl pt-6 font-semibold ${highlight ? "text-white" : "text-green-darker"}`}
+                    className={`mb-6 text-lg md:text-xl pt-6 font-bold ${highlight ? "text-white" : "text-green-darker"}`}
                 >
                     {title}
                 </p>
-                <p className="mb-8 text-sm -mt-2.5">{statement}</p>
+                {/* <p className="mb-8 text-sm -mt-2.5">{statement}</p> */}
             </div>
             <div className="">
-                <div className="mb-8 space-y-2 flex flex-col flex-grow">
+                <div className="mb-12 space-y-2 flex flex-col flex-grow">
                     {items.map((i) => (
                         <CheckListItem key={i.children} checked={i.checked}>
                             {i.children}

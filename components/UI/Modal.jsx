@@ -14,9 +14,9 @@ export const WorksModal = ({ title, data }) => {
   return (
     <div>
       <div className="space-y-10">
-        <h4 className="text-3xl sm:text-4xl lg:text-[60px] tracking-wider font-medium text-center">
+        {/* <h4 className="text-3xl sm:text-4xl lg:text-[60px] tracking-wider font-medium text-center">
           {title}
-        </h4>
+        </h4> */}
         <div
           className="flex flex-wrap justify-center items-center w-full h-full gap-8 sm:gap-10 lg:gap-16"
           onClick={() => {
@@ -27,7 +27,7 @@ export const WorksModal = ({ title, data }) => {
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-lg shadow-lg w-72 sm:w-60 lg:w-72 h-[350px] hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white overflow-hidden flex flex-col justify-between"
+              className="rounded-lg shadow-lg w-72 sm:w-60 lg:w-72 h-[350px] hover:scale-110 duration-300 ease-in-out transition-all cursor-pointer bg-white overflow-hidden flex flex-col gap-2"
               onClick={() => {
                 setPdf(item.pdfUrl);
                 setField(item.field);
@@ -41,16 +41,22 @@ export const WorksModal = ({ title, data }) => {
                   width={300}
                   height={256}
                   quality={85}
-                  className="object-contain object-center w-full h-full rounded-t-lg"
+                  className="object-cover object-center w-full h-full rounded-t-lg"
                 />
               </div>
-              <div className="flex justify-between items-center p-3.5">
-                <h5 className="text-xl font-medium tracking-wider md:text-2xl">
+              <div className="flex items-center md:items-start gap-4 p-3.5">
+                <Image
+                  title={"pdf icon"}
+                  src={"/pdf-icon.svg"}
+                  alt={"pdf icon"}
+                  width={30}
+                  height={25}
+                  quality={95}
+                  className="object-contain object-center"
+                />
+                <h5 className="text-base font-semibold tracking-wider md:text-lg">
                   {item.field}
                 </h5>
-                <p className="text-base md:text-lg tracking-wide">
-                  {item.type}
-                </p>
               </div>
             </div>
           ))}

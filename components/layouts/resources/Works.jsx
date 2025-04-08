@@ -56,6 +56,13 @@ const Works = async () => {
   //   }
   // );
 
+  const totalPosts = [
+    ...b2cPosts,
+    ...b2bPosts,
+    ...MCPosts,
+    ...wcpPosts,
+  ];
+  // console.log(totalPosts);
 
   return (
     <section className='padding w-full space-y-14'>
@@ -64,11 +71,7 @@ const Works = async () => {
       </h2>
       <Gradient rotate />
       <div className='space-y-16 md:space-y-32'>
-        <WorksModal data={b2cPosts} title={"B2C Work Samples"} />
-        <WorksModal data={b2bPosts} title={"B2B / SaaS Work Samples"} />
-        <WorksModal data={MCPosts} title={"Marketing Collateral"} />
-        <WorksModal data={wcpPosts} title={"Website Content Portfolio"} />
-        {/* <WorksModal data={BCPosts} title={"Blog Content"} /> */}
+        <WorksModal data={totalPosts} />
       </div>
     </section>
   )
