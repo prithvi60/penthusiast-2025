@@ -362,7 +362,7 @@ export const SpringModalPrice = ({ isOpen, setIsOpen, thank, setThank, price }) 
                     <div className="gap-2 flex flex-col">
                       <label
                         htmlFor="name"
-                        className="capitalize tracking-wider"
+                        className="capitalize tracking-wider font-semibold"
                       >
                         name
                       </label>
@@ -379,7 +379,7 @@ export const SpringModalPrice = ({ isOpen, setIsOpen, thank, setThank, price }) 
                     <div className="gap-2 flex flex-col">
                       <label
                         htmlFor="email"
-                        className="capitalize tracking-wider"
+                        className="capitalize tracking-wider font-semibold"
                       >
                         email
                       </label>
@@ -394,7 +394,7 @@ export const SpringModalPrice = ({ isOpen, setIsOpen, thank, setThank, price }) 
                       />
                     </div>
                     <div className="gap-2 flex flex-col">
-                      <label htmlFor="message" className="capitalize font-bold tracking-wider">
+                      <label htmlFor="message" className="capitalize font-semibold tracking-wider">
                         message
                       </label>
                       <textarea
