@@ -81,22 +81,22 @@ export const socialLinks = [
 ];
 
 export const ourClients = [
+  { logo: "/client-11.png", alt: "vurve logo" },
+  { logo: "/client-9.png", alt: "mayflower logo" },
   { logo: "/client-1.svg", alt: "congruent logo" },
   { logo: "/client-2.png", alt: "atlantic rcm logo" },
   { logo: "/client-3.png", alt: "eClaim status logo" },
-  { logo: "/client-4.png", alt: "cloudbankin logo" },
-  { logo: "/client-5.svg", alt: "bitsCrunch logo" },
-  { logo: "/client-6.png", alt: "SKC logo" },
-  { logo: "/client-7.png", alt: "canit solution logo" },
   { logo: "/client-8.png", alt: "clique logo" },
-  { logo: "/client-9.png", alt: "emami logo" },
-  { logo: "/client-10.png", alt: "ticket logo" },
-  { logo: "/client-11.png", alt: "vurve logo" },
-  { logo: "/client-12.png", alt: "go floaters logo" },
-  { logo: "/client-13.png", alt: "swan logo" },
+  { logo: "/client-7.png", alt: "canit solution logo" },
+  { logo: "/client-10.png", alt: "ticket9 logo" },
+  { logo: "/client-5.svg", alt: "bitsCrunch logo" },
+  { logo: "/client-17.jpg", alt: "fabright logo" },
+  { logo: "/client-6.png", alt: "SKC logo" },
   { logo: "/client-14.png", alt: "t10 sports logo" },
-  { logo: "/client-15.png", alt: "tata soulful logo" },
+  { logo: "/client-13.png", alt: "swan logo" },
   { logo: "/client-16.png", alt: "wild creek logo" },
+  // { logo: "/client-4.png", alt: "cloudbankin logo" },
+  // { logo: "/client-15.png", alt: "tata soulful logo" },
 ];
 
 export const domains = [

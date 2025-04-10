@@ -67,8 +67,14 @@ body {
 .slick-slide > div {
   margin: 0 10px !important;
 }
-
-  /* .explore-slider {
+@media (min-width: 1440px) {
+  .explore-slider {
     width: 100%;
-    height: 60vh;
-  } */
+    height: 45vh;
+  }
+}
+
+/* .explore-slider {
+  width: 100%;
+  height: 60vh;
+} */
