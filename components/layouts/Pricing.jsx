@@ -89,7 +89,7 @@ export const Pricing = () => {
                     />
                     <PriceColumn
                         title="B2C Services / D2C / eCommerce Blogs"
-                        price={"4000"}
+                        price={"5000"}
                         per={"per blog / month"}
                         statement="Additional charges for blog banners / infographics / in-blog images"
                         items={[
