@@ -15,7 +15,7 @@ export default function Home() {
     name: "Penthusiasts",
     image: "https://ik.imagekit.io/webibee/penthusiast_logo_full.png",
     description:
-      "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
+      "Elevate your brand with our content writing services. Expert copywriting services to engage your audience and boost your online presence. Contact us today!",
     email: "reachout@penthusiasts.com",
     url: "https://penthusiasts.com/",
   };
@@ -28,15 +28,8 @@ export default function Home() {
     telephone: "+91-9003285687",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
-      opens: "09:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "10:00",
       closes: "18:00",
     },
   };
