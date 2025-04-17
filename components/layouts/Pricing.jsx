@@ -24,7 +24,7 @@ export const Pricing = () => {
                     <PriceColumn
                         title="Website Content Creation"
                         price="4000"
-                        per={"per page / month"}
+                        per={"per page"}
                         statement=""
                         items={[
                             {
@@ -55,7 +55,7 @@ export const Pricing = () => {
                     <PriceColumn
                         title="B2B / B2B SaaS Blogs"
                         price={"10850"}
-                        per={"per blog / month"}
+                        per={"per blog"}
                         statement="Additional charges for blog banners / infographics / in-blog images"
                         items={[
                             {
@@ -90,7 +90,7 @@ export const Pricing = () => {
                     <PriceColumn
                         title="B2C Services / D2C / eCommerce Blogs"
                         price={"5000"}
-                        per={"per blog / month"}
+                        per={"per blog"}
                         statement="Additional charges for blog banners / infographics / in-blog images"
                         items={[
                             {
