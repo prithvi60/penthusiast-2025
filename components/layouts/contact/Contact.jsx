@@ -31,12 +31,7 @@ const Contact = () => {
                     className="pb-10 mx-auto"
                 />
                 <div className="space-y-3">
-                    <p className="flex items-center gap-2 text-sm">
-                        <span>
-                            <FaPhone className="text-lg shrink-0 text-text" />
-                        </span>
-                        91-90032 85687
-                    </p>
+               
                     <p className="flex items-center gap-2 text-sm">
                         <span>
                             <MdEmail className="text-xl shrink-0 text-text" />

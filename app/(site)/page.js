@@ -56,7 +56,7 @@ export default function Home() {
         title={"Showcasing our most impactful client collaborations"}
       />
       <Faq />
-      <Pricing />
+      {/*  <Pricing /> */}
       <BuildOurStory />
     </main>
   );
