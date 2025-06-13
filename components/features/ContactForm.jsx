@@ -36,7 +36,6 @@ export const ContactForm = () => {
                     email: formData.email,
                     message: formData.message,
                     title: "contact",
-                    priceTag: "",
                 }),
             });
 
