@@ -90,7 +90,7 @@ export const ourClients = [
   { logo: "/client-7.png", alt: "canit solution logo" },
   { logo: "/client-10.png", alt: "ticket9 logo" },
   { logo: "/client-5.svg", alt: "bitsCrunch logo" },
-  { logo: "/client-17.jpg", alt: "fabright logo" },
+  // { logo: "/client-17.jpg", alt: "fabright logo" },
   { logo: "/client-6.png", alt: "SKC logo" },
   { logo: "/client-14.png", alt: "t10 sports logo" },
   { logo: "/client-13.png", alt: "swan logo" },
