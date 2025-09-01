@@ -22,7 +22,7 @@ export const metadata = {
     url: "https://penthusiasts.com",
     images: [
       {
-        url: "https://ik.imagekit.io/webibee/penthusiast_logo_full.png",
+        url: "https://ik.imagekit.io/a7ag28udt/penthusiasts-logo-full.png?updatedAt=1756712997493",
         width: 1200,
         height: 630,
         alt: "Penthusiasts",
