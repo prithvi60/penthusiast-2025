@@ -74,7 +74,7 @@ const Footer = () => {
                                 #37A RAASI BUSINESS CENTRE 
                                 <br />Puliyur 2nd Main Rd,<br /> Trustpuram, Kodambakkam,
                                 <br />
-                                Chennai, Tamil Nadu 600024
+                                Chennai, Tamil Nadu 600024.
                             </p>
                         </div>
                     </div>
