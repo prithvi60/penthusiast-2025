@@ -57,7 +57,7 @@ const Footer = () => {
                         </div>
                         <div className="block space-y-2 w-max mx-auto sm:w-full sm:mx-0">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.534788119043!2d80.23897797436692!3d13.065257187258814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ce08031391%3A0x1e8e6ee23500142c!2sWOCO%20SPACES!5e0!3m2!1sen!2sin!4v1743596147817!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4782.454727935702!2d80.22247370000001!3d13.055179699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52676179fa19a5%3A0x1e756da6c3fde677!2sRAASI%20BUSINESS%20CENTRE!5e1!3m2!1sen!2sin!4v1767950874727!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 allowFullScreen=""
@@ -71,10 +71,10 @@ const Footer = () => {
                             <p className="text-xs md:text-sm">
                                 Penthusiasts,
                                 <br />
-                                4th Floor, Woco Spaces, No 11/38,
-                                <br /> Status Quo Building,Sterling Rd,<br /> Seetha Nagar,Nungambakkam,
+                                #37A RAASI BUSINESS CENTRE 
+                                <br />Puliyur 2nd Main Rd,<br /> Trustpuram, Kodambakkam,
                                 <br />
-                                Chennai, Tamil Nadu 600034
+                                Chennai, Tamil Nadu 600024
                             </p>
                         </div>
                     </div>

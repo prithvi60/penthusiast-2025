@@ -52,8 +52,8 @@ const Contact = () => {
                         <p>
                             Work Location:<br />
                             Penthusiasts,<br />
-                            4th Floor, Woco Spaces, No 11/38, Status Quo Building,<br /> Sterling Rd, Seetha Nagar,<br />
-                            Nungambakkam, Chennai, Tamil Nadu 600034
+                                #37A RAASI BUSINESS CENTRE, Puliyur 2nd Main Rd,<br /> Trustpuram, Kodambakkam,<br />
+                         Chennai, Tamil Nadu 600024
                         </p>
                     </div>
                 </div>
