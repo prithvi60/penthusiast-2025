@@ -13,7 +13,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Penthusiasts",
-    image: "https://ik.imagekit.io/webibee/penthusiast_logo_full.png",
+    image:
+      "https://ik.imagekit.io/a7ag28udt/penthusiasts-logo-full.png?updatedAt=1756712997493",
     description:
       "Elevate your brand with our content writing services. Expert copywriting services to engage your audience and boost your online presence. Contact us today!",
     email: "reachout@penthusiasts.com",
@@ -23,7 +24,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Penthusiasts",
-    image: "https://ik.imagekit.io/webibee/penthusiast_logo_full.png",
+    image:
+      "https://ik.imagekit.io/a7ag28udt/penthusiasts-logo-full.png?updatedAt=1756712997493",
     url: "https://penthusiasts.com",
     telephone: "+91-9003285687",
     openingHoursSpecification: {

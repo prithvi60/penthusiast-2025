@@ -1,5 +1,5 @@
 export function generateEmailTemplateForUser(mainContent, title, priceTag) {
-    const imageUrl = "https://ik.imagekit.io/webibee/penthusiast_logo_full.png";
+    const imageUrl = "https://ik.imagekit.io/a7ag28udt/penthusiasts-logo-full.png?updatedAt=1756712997493";
     return `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
           <div style="text-align: center; margin-bottom: 20px;">
@@ -37,7 +37,7 @@ export function generateEmailTemplateForUser(mainContent, title, priceTag) {
 }
 
 export function generateEmailTemplateForClient(mainContent) {
-    const imageUrl = "https://ik.imagekit.io/webibee/penthusiast_logo.png";
+    const imageUrl = "https://ik.imagekit.io/a7ag28udt/penthusiast_logo.png";
     return `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
               <p style="font-size: 16px; color: #555;">Hi,</p>

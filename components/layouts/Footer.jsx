@@ -22,7 +22,7 @@ const Footer = () => {
                         <Image
                             title={"logo"}
                             src={
-                                "https://ik.imagekit.io/webibee/penthusiasts%20logo.svg?updatedAt=1743161885549"
+                                "https://ik.imagekit.io/a7ag28udt/penthusiasts-logo-full.png?updatedAt=1756712997493"
                             }
                             alt="penthusiasts logo"
                             width={180}
