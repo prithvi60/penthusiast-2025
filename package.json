@@ -15,7 +15,7 @@
     "framer-motion": "^12.4.7",
     "lenis": "^1.1.22",
     "lottie-react": "^2.4.1",
-    "next": "15.1.7",
+    "next": "15.1.11",
     "next-sanity": "^9.8.59",
     "node-fetch": "^3.3.2",
     "nodemailer": "^6.10.0",
